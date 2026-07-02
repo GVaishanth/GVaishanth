@@ -1,16 +1,14 @@
 <div align="center">
 
-<img src="assets/banner.png" width="100%" alt="GVaishanth — Velocity telemetry banner" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-hero.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-hero-light.svg">
+  <img src="assets/banner-hero-og.png" width="100%" alt="GVaishanth — Simulations Engineer · AI · Android · Web">
+</picture>
 
-<br>
-
-<a href="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Simulations+Engineer;Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems.">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Simulations+Engineer;Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems." alt="Typing: Simulations Engineer / Game AI / Android / Web" />
+<a href="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems.;Open+Source+%E2%80%A2+Learning">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems.;Open+Source+%E2%80%A2+Learning" alt="Typing: Game AI / Android / Web" />
 </a>
-
-<p>
-  <sub>AI · Android · Web — Open Source • Learning</sub>
-</p>
 
 <p>
   <a href="https://gvaishanth.github.io/Velocity/"><img src="https://img.shields.io/badge/Play-Velocity-FF3340?style=flat-square&logoColor=white&labelColor=11151C&color=FF3340" alt="Play Velocity"></a>
@@ -18,13 +16,13 @@
   <img src="https://komarev.com/ghpvc/?username=GVaishanth&color=1E232E&style=flat-square&label=views" alt="profile views"/>
 </p>
 
-</div>
+<p><sub>I build simulations, games, and resilient tools — AI · Android · Web</sub></p>
 
-<br>
+</div>
 
 ---
 
-### About
+### About me
 
 <table>
 <tr>
@@ -36,11 +34,6 @@ I like problems with hard systems constraints — networking, game AI, physics, 
 
 I ship in public, learn continuously, and keep the code clean.
 
-<br>
-
-<strong>Focus areas</strong><br>
-Simulations · Game AI · Real-time Multiplayer · Android / Kotlin · Data analysis · Broadcast-style UX
-
 </td>
 <td width="42%" valign="top">
 
@@ -49,15 +42,9 @@ $ whoami
 GVaishanth
 software engineer
 
-$ stack --depth
-ai, android, web
-python, js, kotlin
-
-$ interests
-simulations
-motorsport/f1
-game_design
-problem_solving
+$ stack
+ai · android · web
+python · js · kotlin
 
 $ now
 building interactive tools
@@ -68,21 +55,36 @@ cowboy_coding: true
 </tr>
 </table>
 
-<br>
+### What I'm interested in
 
-### Live demos
+<table>
+<tr>
+<td width="50%">
 
-<p align="center">
-<a href="https://gvaishanth.github.io/Velocity/"><img src="https://img.shields.io/badge/Velocity — F1 Constructor Sim-FF3340?style=for-the-badge&labelColor=0d1117&color=FF3340" /></a>&nbsp;&nbsp;
-<a href="https://gvaishanth.github.io/Computer-Cricket/game.html"><img src="https://img.shields.io/badge/Computer_Cricket — Hand Cricket Club-1E232E?style=for-the-badge&labelColor=0d1117&color=1E232E" /></a>
-</p>
-<p align="center"><sub>No install. Opens in browser. 60fps.</sub></p>
+<strong>Engineering</strong><br>
+<sub>Systems design · clean architecture · real-time multiplayer / WebRTC · 60fps interactive UI</sub>
+<br><br>
+<strong>Interactive</strong><br>
+<sub>Game design · simulation · motorsport / automotive engineering · building tools people want to play with</sub>
 
-<br>
+</td>
+<td width="50%">
+
+<strong>AI & Data</strong><br>
+<sub>Game AI — Minimax / Alpha-Beta · quantum-inspired simulation · data cleaning & EDA</sub>
+<br><br>
+<strong>Craft</strong><br>
+<sub>Vanilla JS, no-framework builds · Android / Kotlin · experimentation & side projects · learning new technologies</sub>
+
+</td>
+</tr>
+</table>
+
+> Automotive / motorsport interest shows up in my work — most directly in Velocity, an F1 constructor simulator. Subtle, not a gimmick.
 
 ---
 
-### Featured work
+### Featured repositories
 
 <table>
 <tr>
@@ -92,8 +94,7 @@ cowboy_coding: true
 <img src="assets/cover-velocity.png" width="100%" alt="Velocity cover" />
 </a>
 
-<strong>Velocity — F1 Constructor Championship</strong>
-<br>
+<strong>Velocity — F1 Constructor Championship</strong><br>
 <sub>JavaScript · Canvas · WebRTC</sub>
 
 <p>Elite, serverless F1 management & racing sim. 60fps Canvas, 22 subsystems.</p>
@@ -114,8 +115,7 @@ cowboy_coding: true
 <img src="assets/cover-cricket.png" width="100%" alt="Computer Cricket cover" />
 </a>
 
-<strong>Computer Cricket — Hand Cricket Club</strong>
-<br>
+<strong>Computer Cricket — Hand Cricket Club</strong><br>
 <sub>Python · JavaScript · PeerJS</sub>
 
 <p>Number-based cricket in three forms: Python CLI, single-player web, real-time tournament.</p>
@@ -133,14 +133,12 @@ cowboy_coding: true
 </tr>
 <tr>
 <td width="50%" valign="top">
-<br>
 
 <a href="https://github.com/GVaishanth/CRPapp">
-<img src="assets/cover-crppapp.png" width="100%" alt="CRPapp cover" />
+<img src="assets/cover-crpapp.png" width="100%" alt="CRPapp cover" />
 </a>
 
-<strong>CRPapp — Predictive Crash Resilience</strong>
-<br>
+<strong>CRPapp — Predictive Crash Resilience</strong><br>
 <sub>Kotlin · Android · Proto DataStore</sub>
 
 <p>A PDF workspace built to demonstrate fail-safe resilience, not just read files.</p>
@@ -156,14 +154,12 @@ cowboy_coding: true
 
 </td>
 <td width="50%" valign="top">
-<br>
 
 <a href="https://github.com/GVaishanth/Quantum-Tic-Tac-Toe">
 <img src="assets/cover-quantum.png" width="100%" alt="Quantum Tic-Tac-Toe cover" />
 </a>
 
-<strong>Quantum Tic-Tac-Toe</strong>
-<br>
+<strong>Quantum Tic-Tac-Toe</strong><br>
 <sub>Python · Qiskit · Minimax</sub>
 
 <p>Classical Tic-Tac-Toe with non-deterministic quantum state resolution.</p>
@@ -181,20 +177,16 @@ cowboy_coding: true
 </tr>
 </table>
 
-<br>
-
 <details>
 <summary><strong>More projects</strong></summary>
 <br>
 
-| Project | What it does | Stack |
+| Project | Description | Technologies |
 |---|---|---|
 | **GroupDNA** | WhatsApp Chat Analyzer — “Spotify Wrapped for your WhatsApp group”. Personality archetypes, response times, heatmaps. | Python, NumPy |
 | **Salary_Decoder** | Bangalore Tech Salary Decoder. 1,015-record EDA — cleaning messy CTC formats, role premiums, skill deltas. | Python, Pandas, Seaborn, Jupyter |
 
 </details>
-
-<br>
 
 ---
 
@@ -202,65 +194,57 @@ cowboy_coding: true
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="160">
-<img src="https://skillicons.dev/icons?i=python" width="44"/><br>
-<sub><b>Python</b><br>CLI · Data · AI</sub>
-</td>
-<td align="center" width="160">
-<img src="https://skillicons.dev/icons?i=js" width="44"/><br>
-<sub><b>JavaScript</b><br>ES6 · Canvas</sub>
-</td>
-<td align="center" width="160">
-<img src="https://skillicons.dev/icons?i=kotlin" width="44"/><br>
-<sub><b>Kotlin</b><br>Android</sub>
-</td>
-<td align="center" width="160">
-<img src="https://skillicons.dev/icons?i=html,css" width="44"/><br>
-<sub><b>HTML/CSS</b><br>Grid · Flex</sub>
-</td>
-</tr>
-</table>
-
-<br>
-
-<strong>AI / Data</strong><br>
-<sub>Minimax · Alpha-Beta · Qiskit · NumPy · Pandas · Matplotlib · Seaborn · Jupyter</sub>
+<strong>Languages</strong><br>
+<img src="https://skillicons.dev/icons?i=python,js,kotlin,html,css" /><br>
+<sub>Python · JavaScript · Kotlin · HTML · CSS</sub>
 
 <br><br>
 
-<strong>Web · Realtime</strong><br>
-<sub>HTML5 Canvas · WebRTC · PeerJS · GitHub Pages · Vanilla ES6+</sub>
+<strong>Frameworks</strong><br>
+<sub>Vanilla-first — ES6 Modules, no heavy frameworks. HTML5 Canvas for real-time rendering.</sub>
+
+<br><br>
+
+<strong>AI / ML</strong><br>
+<sub>Minimax · Alpha-Beta pruning · Qiskit / Qiskit Aer</sub>
+
+<br><br>
+
+<strong>Data Science</strong><br>
+<sub>NumPy · Pandas · Matplotlib · Seaborn · Jupyter Notebook</sub>
+
+<br><br>
+
+<strong>Web</strong><br>
+<sub>HTML5 Canvas · WebRTC · PeerJS · GitHub Pages · CSS Grid / Flexbox</sub>
 
 <br><br>
 
 <strong>Mobile</strong><br>
-<sub>Android · Material Design 3 · Proto DataStore · Gradle</sub>
+<img src="https://skillicons.dev/icons?i=androidstudio" /><br>
+<sub>Android · Kotlin · Material Design 3 · Proto DataStore · Gradle</sub>
 
 <br><br>
 
-<strong>Tooling</strong><br>
+<strong>Developer Tools</strong><br>
 <img src="https://skillicons.dev/icons?i=git,github,vscode" /><br>
-<sub>Git · GitHub Actions</sub>
+<sub>Git · GitHub Actions · VS Code</sub>
 
 </div>
 
-<br>
-
 ---
 
-### Now
+### Current focus
 
 ```
 building:  interactive simulations, real-time multiplayer
-learning:   game AI, resilient systems architecture  
+learning:   game AI, resilient systems architecture
 shipping:   small, polished tools — regularly
 ```
 
-<br>
+---
 
-### Stats
+### GitHub statistics
 
 <div align="center">
 
@@ -275,13 +259,15 @@ shipping:   small, polished tools — regularly
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=GVaishanth&theme=github-compact&hide_border=true&bg_color=0d1117&color=9AA0A6&line=FF3340&point=E6E6E6" width="100%" />
 
-</div>
-
 <br>
+
+<img src="https://github-profile-trophy.vercel.app/?username=GVaishanth&theme=discord&no-frame=true&no-bg=true&row=1&column=6&margin-w=15" />
+
+</div>
 
 ---
 
-### Notes
+### Fun facts
 
 ```
 - I build games with 7 rule sets just to see what breaks
@@ -291,16 +277,14 @@ shipping:   small, polished tools — regularly
 - Broadcast / telemetry UI is a recurring theme
 ```
 
-<br>
-
 <div align="center">
 
-> <em>“Championships are engineered.”</em><br>
+> <em>"Championships are engineered."</em><br>
 > <sub>— Velocity</sub>
 
-<br>
-
 ---
+
+### Connect
 
 <a href="https://github.com/GVaishanth">
 <img src="https://img.shields.io/badge/GitHub-GVaishanth-11151C?style=flat-square&logo=github&logoColor=E6E6E6" />

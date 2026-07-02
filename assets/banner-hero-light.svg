@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img">
+  <defs>
+    <pattern id="gridL" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+    </pattern>
+    <filter id="glowL" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+    </filter>
+    <radialGradient id="vignetteL" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="60%" stop-color="#fcfcfc" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f0f1f3" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="600" fill="#fcfcfc"/>
+  <rect width="1600" height="600" fill="url(#gridL)"/>
+  <rect width="1600" height="600" fill="url(#vignetteL)"/>
+  <g opacity="0.95" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#d1d5db" stroke-width="1">
+      <path d="M 820 420 C 940 380, 1020 340, 1100 320 C 1180 300, 1240 340, 1290 300 C 1340 260, 1420 220, 1510 210 L 1600 205" opacity="0.8"/>
+      <path d="M 780 480 C 900 440, 980 410, 1060 390 C 1135 372, 1210 395, 1265 360 C 1315 328, 1400 295, 1520 270 L 1600 262" opacity="0.5"/>
+    </g>
+    <path d="M 740 460 C 860 410, 940 360, 1015 335 C 1075 315, 1115 345, 1168 312 C 1215 282, 1258 248, 1315 238 C 1375 227, 1410 268, 1448 248 C 1485 230, 1525 202, 1600 195"
+          stroke="#ff3340" stroke-width="2.8"/>
+    <g fill="#ff3340"><circle cx="1015" cy="335" r="1.8"/><circle cx="1168" cy="312" r="1.8"/><circle cx="1315" cy="238" r="1.8"/><circle cx="1448" cy="248" r="1.8"/></g>
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9" fill="#6b7280">
+      <text x="1010" y="322">T1</text>
+      <text x="1162" y="299">T5</text>
+      <text x="1308" y="225">T11</text>
+      <text x="1442" y="235">T14</text>
+    </g>
+  </g>
+  <g font-family="'Inter','SF Pro Display','Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif">
+    <text x="96" y="228" fill="#6b7280" font-size="13" letter-spacing="3.5" font-weight="600">AI · ANDROID · WEB</text>
+    <text x="92" y="320" fill="#0b0d11" font-size="84" font-weight="700" letter-spacing="-1.5">GVaishanth</text>
+    <text x="96" y="372" fill="#4b5563" font-size="26" font-weight="500">Simulations Engineer</text>
+    <text x="96" y="418" fill="#6b7280" font-size="15" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">Clean code · Interesting problems · Open Source</text>
+    <rect x="96" y="442" width="52" height="3" fill="#ff3340" rx="1"/>
+  </g>
+  <text x="96" y="548" fill="#9aa0a6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11">BUILD · RACE · DOMINATE — v2026</text>
+  <text x="1504" y="548" fill="#9aa0a6" font-family="'Inter',system-ui,sans-serif" font-size="11" text-anchor="end" letter-spacing="2">VELOCITY</text>
+</svg>

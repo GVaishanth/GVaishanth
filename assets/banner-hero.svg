@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <defs>
+    <!-- Subtle grid -->
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1a1f29" stroke-width="1"/>
+    </pattern>
+    <!-- Red glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    </filter>
+    <!-- Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="60%" stop-color="#0b0d11" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0d11" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="600" fill="#0b0d11"/>
+  <rect width="1600" height="600" fill="url(#grid)" opacity="0.9"/>
+  <rect width="1600" height="600" fill="url(#vignette)"/>
+
+  <!-- Circuit / telemetry linework - right side -->
+  <g opacity="0.95" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- faint telemetry grid paths -->
+    <g stroke="#1e232e" stroke-width="1">
+      <path d="M 820 420 C 940 380, 1020 340, 1100 320 C 1180 300, 1240 340, 1290 300 C 1340 260, 1420 220, 1510 210 L 1600 205" opacity="0.6"/>
+      <path d="M 780 480 C 900 440, 980 410, 1060 390 C 1135 372, 1210 395, 1265 360 C 1315 328, 1400 295, 1520 270 L 1600 262" opacity="0.35"/>
+    </g>
+    <!-- main racing line - red -->
+    <path d="M 740 460 
+             C 860 410, 940 360, 1015 335 
+             C 1075 315, 1115 345, 1168 312 
+             C 1215 282, 1258 248, 1315 238 
+             C 1375 227, 1410 268, 1448 248 
+             C 1485 230, 1525 202, 1600 195"
+          stroke="#ff3340" stroke-width="2.8" filter="url(#glow)" />
+    <!-- secondary ghost line -->
+    <path d="M 740 460 
+             C 860 410, 940 360, 1015 335 
+             C 1075 315, 1115 345, 1168 312 
+             C 1215 282, 1258 248, 1315 238 
+             C 1375 227, 1410 268, 1448 248 
+             C 1485 230, 1525 202, 1600 195"
+          stroke="#ff3340" stroke-width="1" opacity="0.35"/>
+    <!-- timing markers -->
+    <g fill="#ff3340" opacity="0.9">
+      <circle cx="1015" cy="335" r="1.8"/>
+      <circle cx="1168" cy="312" r="1.8"/>
+      <circle cx="1315" cy="238" r="1.8"/>
+      <circle cx="1448" cy="248" r="1.8"/>
+    </g>
+    <!-- distance labels - tiny mono -->
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9" fill="#4b5563">
+      <text x="1010" y="322">T1</text>
+      <text x="1162" y="299">T5</text>
+      <text x="1308" y="225">T11</text>
+      <text x="1442" y="235">T14</text>
+    </g>
+  </g>
+
+  <!-- Left text block -->
+  <g font-family="'Inter','SF Pro Display','Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif">
+    <!-- eyebrow -->
+    <text x="96" y="228" fill="#9aa0a6" font-size="13" letter-spacing="3.5" font-weight="600" style="text-transform:uppercase">
+      AI · Android · Web
+    </text>
+    <!-- name -->
+    <text x="92" y="320" fill="#e6e6e6" font-size="84" font-weight="700" letter-spacing="-1.5">
+      GVaishanth
+    </text>
+    <!-- role -->
+    <text x="96" y="372" fill="#9aa0a6" font-size="26" font-weight="500" letter-spacing="0.2">
+      Simulations Engineer
+    </text>
+    <!-- tagline mono -->
+    <text x="96" y="418" fill="#6b7280" font-size="15" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" letter-spacing="0.2">
+      Clean code · Interesting problems · Open Source
+    </text>
+    <!-- accent rule -->
+    <rect x="96" y="442" width="52" height="3" fill="#ff3340" rx="1"/>
+  </g>
+
+  <!-- Bottom left meta - tiny -->
+  <text x="96" y="548" fill="#3a404c" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11" letter-spacing="0.3">
+    BUILD · RACE · DOMINATE — v2026
+  </text>
+
+  <!-- Bottom right - subtle brand mark -->
+  <text x="1504" y="548" fill="#2a303c" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="11" text-anchor="end" letter-spacing="2">
+    VELOCITY
+  </text>
+
+  <!-- Accessibility -->
+  <title id="bannerTitle">GVaishanth — Simulations Engineer, AI · Android · Web</title>
+  <desc id="bannerDesc">Dark premium GitHub profile banner with F1 telemetry circuit line in racing red, left-aligned name and role text. Clean Linear/Vercel style.</desc>
+</svg>
