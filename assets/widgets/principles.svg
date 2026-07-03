@@ -2,61 +2,61 @@
   <rect width="720" height="160" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="159" rx="14" fill="none" stroke="#1c212d"/>
   
-  <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">ENGINEERING PRINCIPLES</text>
+  <text x="28" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">ENGINEERING PRINCIPLES</text>
   
-  <circle cx="38" cy="36" r="5" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
+  <circle cx="28" cy="36" r="4" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.0s" fill="freeze"/>
   </circle>
-  <text x="38" y="39" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5" font-weight="700" opacity="0">
+  <text x="28" y="39" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="7" font-weight="700" opacity="0">
     1
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.0s" fill="freeze"/>
   </text>
-  <text x="54" y="40" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
+  <text x="44" y="40" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
     <tspan fill="#e6edf3" font-weight="600">Systems first</tspan> — Start with the loop that runs every frame
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.0s" fill="freeze"/>
   </text>
-  <circle cx="38" cy="58" r="5" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
+  <circle cx="28" cy="58" r="4" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
   </circle>
-  <text x="38" y="61" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5" font-weight="700" opacity="0">
+  <text x="28" y="61" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="7" font-weight="700" opacity="0">
     2
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
   </text>
-  <text x="54" y="62" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
+  <text x="44" y="62" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
     <tspan fill="#e6edf3" font-weight="600">Authority model</tspan> — One source of truth — compensate everywhere else
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
   </text>
-  <circle cx="38" cy="80" r="5" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
+  <circle cx="28" cy="80" r="4" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
   </circle>
-  <text x="38" y="83" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5" font-weight="700" opacity="0">
+  <text x="28" y="83" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="7" font-weight="700" opacity="0">
     3
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
   </text>
-  <text x="54" y="84" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
+  <text x="44" y="84" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
     <tspan fill="#e6edf3" font-weight="600">Checkpoint early</tspan> — Assume the process will die — save atomically
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
   </text>
-  <circle cx="38" cy="102" r="5" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+  <circle cx="28" cy="102" r="4" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2000000000000002s" fill="freeze"/>
   </circle>
-  <text x="38" y="105" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5" font-weight="700" opacity="0">
+  <text x="28" y="105" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="7" font-weight="700" opacity="0">
     4
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2000000000000002s" fill="freeze"/>
   </text>
-  <text x="54" y="106" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
+  <text x="44" y="106" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
     <tspan fill="#e6edf3" font-weight="600">60fps is law</tspan> — Canvas over DOM, frame budget over features
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2000000000000002s" fill="freeze"/>
   </text>
-  <circle cx="38" cy="124" r="5" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
+  <circle cx="28" cy="124" r="4" fill="none" stroke="#ff3340" stroke-width="1.2" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.6s" fill="freeze"/>
   </circle>
-  <text x="38" y="127" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5" font-weight="700" opacity="0">
+  <text x="28" y="127" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="7" font-weight="700" opacity="0">
     5
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.6s" fill="freeze"/>
   </text>
-  <text x="54" y="128" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
-    <tspan fill="#e6edf3" font-weight="600">Ship, then clean</tspan> — you can't refactor toward an architecture you can't see yet
+  <text x="44" y="128" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" opacity="0">
+    <tspan fill="#e6edf3" font-weight="600">Ship, then clean</tspan> — v1 messy → v4 architecture
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.6s" fill="freeze"/>
   </text>
 </svg>

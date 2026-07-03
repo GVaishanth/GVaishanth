@@ -2,25 +2,21 @@
   <rect width="720" height="180" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="179" rx="14" fill="none" stroke="#1c212d"/>
   
-  <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">OPEN SOURCE JOURNEY</text>
+  <text x="28" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">OPEN SOURCE JOURNEY</text>
   <text x="692" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">244d · 4 langs</text>
   <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" text-anchor="middle">
-        <text x="100" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="16" font-weight="700">6</text>
+        <text x="100" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600">6</text>
     <text x="100" y="62" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">REPOS</text>
-    <text x="230" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="16" font-weight="700">23.8</text>
+    <text x="230" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600">23.8</text>
     <text x="230" y="62" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">MB CODE</text>
-    <text x="360" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="16" font-weight="700">4</text>
+    <text x="360" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600">4</text>
     <text x="360" y="62" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">LANGS</text>
-    <text x="490" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="16" font-weight="700">—</text>
+    <text x="490" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600">—</text>
     <text x="490" y="62" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">STARS</text>
-    <text x="620" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="16" font-weight="700">244</text>
+    <text x="620" y="50" text-anchor="middle" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600">244</text>
     <text x="620" y="62" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">DAYS</text>
 
   </g>
-  <line x1="165" y1="36" x2="165" y2="66" stroke="#1c212d" stroke-width="0.7"/>
-  <line x1="295" y1="36" x2="295" y2="66" stroke="#1c212d" stroke-width="0.7"/>
-  <line x1="425" y1="36" x2="425" y2="66" stroke="#1c212d" stroke-width="0.7"/>
-  <line x1="555" y1="36" x2="555" y2="66" stroke="#1c212d" stroke-width="0.7"/>
   <line x1="50" y1="70" x2="670" y2="70" stroke="#181d27" stroke-width="0.7"/>
     <line x1="35" y1="80" x2="157" y2="80" stroke="#181d27" stroke-width="1.2" stroke-dasharray="4,3"/>
     <circle cx="30" cy="80" r="5" fill="#6e7681" stroke="#1c212d" stroke-width="1.5"/>
