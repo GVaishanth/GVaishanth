@@ -1,45 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewBox="0 0 720 110" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewBox="0 0 720 110" role="img" aria-labelledby="gtTitle">
+  <title id="gtTitle">Garage activity timeline — repository push history over 90 days</title>
   <rect width="720" height="110" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="109" rx="14" fill="none" stroke="#1c212d"/>
-  
+
   <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">GARAGE — ACTIVITY</text>
   <text x="692" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">90d → now</text>
+
   <line x1="36" y1="54" x2="684" y2="54" stroke="#181d27" stroke-width="2"/>
-    <circle cx="662.4" cy="54.0" r="12" fill="#ff3340" opacity="0">
+
+  <!-- Node positions recalculated to prevent overlap:
+       Timeline: x=36 (90d ago) to x=684 (now). Range = 648px.
+       Each day = 648/90 = 7.2px. Position = 684 - (days * 7.2)
+       GroupDNA: 3d  → 684 - 21.6 = 662.4  (kept, rightmost)
+       Salary:   3d  → same day, stagger left by 20px → 642
+       CRPapp:   5d  → 684 - 36   = 648    → stagger → 622
+       Velocity: 10d → 684 - 72   = 612
+       Cricket:  23d → 684 - 165.6= 518.4
+       Quantum:  54d → 684 - 388.8= 295.2  -->
+
+  <!-- GroupDNA — 3d ago -->
+  <circle cx="662" cy="54" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.0s"/>
   </circle>
-  <circle cx="662.4" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="662.4" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
-  <text x="662.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">3d</text>
-  <circle cx="662.4" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="662" cy="54" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="662" y="40" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">GroupDNA</text>
+  <text x="662" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">3d</text>
+
+  <!-- Salary — 3d ago, staggered left to avoid overlap -->
+  <circle cx="638" cy="54" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.5s"/>
   </circle>
-  <circle cx="662.4" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="662.4" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
-  <text x="662.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">3d</text>
-  <circle cx="648.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="638" cy="54" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="638" y="40" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Salary</text>
+  <text x="638" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">3d</text>
+
+  <!-- CRPapp — 5d ago -->
+  <circle cx="612" cy="54" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.0s"/>
   </circle>
-  <circle cx="648.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="648.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CRP</text>
-  <text x="648.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">5d</text>
-  <circle cx="612.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="612" cy="54" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="612" y="40" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">CRPapp</text>
+  <text x="612" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">5d</text>
+
+  <!-- Velocity — 10d ago -->
+  <circle cx="576" cy="54" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.5s"/>
   </circle>
-  <circle cx="612.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="612.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">VEL</text>
-  <text x="612.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
-  
-  <circle cx="518.4" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
-  <text x="518.4" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
-  <text x="518.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">23d</text>
-  
-  <circle cx="295.2" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
-  <text x="295.2" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">QTT</text>
-  <text x="295.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">54d</text>
+  <circle cx="576" cy="54" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="576" y="40" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Velocity</text>
+  <text x="576" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
 
+  <!-- Cricket — 23d ago (inactive) -->
+  <circle cx="518" cy="54" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
+  <text x="518" y="40" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Cricket</text>
+  <text x="518" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">23d</text>
+
+  <!-- Quantum — 54d ago (inactive) -->
+  <circle cx="295" cy="54" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
+  <text x="295" y="40" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Quantum</text>
+  <text x="295" y="76" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">54d</text>
 </svg>

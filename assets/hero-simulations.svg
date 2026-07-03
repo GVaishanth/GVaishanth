@@ -61,12 +61,12 @@
     </circle>
     <text x="86" y="242.5" fill="#e6edf3" font-weight="500">LIVE</text>
     <text x="124" y="242.5" fill="#21262d">│</text>
-    <text x="138" y="242.5" fill="#8b949e">VELOCITY — F1 Constructor</text>
+    <text x="138" y="242.5" fill="#8b949e">SIMULATIONS ACTIVE</text>
     <text x="478" y="242.5" fill="#ff3340" font-size="11" letter-spacing="0.4" text-anchor="end" opacity="0.8">PLAY →</text>
   </g>
 
   <!-- tech stack -->
-  <text x="56" y="288" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" letter-spacing="0.2">Python · JavaScript · Kotlin — PeerJS · Canvas · Android · Qiskit</text>
+  <text x="56" y="288" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" letter-spacing="0.2">Python · JavaScript — Canvas · WebRTC · PeerJS · 0 deps</text>
 
   <!-- ════════════════════════════════════════ -->
   <!-- LEFT — METRICS PANEL                     -->
