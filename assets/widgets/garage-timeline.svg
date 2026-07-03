@@ -34,9 +34,9 @@
   <text x="612.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">VEL</text>
   <text x="612.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
   
-  <circle cx="525.6" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
-  <text x="525.6" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
-  <text x="525.6" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">22d</text>
+  <circle cx="518.4" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
+  <text x="518.4" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
+  <text x="518.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">23d</text>
   
   <circle cx="295.2" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
   <text x="295.2" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">QTT</text>
