@@ -136,7 +136,14 @@ def build_current_build(repo):
     except Exception:
         pushed_txt = "—"
 
-    body = f'''  <rect x="0" y="0" width="4" height="120" rx="14" fill="{C_ACCENT}"/>
+    # FIX: Wrap accent bar in a clipPath matching card shape to prevent corner bleed.
+    body = f'''  <defs>
+    <clipPath id="cb-clip"><rect width="720" height="120" rx="14"/></clipPath>
+  </defs>
+  <!-- Red left accent bar, clipped to card boundary -->
+  <g clip-path="url(#cb-clip)">
+    <rect x="0" y="0" width="4" height="120" fill="{C_ACCENT}"/>
+  </g>
   <text x="32" y="32" fill="{C_FAINT}" font-family="{MONO}" font-size="10" letter-spacing="2">CURRENT BUILD</text>
   <text x="32" y="58" fill="{C_TEXT}" font-family="{SANS}" font-size="22" font-weight="650">{esc(name)}</text>
   <text x="32" y="78" fill="{C_SUB}" font-family="{SANS}" font-size="13">{esc(desc)}</text>
@@ -269,23 +276,27 @@ def build_language_graph(repos):
         total_kb += kb
 
     lang_list = sorted(lang_map.items(), key=lambda x: x[1], reverse=True)
-    W, H = 720, 110
+    # FIX: Use 32px row spacing. For up to 5 rows: header(22) + 5×32 + 6pad = 188px.
+    # Cap at 5 rows displayed. Height = 36 + n_rows * 32 + 12 bottom pad.
+    n_display = min(5, len(lang_list))
+    H = 36 + n_display * 32 + 12
+    W = 720
     colors = [C_ACCENT, C_BLUE, C_GREEN, C_YELLOW, "#a78bfa"]
     rows = ""
     max_kb = max(v for _, v in lang_list) if lang_list else 1
-    y0 = 32
-    for i, (lang, kb) in enumerate(lang_list[:5]):
+    for i, (lang, kb) in enumerate(lang_list[:n_display]):
         pct = kb / total_kb * 100 if total_kb > 0 else 0
         bar_w = max(4, (kb / max_kb) * 400)
         col = colors[i % len(colors)]
+        y_text = 46 + i * 32
+        y_bar  = y_text - 8
         rows += f'''
-  <text x="28" y="{y0+i*16}" fill="{C_SUB}" font-family="{MONO}" font-size="10.5">{esc(lang[:14])}</text>
+  <text x="28" y="{y_text}" fill="{C_SUB}" font-family="{MONO}" font-size="10.5">{esc(lang[:16])}</text>
   <!-- bar fills from 0 → width with stagger delay -->
-  <rect x="150" y="{y0+i*16-8}" width="{bar_w:.0f}" height="10" rx="4" fill="{col}" opacity="0.7">
-    <animate attributeName="width" from="0" to="{bar_w:.0f}" dur="1.2s" begin="{i*0.15}s" fill="freeze"/>
+  <rect x="150" y="{y_bar}" width="{bar_w:.0f}" height="10" rx="4" fill="{col}" opacity="0.7">
+    <animate attributeName="width" from="0" to="{bar_w:.0f}" dur="1.2s" begin="{i*0.15:.2f}s" fill="freeze"/>
   </rect>
-  <text x="562" y="{y0+i*16}" fill="{C_FAINT}" font-family="{MONO}" font-size="9" text-anchor="end">{pct:.0f}% · {kb}kb</text>'''
-        y0 += 16
+  <text x="562" y="{y_text}" fill="{C_FAINT}" font-family="{MONO}" font-size="9" text-anchor="end">{pct:.0f}% · {kb}kb</text>'''
 
     body = f'''<text x="28" y="22" fill="{C_FAINT}" font-family="{MONO}" font-size="10" letter-spacing="2">LANGUAGES</text>
   <text x="692" y="22" fill="{C_FAINT}" font-family="{MONO}" font-size="9" text-anchor="end">{len(lang_map)} langs · {total_kb}kb total</text>
@@ -299,49 +310,63 @@ def build_language_graph(repos):
 #  Cycle: 4.4s continuous, two packets offset by 1.1s
 # ═══════════════════════════════════════════════════════
 def build_architecture():
-    nodes = [(100, 96, "CORE"), (260, 96, "RENDER"),
-             (100, 176, "NETWORK"), (260, 176, "SIM")]
-    edges = [(0, 1), (1, 3), (3, 2), (2, 0)]
+    # FIX 1: Height increased from 170→240 so all 4 nodes are fully visible.
+    # FIX 2: arch-path uses a single closed subpath (Z) so animateMotion orbits
+    #         the full rectangle, not just the first edge.
+    # Node positions: top row y=61, bottom row y=151 (both within 240px card).
+    nodes = [(100, 61, "CORE"), (260, 61, "RENDER"),
+             (100, 151, "NETWORK"), (260, 151, "SIM")]
+
+    # Centre-points of each node for the orbit path
+    cx = [n[0] + 46 for n in nodes]
+    cy = [n[1] + 15 for n in nodes]
 
     svg_nodes = ""
     for x, y, label in nodes:
         svg_nodes += f'''    <rect x="{x}" y="{y}" width="92" height="30" rx="8" fill="{C_BG}" stroke="{C_BORDER}" stroke-width="1"/>
     <text x="{x+46}" y="{y+19}" text-anchor="middle" fill="{C_SUB}" font-family="{MONO}" font-size="10.5">{label}</text>
 '''
-    svg_edges = ""
-    path_d = ""
-    for a, b in edges:
-        x1, y1 = nodes[a][0] + 46, nodes[a][1] + 15
-        x2, y2 = nodes[b][0] + 46, nodes[b][1] + 15
-        svg_edges += f'    <line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{C_BORDER}" stroke-width="1.2"/>\n'
-        path_d += f"M {x1},{y1} L {x2},{y2} "
+
+    # Visible connecting lines (drawn separately from the hidden path)
+    svg_edges = f'''    <line x1="{cx[0]}" y1="{cy[0]}" x2="{cx[1]}" y2="{cy[1]}" stroke="{C_BORDER}" stroke-width="1.2"/>
+    <line x1="{cx[1]}" y1="{cy[1]}" x2="{cx[3]}" y2="{cy[3]}" stroke="{C_BORDER}" stroke-width="1.2"/>
+    <line x1="{cx[3]}" y1="{cy[3]}" x2="{cx[2]}" y2="{cy[2]}" stroke="{C_BORDER}" stroke-width="1.2"/>
+    <line x1="{cx[2]}" y1="{cy[2]}" x2="{cx[0]}" y2="{cy[0]}" stroke="{C_BORDER}" stroke-width="1.2"/>
+'''
+
+    # SINGLE closed path with Z — animateMotion will orbit the full rectangle
+    closed_path = (f"M {cx[0]},{cy[0]} L {cx[1]},{cy[1]} "
+                   f"L {cx[3]},{cy[3]} L {cx[2]},{cy[2]} Z")
 
     metrics = [("Canvas", "60 fps"), ("Physics", "120 Hz"),
                ("WebRTC", "P2P"), ("Memory", "&lt; 45MB")]
     svg_metrics = "".join(
-        f'    <text x="420" y="{104+i*22}" fill="{C_MUTED}" font-family="{MONO}" font-size="10.5">{k} · {v}</text>\n'
+        f'    <text x="420" y="{84+i*22}" fill="{C_MUTED}" font-family="{MONO}" font-size="10.5">{k} · {v}</text>\n'
         for i, (k, v) in enumerate(metrics))
 
     body = f'''<text x="28" y="26" fill="{C_FAINT}" font-family="{MONO}" font-size="10" letter-spacing="2">ARCHITECTURE — VELOCITY</text>
   <text x="692" y="26" fill="{C_FAINT}" font-family="{MONO}" font-size="9" text-anchor="end">ES6 · 22 modules · 52 files</text>
+  <defs>
+    <!-- Single closed subpath — animateMotion orbits all 4 edges -->
+    <path id="arch-path" d="{closed_path}"/>
+  </defs>
   <g>
-    <path id="arch-path" d="{path_d.strip()}" fill="none"/>
     {svg_edges}{svg_nodes}
-    <!-- two data packets orbit the loop, offset by 1.1s -->
+    <!-- two data packets orbit the loop, offset by 2.2s (half of 4.4s) -->
     <circle r="2.5" fill="{C_ACCENT}">
       <animateMotion dur="4.4s" repeatCount="indefinite" rotate="auto">
         <mpath href="#arch-path"/>
       </animateMotion>
     </circle>
     <circle r="2.5" fill="{C_ACCENT}" opacity="0.7">
-      <animateMotion dur="4.4s" repeatCount="indefinite" rotate="auto" begin="1.1s">
+      <animateMotion dur="4.4s" repeatCount="indefinite" rotate="auto" begin="2.2s">
         <mpath href="#arch-path"/>
       </animateMotion>
     </circle>
   </g>
   {svg_metrics}
-  <text x="692" y="164" fill="{C_FAINT}" font-family="{MONO}" font-size="8" text-anchor="end">data flow — live system map</text>'''
-    return _card(720, 170, body)
+  <text x="692" y="230" fill="{C_FAINT}" font-family="{MONO}" font-size="8" text-anchor="end">data flow — live system map</text>'''
+    return _card(720, 240, body)
 
 
 # ═══════════════════════════════════════════════════════
@@ -434,16 +459,29 @@ def build_ticker(repos):
     names = [r["name"].upper().replace("-", "_") for r in repos[:6]]
     if not names:
         names = ["VELOCITY", "COMPUTER_CRICKET", "CRPAPP", "QUANTUM", "GROUPDNA", "SALARY"]
-    text = "  ◆  ".join(names) + "  ◆  BUILD · RACE · DOMINATE  ◆  " + "  ◆  ".join(names)
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="720" height="44" viewBox="0 0 720 44" role="img">
+    # Build one copy of the ticker content (segment A)
+    segment = "  ◆  ".join(names) + "  ◆  BUILD · RACE · DOMINATE  ◆  "
+    # Duplicate: A + A for seamless looping
+    text = segment + segment
+
+    # FIX: Calculate the translate offset as the pixel width of one segment.
+    # At font-size 11px monospace, each char ≈ 6.6px.
+    # We translate by -(len_of_segment * 6.6) so the second copy snaps to where
+    # the first started — producing a perfectly seamless infinite loop.
+    seg_px = int(len(segment) * 6.6)
+    # Duration proportional to content length (38s was for ~1040px; scale accordingly)
+    dur_s = round(seg_px / 27.4, 1)   # 1040/38 ≈ 27.4 px/s → maintain same speed
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="720" height="44" viewBox="0 0 720 44" role="img" aria-labelledby="tickerTitle">
+  <title id="tickerTitle">Project ticker — {" · ".join(names)}</title>
   <defs><clipPath id="tc"><rect x="0" y="0" width="720" height="44" rx="12"/></clipPath></defs>
   <rect width="720" height="44" rx="12" fill="{C_CARD}"/>
   <rect x=".5" y=".5" width="719" height="43" rx="12" fill="none" stroke="{C_BORDER}"/>
   <g clip-path="url(#tc)">
     <text x="0" y="27" fill="{C_FAINT}" font-family="{MONO}" font-size="11" letter-spacing="0.3">
       {text}
-      <animateTransform attributeName="transform" type="translate" values="0,0;-1040,0" dur="38s" repeatCount="indefinite" calcMode="linear"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-{seg_px},0" dur="{dur_s}s" repeatCount="indefinite" calcMode="linear"/>
     </text>
   </g>
 </svg>'''
@@ -487,9 +525,12 @@ def build_oss_journey(repos, user_data=None):
         for sx, sv, sl in zip(stats_x, stats_v, stats_l))
 
     # timeline
+    # FIX: Shift all nodes 20px left so last node (index 5) sits at x=690.
+    # Pulse ring expands to r=16 → max right edge = 690+16 = 706 < 720. ✓
     timeline = ""
+    x_positions = [30 + i * 132 for i in range(6)]
     for i, (date, desc) in enumerate(milestones[:6]):
-        x = 50 + i * 132
+        x = x_positions[i]
         y = 80
         active = (i == len(milestones) - 1)
         fill = C_ACCENT if active else C_MUTED
@@ -503,7 +544,7 @@ def build_oss_journey(repos, user_data=None):
   </circle>
 '''
         if i < 5:
-            nx = 50 + (i + 1) * 132
+            nx = x_positions[i + 1]
             lc = C_ACCENT if active else C_DIV
             timeline += f'  <line x1="{x+5}" y1="{y}" x2="{nx-5}" y2="{y}" stroke="{lc}" stroke-width="1.2" stroke-dasharray="4,3"/>\n'
 
@@ -534,6 +575,9 @@ def main():
     if not repos:
         repos = FALLBACK_REPOS
         print("  (using fallback repo data)")
+    # Safety: always guarantee at least one repo to avoid IndexError
+    if not repos:
+        repos = FALLBACK_REPOS
 
     user_data = gh_json(f"https://api.github.com/users/{USER}")
 
@@ -611,4 +655,12 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"\n  ERROR: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc(file=sys.stderr)
+        # Exit 0 so the CI workflow still commits any widgets that succeeded.
+        # The ::warning:: in the workflow step handles notification.
+        sys.exit(0)

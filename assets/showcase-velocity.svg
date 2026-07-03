@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="720" viewBox="0 0 800 720">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="720" viewBox="0 0 800 720" role="img" aria-labelledby="svgTitle">
+  <title id="svgTitle">Velocity — F1 Constructor Championship Simulator</title>
   <defs>
     <filter id="sh" x="-3%" y="-3%" width="106%" height="110%">
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
@@ -72,7 +73,7 @@
 
   <!-- ═══════ INTERESTING FACTS ═══════ -->
   <text x="48" y="634" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="8" letter-spacing="2.5">DID YOU KNOW</text>
-  <text x="48" y="652" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Exceed 125°C thermal limit mid-race and you DNF — no second chances</text>
+  <text x="48" y="652" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Every driver has a unique pace profile — the fastest qualifier is rarely the best strategist</text>
   <text x="48" y="670" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Hall of Glory features 3 historic title shootouts you can drop into directly</text>
   <text x="48" y="688" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Pure ES6 modules + CSS3 — zero dependencies, runs from a static HTML file</text>
 

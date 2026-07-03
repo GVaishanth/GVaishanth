@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="bootTitle">
+  <title id="bootTitle">GVaishanth — system initialising</title>
+
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#0d1117" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <filter id="glow-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <clipPath id="left-panel"><rect x="0" y="0" width="580" height="420"/></clipPath>
+    <clipPath id="right-panel"><rect x="620" y="0" width="580" height="420"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="#0b0d11"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+
+  <!-- Vertical centre divider — the "spine" of the profile -->
+  <line x1="600" y1="32" x2="600" y2="388" stroke="#1a2030" stroke-width="1"/>
+  <circle cx="600" cy="210" r="3" fill="#1a2030"/>
+
+  <!-- ── LEFT PANEL: BOOT LOG ── -->
+  <g clip-path="url(#left-panel)" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace">
+
+    <!-- top-left label -->
+    <text x="40" y="48" fill="#2a3545" font-size="9" letter-spacing="3">GVAISHANTH · INIT SEQUENCE</text>
+
+    <!-- Boot log lines — each fades in sequentially -->
+    <!-- Line 1: immediate -->
+    <text x="40" y="88" fill="#3a4a5a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.000</tspan>  kernel loading
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="40" y="108" fill="#3a4a5a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.041</tspan>  mounting subsystems
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.6s" fill="freeze"/>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="40" y="128" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.112</tspan>  <tspan fill="#22c55e">✓</tspan>  physics engine
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.0s" fill="freeze"/>
+    </text>
+
+    <!-- Line 4 -->
+    <text x="40" y="148" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.198</tspan>  <tspan fill="#22c55e">✓</tspan>  game loop 60Hz
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.3s" fill="freeze"/>
+    </text>
+
+    <!-- Line 5 -->
+    <text x="40" y="168" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.264</tspan>  <tspan fill="#22c55e">✓</tspan>  WebRTC mesh 12-node
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.6s" fill="freeze"/>
+    </text>
+
+    <!-- Line 6 -->
+    <text x="40" y="188" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.331</tspan>  <tspan fill="#22c55e">✓</tspan>  state machine authority
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.9s" fill="freeze"/>
+    </text>
+
+    <!-- Line 7 -->
+    <text x="40" y="208" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.402</tspan>  <tspan fill="#22c55e">✓</tspan>  crash recovery protocol
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+    </text>
+
+    <!-- Line 8 — warning -->
+    <text x="40" y="228" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.489</tspan>  <tspan fill="#eab308">⚡</tspan>  minimax depth 8 — acceptable
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.5s" fill="freeze"/>
+    </text>
+
+    <!-- Line 9 -->
+    <text x="40" y="248" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.561</tspan>  <tspan fill="#22c55e">✓</tspan>  telemetry stream open
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.8s" fill="freeze"/>
+    </text>
+
+    <!-- Line 10 — separator -->
+    <line x1="40" y1="265" x2="560" y2="265" stroke="#1a2030" stroke-width="0.7" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.1s" fill="freeze"/>
+    </line>
+
+    <!-- Line 11 — ONLINE status -->
+    <text x="40" y="288" fill="#4a5a6a" font-size="11" opacity="0">
+      <tspan fill="#2a3545">00:00.612</tspan>  all systems nominal
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+    </text>
+
+    <!-- READY line — bright -->
+    <text x="40" y="314" font-size="13" font-weight="700" opacity="0">
+      <tspan fill="#2a3545">00:00.734</tspan>  <tspan fill="#ff3340" filter="url(#glow)">READY</tspan>
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.5s" fill="freeze"/>
+    </text>
+
+    <!-- Blinking cursor after READY -->
+    <rect x="192" y="302" width="8" height="14" fill="#ff3340" rx="1" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0;1;1;0;0;1;1;0" dur="4s" begin="3.9s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Progress bar at bottom of left panel -->
+    <rect x="40" y="345" width="520" height="2" rx="1" fill="#0d1117"/>
+    <rect x="40" y="345" width="0" height="2" rx="1" fill="#ff3340">
+      <animate attributeName="width" values="0;520" dur="3.5s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+
+    <!-- Progress label -->
+    <text x="40" y="364" fill="#2a3545" font-size="9" letter-spacing="1" opacity="0">
+      SIMULATION ENGINE · 0 EXTERNAL DEPENDENCIES · 6 ACTIVE REPOS
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.6s" fill="freeze"/>
+    </text>
+
+  </g>
+
+  <!-- ── RIGHT PANEL: IDENTITY ── -->
+  <g clip-path="url(#right-panel)">
+
+    <!-- Identity emerges after boot is nearly complete -->
+
+    <!-- Role label -->
+    <text x="640" y="120" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace"
+          font-size="10" letter-spacing="4" opacity="0">
+      SIMULATIONS ENGINEER
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="3.2s" fill="freeze"/>
+    </text>
+
+    <!-- Name — large, tight tracking -->
+    <text x="636" y="198" fill="#c9d1d9" font-family="'Inter','SF Pro Display',system-ui,-apple-system,sans-serif"
+          font-size="62" font-weight="700" letter-spacing="-2" opacity="0">
+      GVaishanth
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="3.4s" fill="freeze"/>
+    </text>
+
+    <!-- Tagline -->
+    <text x="640" y="232" fill="#4a5a6a" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace"
+          font-size="13" opacity="0">
+      real-time · multiplayer · 60fps
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="3.7s" fill="freeze"/>
+    </text>
+
+    <!-- Three stat pills — appear together -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="4.0s" fill="freeze"/>
+
+      <!-- Pill 1: Repos -->
+      <rect x="640" y="262" width="100" height="28" rx="14" fill="#0d1117" stroke="#1a2030" stroke-width="1"/>
+      <text x="690" y="281" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">6 repos</text>
+
+      <!-- Pill 2: Since -->
+      <rect x="752" y="262" width="130" height="28" rx="14" fill="#0d1117" stroke="#1a2030" stroke-width="1"/>
+      <text x="817" y="281" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">Nov '25 →</text>
+
+      <!-- Pill 3: Live indicator -->
+      <rect x="894" y="262" width="70" height="28" rx="14" fill="#0d1117" stroke="#1a2030" stroke-width="1"/>
+      <circle cx="912" cy="276" r="3.5" fill="#ff3340">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="944" y="281" text-anchor="middle" fill="#ff3340" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">LIVE</text>
+    </g>
+
+    <!-- Two nav links -->
+    <g opacity="0" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="4.3s" fill="freeze"/>
+      <text x="640" y="330" fill="#3a4a5a">→ <tspan fill="#58a6ff" text-decoration="underline">play.velocity</tspan></text>
+      <text x="640" y="352" fill="#3a4a5a">→ <tspan fill="#58a6ff" text-decoration="underline">play.cricket</tspan></text>
+    </g>
+
+    <!-- Bottom right: a single animated waveform — the heartbeat of the system -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="4.5s" fill="freeze"/>
+      <!-- flat baseline -->
+      <line x1="640" y1="388" x2="1160" y2="388" stroke="#1a2030" stroke-width="1"/>
+      <!-- waveform drawing in from left to right -->
+      <polyline
+        points="640,388 680,388 700,370 720,388 740,388 760,362 780,388 800,388 820,374 840,388 860,388 880,366 900,388 920,388 940,378 960,388 980,388 1000,369 1020,388 1040,388 1060,372 1080,388 1100,388 1120,376 1140,388 1160,388"
+        fill="none" stroke="#ff3340" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"
+        stroke-dasharray="800" stroke-dashoffset="800">
+        <animate attributeName="stroke-dashoffset" values="800;0" dur="2s" begin="4.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      </polyline>
+      <!-- pulsing endpoint -->
+      <circle cx="1160" cy="388" r="3" fill="#ff3340" opacity="0">
+        <animate attributeName="opacity" values="0;1;0.4;1" dur="2s" begin="6.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+  </g>
+
+  <!-- Top and bottom border lines -->
+  <line x1="40" y1="32" x2="1160" y2="32" stroke="#1a2030" stroke-width="1"/>
+  <line x1="40" y1="392" x2="1160" y2="392" stroke="#1a2030" stroke-width="1"/>
+
+  <!-- Corner ticks — engineering drawing aesthetic -->
+  <g stroke="#2a3545" stroke-width="1" fill="none">
+    <path d="M40 32 L40 44 M40 32 L52 32"/>
+    <path d="M1160 32 L1160 44 M1160 32 L1148 32"/>
+    <path d="M40 392 L40 380 M40 392 L52 392"/>
+    <path d="M1160 392 L1160 380 M1160 392 L1148 392"/>
+  </g>
+
+</svg>
