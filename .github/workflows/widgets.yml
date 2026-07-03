@@ -11,34 +11,58 @@ on:
       - "data/**"
       - ".github/workflows/widgets.yml"
 
+# Prevent parallel runs: cancel any in-progress run when a new one starts.
+# This eliminates duplicate commits and merge conflicts.
+concurrency:
+  group: telemetry-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Fetch with token so push works even on protected branches
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Build telemetry SVGs
+        id: build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/build_widgets.py
+        # If the build script exits non-zero (API down, etc.), we still want
+        # to commit whatever widgets DID regenerate successfully.
+        continue-on-error: true
+
+      - name: Report build outcome
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "::warning::Widget build had errors. Committing any successfully generated files."
 
       - name: Commit updated widgets
         run: |
-          if [ -n "$(git status --porcelain assets/widgets/)" ]; then
-            git config user.name "telemetry-bot"
-            git config user.email "bot@noreply.github.com"
-            git add assets/widgets/
-            git commit -m "chore: refresh telemetry [skip ci]"
-            git push
+          git config user.name "telemetry-bot"
+          git config user.email "bot@noreply.github.com"
+          # Only stage widget SVGs — never stage unrelated changes
+          git add assets/widgets/*.svg
+          if git diff --cached --quiet; then
+            echo "No widget changes — nothing to commit."
           else
-            echo "No changes."
+            # [skip ci] prevents the commit from re-triggering the workflow
+            git commit -m "chore: refresh telemetry widgets [skip ci]"
+            # Pull with rebase to handle any race condition between jobs
+            git pull --rebase origin ${{ github.ref_name }} --autostash
+            git push
+            echo "✓ Widgets committed and pushed."
           fi

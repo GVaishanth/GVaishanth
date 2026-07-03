@@ -1,65 +1,30 @@
-<div align="center">
-
-<a name="top"></a>
+<div align="center"><a name="top"></a>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-simulations.svg" type="image/svg+xml">
-  <img src="assets/hero-simulations.png" width="100%" alt="Simulations — GVaishanth, Simulations Engineer. Real-time · multiplayer · 60fps">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-hero-light.svg" type="image/svg+xml">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/boot-sequence.svg" type="image/svg+xml">
+  <img src="assets/hero-simulations.png" width="100%" alt="GVaishanth — Simulations Engineer. System initialising.">
 </picture>
-
-<br>
-
-<p>
-<sub>
-<a href="https://gvaishanth.github.io/Velocity/">play.velocity</a> ·
-<a href="https://gvaishanth.github.io/Computer-Cricket/game.html">play.cricket</a> ·
-<a href="https://github.com/GVaishanth">github</a>
-</sub>
-</p>
 
 </div>
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- MISSION CONTROL                                         -->
-<!-- ═══════════════════════════════════════════════════════ -->
+I build things to understand how they work — starting with a game loop, a physics tick, or a state machine that needs to survive a crash.
 
-<div align="center">
+Most of what I ship is interactive — simulations, games, tools people can click — because feedback is immediate and honest. No tests pass like a friend picking it up and figuring it out.
 
-```
-┌──────────────────────────────────────────────────────┐
-│  SYSTEM ONLINE  ·  all subsystems nominal            │
-│  60fps target locked  ·  no backend required         │
-│  feedback loops: ACTIVE                              │
-└──────────────────────────────────────────────────────┘
-```
-
-</div>
-
-I build things to understand how they work. Usually that starts with a game loop, a physics tick, or a state machine that needs to survive a crash.
-
-Most of what I ship is interactive — simulations, games, tools people can click — because feedback is immediate and honest. Either it feels good or it doesn't.
-
-The thread that ties everything together is **feedback loops**. That's why I keep coming back to simulations. They force you to think in systems, in cycles, in consequences. You can't fake a simulation. If your physics are wrong, people notice in the first three seconds.
+You can't fake a simulation. If the physics are wrong, people notice in the first three seconds.
 
 And I like that.
 
-<div align="center">
-<img src="assets/widgets/current-build.svg" width="720" alt="Current build status — live">
-</div>
-
 ---
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- THE GARAGE                                              -->
-<!-- ═══════════════════════════════════════════════════════ -->
 
 <div align="center">
 
 ```
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-  THE GARAGE — what's on the wall
+  THE STACK — what's installed
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ```
 
@@ -67,210 +32,119 @@ And I like that.
 
 > **`[01]`** Simulations & game systems → Canvas · ES6 · game loops
 >
-> **`[02]`** Real-time multiplayer → WebRTC · PeerJS · host-authority
+> **`[02]`** Real-time multiplayer → WebRTC · PeerJS · host-authority · 12 players, 0 servers
 >
-> **`[03]`** Game AI → Minimax · Alpha-Beta · Qiskit
+> **`[03]`** Game AI → Minimax · Alpha-Beta · quantum state resolution
 >
 > **`[04]`** Resilient systems → Proto DataStore · checkpoint/recover
 >
-> **`[05]`** Data analysis → NumPy · Pandas · Seaborn
+> **`[05]`** Data as story → NumPy · Pandas · Seaborn
 >
-> **`[06]`** Motorsport engineering → telemetry · thermal models · strategy
+> **`[06]`** Motorsport engineering → telemetry · lap data · race strategy
 >
 > **`[07]`** Polished tools → things people actually want to play with
 
-The automotive thread is deliberate but quiet. It's in Velocity, it's in how I think about telemetry and feedback loops. It's not a brand.
+I enjoy building things where someone's face changes when they see it work. A kid playing hand cricket against an AI, losing three times before they figure out the pattern. A friend joining a 12-player lobby, realizing the physics feel right.
 
-I don't enjoy building dashboards that no one reads or APIs that no one calls. I enjoy building things where someone's face changes when they see it work. A kid playing hand cricket against an AI and losing three times in a row before they figure out the pattern. A friend joining a 12-player lobby and realizing the physics feel right.
-
-That's the metric that matters.
+That's the metric. Not installs, not stars — the moment it clicks.
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- BLUEPRINTS                                              -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-<img src="assets/widgets/architecture.svg" width="720" alt="Velocity architecture — animated data flow">
+<sub>TELEMETRY</sub>
+
+<img src="assets/mission-control.svg" width="100%" alt="Mission control — live commit frequency, language split, and repository health">
 
 </div>
 
-<br>
-
-Two data packets orbit the architecture loop every 4.4 seconds. That's not decoration — it demonstrates the system is a closed loop. If any link breaks, the packets stop. **The animation is the proof the architecture works.**
-
-<br>
-
-<div align="center">
-<img src="assets/widgets/principles.svg" width="720" alt="Engineering principles — animated fade-in">
-</div>
-
-<br>
-
-These aren't aspirational. They're what survived v1 → v4 refactors across every repo. I write code to be read, delete code that isn't pulling weight, and ship early enough to get real feedback. "Cowboy Coding" in my bio isn't a joke about quality — it's about velocity.
+<sub>Six repos in eight months. Regenerates every six hours — not manually updated, not estimated.</sub>
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- FEATURED BUILDS                                         -->
-<!-- Apple-style product showcase cards                      -->
-<!-- ═══════════════════════════════════════════════════════ -->
+The data confirms what the code already knows. Here is how the system is designed, and what it learned.
 
 <div align="center">
 
-`▸ FEATURED BUILDS — two simulations, zero installs, zero accounts`
+<sub>BLUEPRINTS</sub>
+
+<img src="assets/widgets/architecture.svg" width="100%" alt="Velocity architecture — two data packets orbiting a closed system loop">
+</div>
+
+F1 is already a feedback loop: lap, data, adjustment, next lap. The telemetry aesthetic — timing panels, live tickers, data packets orbiting a closed system — is the accurate visual language for what the code does. Two packets orbit this loop every 4.4 seconds. If any link breaks, they stop. **The animation runs only if every connection is intact.**
+
+Think of it as a heartbeat monitor for the architecture. Flatline means something broke.
+
+<div align="center">
+<img src="assets/widgets/principles.svg" width="100%" alt="Engineering principles — five rules that survived four rewrites, revealed one by one">
+</div>
+
+These aren't aspirational. They're what survived four complete rewrites — each thrown away, each necessary. Not from reading about engineering. From shipping something, watching it break, building it differently. "Cowboy Coding" is about pace, not sloppiness — you can't see the right architecture until you've built the wrong one twice.
+
+---
+
+<div align="center">
+
+<img src="assets/field-notes.svg" width="100%" alt="Field notes — seven engineering lessons recovered from four complete builds">
+
+</div>
+
+---
+
+<div align="center">
+
+```
+▸ FEATURED BUILDS — two simulations, zero installs, zero accounts
+```
 
 <br>
 
 <a href="https://github.com/GVaishanth/Velocity">
-<img src="assets/showcase-velocity.svg" width="800" alt="Velocity — F1 Constructor Championship">
+<img src="assets/showcase-velocity.svg" width="100%" alt="Velocity — F1 Constructor Championship Simulator">
 </a>
 
-<br><br><br>
+<br><br>
 
 <a href="https://github.com/GVaishanth/Computer-Cricket">
-<img src="assets/showcase-cricket.svg" width="800" alt="Computer Cricket — Hand Cricket Club">
+<img src="assets/showcase-cricket.svg" width="100%" alt="Computer Cricket — Hand Cricket Club">
 </a>
 
-<br><br><br>
+<br><br>
 
 <details>
 <summary><b>Archive</b> — CRPapp · Quantum Tic-Tac-Toe · GroupDNA · Salary_Decoder</summary>
+
 <br>
 
 <a href="https://github.com/GVaishanth/CRPapp">
-<img src="assets/showcase-crpapp.svg" width="800" alt="CRPapp — Predictive Crash Resilience Framework">
+<img src="assets/showcase-crpapp.svg" width="100%" alt="CRPapp — Predictive Crash Resilience Framework">
 </a>
 
 <br><br>
 
 <a href="https://github.com/GVaishanth/Quantum-Tic-Tac-Toe">
-<img src="assets/showcase-quantum.svg" width="800" alt="Quantum Tic-Tac-Toe — Quantum State Resolution">
+<img src="assets/showcase-quantum.svg" width="100%" alt="Quantum Tic-Tac-Toe — Quantum State Resolution">
 </a>
 
 <br><br>
 
 <a href="https://github.com/GVaishanth/GroupDNA">
-<img src="assets/showcase-groupdna.svg" width="800" alt="GroupDNA — WhatsApp Chat Analyzer">
+<img src="assets/showcase-groupdna.svg" width="100%" alt="GroupDNA — WhatsApp Chat Analyzer">
 </a>
 
 <br><br>
 
 <a href="https://github.com/GVaishanth/Salary_Decoder">
-<img src="assets/showcase-salary.svg" width="800" alt="Salary_Decoder — Bangalore Tech Salary Decoder">
+<img src="assets/showcase-salary.svg" width="100%" alt="Salary_Decoder — Bangalore Tech Salary Decoder">
 </a>
+
+<br>
 
 </details>
 
 </div>
 
 ---
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- BLACK BOX                                               -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════╗
-║  BLACK BOX — DATA EXTRACTION COMPLETE                    ║
-╠══════════════════════════════════════════════════════════╣
-║  Source: v1→v4 refactors across 4 flagship repos         ║
-║  Status: 7 findings recovered, 0 overwritten             ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-| `#01` | Multiplayer is a **state machine** problem, not a networking problem |
-|:---:|:---|
-| **Evidence** | Velocity's host-authority + 1s state broadcast. Boring engineering that works. Clever prediction without authority drifts. |
-
-| `#02` | Checkpoint **before** you need to recover |
-|:---:|:---|
-| **Evidence** | CRPapp taught me this literally — monitor health continuously, save atomically, assume the process dies at the worst moment. If you can't resume, you didn't finish. |
-
-| `#03` | Game feel = frame budget + input latency + feedback — **in that order** |
-|:---:|:---|
-| **Evidence** | 60fps non-negotiable. Then input response. Then audio/visual feedback. Without feedback a number game feels dead. |
-
-| `#04` | Constraints produce interesting games |
-|:---:|:---|
-| **Evidence** | Seven cricket modes because "same number = out" gets boring fast. Change one rule and suddenly players think differently. |
-
-| `#05` | Vanilla tools go further than people admit |
-|:---:|:---|
-| **Evidence** | Velocity: 52 ES6 modules, no bundler, no framework, 60fps on a phone. Cricket: ~99 KB of vanilla JS over WebRTC. |
-
-| `#06` | If it looks like a broadcast, people trust it |
-|:---:|:---|
-| **Evidence** | Telemetry panels, timing towers, live tickers — not decoration, but how players understand complex state at a glance. |
-
-| `#07` | Ship, then clean |
-|:---:|:---|
-| **Evidence** | "Cowboy Coding" means get something playable fast, then refactor the systems that hurt. The fourth version is where the architecture settles. |
-
-<div align="center">
-<br>
-<img src="assets/widgets/commit-telemetry.svg" width="720" alt="Commit telemetry — draws in on load">
-<br><br>
-<img src="assets/widgets/language-graph.svg" width="720" alt="Language distribution">
-<br><br>
-<img src="assets/widgets/oss-journey.svg" width="720" alt="Open source journey timeline">
-</div>
-
-All three regenerate every 6 hours via GitHub Actions.
-
----
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- ON AIR                                                  -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-```
-◉ ON AIR — currently transmitting
-```
-
-</div>
-
-| Session | Signal | Focus |
-|:---|:---:|:---|
-| Interactive simulations | `◉` | Canvas performance · tighter physics · better broadcast UI |
-| Real-time multiplayer | `◉` | Lower latency · better reconnection · larger rooms |
-| Game AI | `◉` | Stronger opponents · MCTS · probabilistic systems |
-| Resilient Android | `◉` | Fail-safe state management · Material 3 |
-| Small polished tools | `◉` | Ship regularly instead of one big perfect thing |
-
-<div align="center">
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░ 6 repos · 5 languages · 244 days
-```
-
-<br>
-
-<img src="assets/widgets/build-grid.svg" width="720" alt="Build grid — repository health">
-<br><br>
-<img src="assets/widgets/garage-timeline.svg" width="720" alt="Garage timeline — activity">
-
-</div>
-
-<div align="center">
-<img src="assets/widgets/ticker.svg" width="720" alt="Project ticker — scrolling">
-</div>
-
-Every widget is self-generated. No third-party stat services. No JavaScript. No plugins.
-
----
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- HORIZON                                                 -->
-<!-- ═══════════════════════════════════════════════════════ -->
 
 <div align="center">
 
@@ -282,21 +156,21 @@ exploring, not promising
 
 </div>
 
-> **Deeper motorsport sim** — pit strategy with tyre degradation models tied to real track temperature data. Maybe a full season with driver market dynamics.
+> **Simulations, tighter** — the physics are good enough that you notice when something is slightly wrong. I want to get to the point where you notice when something is exactly right.
 
-> **Multiplayer beyond cricket** — the tournament/lobby/spectate infrastructure from Computer Cricket is generic. It wants a second game.
+> **Multiplayer, larger** — the lobby, spectate, and reconnect infrastructure from Cricket works for 12 players. It doesn't know it's a cricket game. It wants a second use.
 
-> **Better AI opponents** — Minimax + Alpha-Beta is a start. I'd like to try MCTS for larger state spaces. Maybe a racing AI that actually learns a line.
+> **Deeper motorsport sim** — a full constructor season where tyre temperature changes the fastest lap and the fastest lap changes the championship. One number cascading into everything.
 
-> **Android resilience tooling** — CRPapp proved the checkpoint/recover pattern works. The same engine could protect other long-running mobile sessions.
+> **Better AI opponents** — a racing AI that doesn't follow a fixed line but learns one. Lap by lap. Getting faster in a way you can actually feel.
 
-> **Data storytelling tools** — take messy real-world exports, turn them into something people screenshot and share. "Spotify Wrapped" as an interaction pattern.
+> **Data storytelling** — the kind of output someone doesn't explain, they just show their phone. Take a messy export, return something worth a screenshot.
 
 <div align="center">
 
-```
-·  ·  ·  ·  →  →  →  →  →  →  →  →  →  →  →  →  →  ·  ·  ·  ·
-```
+<br>
+
+<img src="assets/widgets/ticker.svg" width="100%" alt="Project ticker — all active repositories">
 
 <br><br>
 
@@ -308,11 +182,9 @@ exploring, not promising
 <a href="https://github.com/GVaishanth">github.com/GVaishanth</a>
 
 <br><br>
-<sub>AI · Android · Web — Open Source • Learning</sub>
+<sub>Simulations · AI · Android — building in the open</sub>
 <br><br>
 <sub><a href="#top">↑ top</a></sub>
-
-<br><br>
-<sub>Updated last by end of first year</sub>
+<br>
 
 </div>
