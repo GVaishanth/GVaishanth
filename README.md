@@ -1,301 +1,195 @@
 <div align="center">
 
+<a name="top"></a>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-hero.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-hero-light.svg">
-  <img src="assets/banner-hero-og.png" width="100%" alt="GVaishanth — Simulations Engineer · AI · Android · Web">
+  <source srcset="assets/hero-simulations.svg" type="image/svg+xml">
+  <img src="assets/hero-simulations.png" width="100%" alt="Simulations — GVaishanth, Simulations Engineer. Real-time · multiplayer · 60fps">
 </picture>
 
-<a href="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems.;Open+Source+%E2%80%A2+Learning">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1200&color=9AA0A6&center=true&vCenter=true&width=700&lines=Game+AI+%26+Real-time+Multiplayer;Android+%2F+Kotlin+%E2%80%A2+Web+%2F+Canvas;Clean+code.+Interesting+problems.;Open+Source+%E2%80%A2+Learning" alt="Typing: Game AI / Android / Web" />
-</a>
-
 <p>
-  <a href="https://gvaishanth.github.io/Velocity/"><img src="https://img.shields.io/badge/Play-Velocity-FF3340?style=flat-square&logoColor=white&labelColor=11151C&color=FF3340" alt="Play Velocity"></a>
-  <a href="https://gvaishanth.github.io/Computer-Cricket/game.html"><img src="https://img.shields.io/badge/Play-Computer_Cricket-1E232E?style=flat-square&logoColor=9AA0A6&labelColor=11151C" alt="Play Computer Cricket"></a>
-  <img src="https://komarev.com/ghpvc/?username=GVaishanth&color=1E232E&style=flat-square&label=views" alt="profile views"/>
+<sub>
+<a href="https://gvaishanth.github.io/Velocity/">play.velocity</a> ·
+<a href="https://gvaishanth.github.io/Computer-Cricket/game.html">play.cricket</a> ·
+<a href="https://github.com/GVaishanth">github</a>
+</sub>
 </p>
-
-<p><sub>I build simulations, games, and resilient tools — AI · Android · Web</sub></p>
 
 </div>
 
 ---
 
-### About me
+### Beginning
 
-<table>
-<tr>
-<td width="58%" valign="top">
+I build things to understand how they work.
 
-I'm a software engineer who builds end-to-end. Interactive simulations, real-time multiplayer games, resilient Android apps, data tools.
+Usually that starts with a game loop, a physics tick, or a state machine that needs to survive a crash. If I can make it run at 60fps in a browser tab with no backend, even better.
 
-I like problems with hard systems constraints — networking, game AI, physics, 60fps UI, state recovery. If it feels good to use, I did my job.
-
-I ship in public, learn continuously, and keep the code clean.
-
-</td>
-<td width="42%" valign="top">
-
-```console
-$ whoami
-GVaishanth
-software engineer
-
-$ stack
-ai · android · web
-python · js · kotlin
-
-$ now
-building interactive tools
-learning continuously
-cowboy_coding: true
-```
-</td>
-</tr>
-</table>
-
-### What I'm interested in
-
-<table>
-<tr>
-<td width="50%">
-
-<strong>Engineering</strong><br>
-<sub>Systems design · clean architecture · real-time multiplayer / WebRTC · 60fps interactive UI</sub>
-<br><br>
-<strong>Interactive</strong><br>
-<sub>Game design · simulation · motorsport / automotive engineering · building tools people want to play with</sub>
-
-</td>
-<td width="50%">
-
-<strong>AI & Data</strong><br>
-<sub>Game AI — Minimax / Alpha-Beta · quantum-inspired simulation · data cleaning & EDA</sub>
-<br><br>
-<strong>Craft</strong><br>
-<sub>Vanilla JS, no-framework builds · Android / Kotlin · experimentation & side projects · learning new technologies</sub>
-
-</td>
-</tr>
-</table>
-
-> Automotive / motorsport interest shows up in my work — most directly in Velocity, an F1 constructor simulator. Subtle, not a gimmick.
+Most of what I ship is interactive — simulations, games, tools people can click — because feedback is immediate and honest. Either it feels good or it doesn't.
 
 ---
 
-### Featured repositories
+### What I enjoy
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Building software end-to-end. Solving problems with real constraints — networking, timing, memory, frame budgets. Learning continuously, writing code I can come back to in six months, and deleting code that didn't earn its keep.
+
+I keep coming back to a few areas:
+
+- Interactive simulations and game systems
+- Real-time multiplayer — WebRTC, host-authority, state sync
+- Game AI — Minimax, Alpha-Beta, probabilistic outcomes
+- Resilient systems — predict, checkpoint, recover
+- Data analysis that turns messy input into something readable
+- Motorsport and automotive engineering — mostly through simulation
+- Small, polished tools that people actually want to play with
+
+The automotive thread is deliberate but quiet. It's in Velocity, it's in how I think about telemetry and feedback loops. It's not a brand.
+
+---
+
+### How I think
+
+Systems first. Start with the loop that has to run every frame, then build outward.
+
+For multiplayer: one source of truth, deterministic where it matters, compensate everywhere else. Velocity runs 12 human constructors over PeerJS with host-authority results — not because it's trendy, because it's the simplest thing that stays correct when packets drop.
+
+For state: assume the process will die. CRPapp checkpoints PDF reading state to Proto DataStore at 1 Hz, so a crash is a resume, not data loss. Same instinct shows up in the cricket games — match state is serializable, recoverable.
+
+For UI: 60fps is a requirement, not a nice-to-have. Canvas, not DOM thrashing. Vanilla ES6, no framework tax for a simulation loop. If the interface feels like broadcast telemetry, good — that's the standard I hold myself to.
+
+For AI: clean search beats clever heuristics, until it doesn't. Quantum Tic-Tac-Toe uses Minimax with Alpha-Beta — optimal, explainable, fast enough. Then layer probability on top with Qiskit so identical moves don't produce identical outcomes.
+
+For data: clean first, visualize second, conclude last. Salary_Decoder and GroupDNA are both "take messy real-world input → normalize → find the signal" — same muscle, different domain.
+
+Tools I reach for most: Python, JavaScript, Kotlin. WebRTC / PeerJS, HTML5 Canvas, Android / Material 3, Qiskit, NumPy / Pandas.
+
+I write code to be read, delete code that isn't pulling weight, and ship early enough to get real feedback. "Cowboy Coding" in my bio isn't a joke about quality — it's about velocity.
+
+---
+
+### Projects
+
+Two interactive simulations I keep coming back to. Both run in a browser, no install, no account.
+
+<br>
 
 <a href="https://github.com/GVaishanth/Velocity">
-<img src="assets/cover-velocity.png" width="100%" alt="Velocity cover" />
+<img src="assets/cover-velocity.png" width="100%" alt="Velocity — F1 Constructor Championship">
 </a>
 
-<strong>Velocity — F1 Constructor Championship</strong><br>
-<sub>JavaScript · Canvas · WebRTC</sub>
+**Velocity — F1 Constructor Championship**  
+`JavaScript · Canvas · WebRTC`
 
-<p>Elite, serverless F1 management & racing sim. 60fps Canvas, 22 subsystems.</p>
+A serverless Formula 1 management and racing sim. 60fps Canvas rendering, 22 subsystems, 52 files.
 
-<ul>
-<li>Host-authority P2P multiplayer — 12 drivers · PeerJS</li>
-<li>Pit lane physics, thermal simulation, VSC / Red Flags</li>
-<li>Livery Studio, R&D, Hall of Glory historic scenarios</li>
-<li>ES6 modules, pure CSS, no backend</li>
-</ul>
+Host-authority P2P multiplayer for 12 drivers. Pit lane physics with per-team pit boxes. Thermal simulation — exceed 125°C and you DNF. VSC pacing sprints, red flags, driver rivalries, livery studio, R&D engineering, and a Hall of Glory with three historic title shootouts you can drop into directly.
+
+Built with ES6 modules, pure CSS3, no backend. Runs from a static `index.html`.
 
 <a href="https://gvaishanth.github.io/Velocity/">Play →</a> · <a href="https://github.com/GVaishanth/Velocity">Code →</a>
 
-</td>
-<td width="50%" valign="top">
+<br><br>
 
 <a href="https://github.com/GVaishanth/Computer-Cricket">
-<img src="assets/cover-cricket.png" width="100%" alt="Computer Cricket cover" />
+<img src="assets/cover-cricket.png" width="100%" alt="Computer Cricket">
 </a>
 
-<strong>Computer Cricket — Hand Cricket Club</strong><br>
-<sub>Python · JavaScript · PeerJS</sub>
+**Computer Cricket — Hand Cricket Club**  
+`Python · JavaScript · PeerJS`
 
-<p>Number-based cricket in three forms: Python CLI, single-player web, real-time tournament.</p>
+Hand cricket as a number-based simulation, in three forms: a Python CLI, a single-player web app, and a real-time multiplayer tournament platform.
 
-<ul>
-<li>7 rule modes: Normal, Crazy, Insane, Mad, Noway, B10, Test</li>
-<li>IPL-style league + knockouts, 2–12 players, team draft</li>
-<li>Live spectating with reactions, toss quiz, career stats</li>
-<li>Season Mode, achievements, broadcast-style UI</li>
-</ul>
+Seven rule modes — Normal, Crazy, Insane, Mad, Noway, B10, Test — each changes what a matching number means: out, square your score, multiply, add, it varies. Single-player has difficulty levels, career stats, per-mode personal bests, and a luck quiz that nudges toss outcomes. Multiplayer runs IPL-style leagues with team drafts, live spectating with reactions, lobby chat, and a 30-match history.
+
+52 JS functions for single-player, 91 for multiplayer. No server, PeerJS over WebRTC.
 
 <a href="https://gvaishanth.github.io/Computer-Cricket/game.html">Play →</a> · <a href="https://github.com/GVaishanth/Computer-Cricket">Code →</a>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/GVaishanth/CRPapp">
-<img src="assets/cover-crpapp.png" width="100%" alt="CRPapp cover" />
-</a>
-
-<strong>CRPapp — Predictive Crash Resilience</strong><br>
-<sub>Kotlin · Android · Proto DataStore</sub>
-
-<p>A PDF workspace built to demonstrate fail-safe resilience, not just read files.</p>
-
-<ul>
-<li>Predict → Checkpoint → Recover — 1 Hz health monitoring</li>
-<li>Atomic session checkpoints via Protocol Buffers</li>
-<li>Chrome-style multi-tab workspace, instant restore</li>
-<li>Material Design 3, v4.2.0 Flagship GUI</li>
-</ul>
-
-<a href="https://github.com/GVaishanth/CRPapp">Code →</a>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/GVaishanth/Quantum-Tic-Tac-Toe">
-<img src="assets/cover-quantum.png" width="100%" alt="Quantum Tic-Tac-Toe cover" />
-</a>
-
-<strong>Quantum Tic-Tac-Toe</strong><br>
-<sub>Python · Qiskit · Minimax</sub>
-
-<p>Classical Tic-Tac-Toe with non-deterministic quantum state resolution.</p>
-
-<ul>
-<li>Qiskit / Qiskit Aer circuits — H, Z, X gate encoding</li>
-<li>Multi-shot simulation for final board state</li>
-<li>Minimax AI with Alpha-Beta pruning</li>
-<li>PvP / PvC modes</li>
-</ul>
-
-<a href="https://github.com/GVaishanth/Quantum-Tic-Tac-Toe">Code →</a>
-
-</td>
-</tr>
-</table>
-
-<details>
-<summary><strong>More projects</strong></summary>
 <br>
 
-| Project | Description | Technologies |
-|---|---|---|
-| **GroupDNA** | WhatsApp Chat Analyzer — “Spotify Wrapped for your WhatsApp group”. Personality archetypes, response times, heatmaps. | Python, NumPy |
-| **Salary_Decoder** | Bangalore Tech Salary Decoder. 1,015-record EDA — cleaning messy CTC formats, role premiums, skill deltas. | Python, Pandas, Seaborn, Jupyter |
+---
+<details>
+<summary><sub>More builds — CRPapp · Quantum Tic-Tac-Toe · GroupDNA · Salary_Decoder</sub></summary>
+<br>
+
+**[CRPapp](https://github.com/GVaishanth/CRPapp)** — Predictive Crash Resilience Framework. Android PDF workspace that monitors VM/OS health at 1 Hz, checkpoints reading state via Protocol Buffers, and recovers transparently after a crash. Chrome-style multi-tab, Material Design 3. `Kotlin · Android · Proto DataStore`
+
+**[Quantum-Tic-Tac-Toe](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe)** — Classical Tic-Tac-Toe with non-deterministic quantum state resolution. Qiskit circuits (H/Z/X gate encoding), multi-shot simulation, Minimax AI with Alpha-Beta pruning. `Python · Qiskit`
+
+**[GroupDNA](https://github.com/GVaishanth/GroupDNA)** — WhatsApp Chat Analyzer. "Spotify Wrapped for your WhatsApp group." Message patterns, response times, silent streaks, personality archetypes. `Python · NumPy`
+
+**[Salary_Decoder](https://github.com/GVaishanth/Salary_Decoder)** — Bangalore Tech Salary Decoder. 1,015-record EDA, cleaning messy CTC formats (LPA/rupees), role premiums, skill deltas, underpaid detection. `Python · Pandas · Seaborn`
 
 </details>
 
 ---
 
-### Tech stack
+### Lessons
+
+What building these actually taught me, not what a blog post says:
+
+1. **Real-time multiplayer is a state machine problem, not a networking problem.** Get the authority model right first — who decides the result — then make the network catch up. Velocity's host-authority + 1s state broadcast is boring engineering and it works. Clever prediction without authority drifts.
+
+2. **Checkpoint before you need to recover.** CRPapp taught me this literally — monitor health continuously, save atomically, assume the process dies at the worst moment. Same principle applies to game state, tournament brackets, user profiles. If you can't resume, you didn't finish.
+
+3. **Game feel is frame budget + input latency + feedback, in that order.** 60fps is non-negotiable. After that, input response. After that, audio/visual feedback that matches the mode — Computer Cricket has mode-specific commentary, boundary FX, win probability bars, because without feedback a number game feels dead.
+
+4. **Constraints produce interesting games.** The seven cricket modes exist because "same number = out" gets boring fast. Change one rule — same = square your score, adjacent = out — and suddenly players think differently. Same with quantum Tic-Tac-Toe: non-deterministic resolution forces a different kind of strategy.
+
+5. **Vanilla tools go further than people admit.** Velocity is 52 files of ES6 modules, no bundler, no framework, runs at 60fps on a phone. Computer Cricket's multiplayer is ~99 KB of vanilla JS over WebRTC. You don't need a stack to build something interactive, you need a tight loop.
+
+6. **If it looks like a broadcast, people trust it.** Telemetry panels, timing towers, live tickers, reaction emojis — these aren't decoration in my projects, they're how players understand state at a glance. I keep coming back to broadcast UX because it compresses complex state into something readable in 200ms.
+
+7. **Ship, then clean.** "Cowboy Coding" means get something playable fast, then refactor the systems that hurt. All four flagship repos have a v1 → v2 → v3 → v4 progression in the commit history. The first version is always messy. The fourth is where the architecture settles.
+
+---
+
+### Current work
 
 <div align="center">
-
-<strong>Languages</strong><br>
-<img src="https://skillicons.dev/icons?i=python,js,kotlin,html,css" /><br>
-<sub>Python · JavaScript · Kotlin · HTML · CSS</sub>
-
-<br><br>
-
-<strong>Frameworks</strong><br>
-<sub>Vanilla-first — ES6 Modules, no heavy frameworks. HTML5 Canvas for real-time rendering.</sub>
-
-<br><br>
-
-<strong>AI / ML</strong><br>
-<sub>Minimax · Alpha-Beta pruning · Qiskit / Qiskit Aer</sub>
-
-<br><br>
-
-<strong>Data Science</strong><br>
-<sub>NumPy · Pandas · Matplotlib · Seaborn · Jupyter Notebook</sub>
-
-<br><br>
-
-<strong>Web</strong><br>
-<sub>HTML5 Canvas · WebRTC · PeerJS · GitHub Pages · CSS Grid / Flexbox</sub>
-
-<br><br>
-
-<strong>Mobile</strong><br>
-<img src="https://skillicons.dev/icons?i=androidstudio" /><br>
-<sub>Android · Kotlin · Material Design 3 · Proto DataStore · Gradle</sub>
-
-<br><br>
-
-<strong>Developer Tools</strong><br>
-<img src="https://skillicons.dev/icons?i=git,github,vscode" /><br>
-<sub>Git · GitHub Actions · VS Code</sub>
-
+  <img src="assets/widgets/current-build.svg" width="720" alt="Current build telemetry">
+  <br><br>
+  <img src="assets/widgets/garage-timeline.svg" width="720" alt="Project timeline">
 </div>
 
+Right now I'm focused on:
+
+- Interactive simulations in vanilla JS — pushing Canvas performance, tighter physics, better broadcast UI
+- Real-time multiplayer over WebRTC / PeerJS — lower latency state sync, better reconnection, larger rooms
+- Game AI — stronger opponents without making them feel unfair, probabilistic systems
+- Resilient Android architecture — fail-safe state management, Material 3
+- Shipping small, polished tools regularly instead of one big perfect thing
+
+The two widgets above are live — current build updates automatically, garage timeline shows real push dates across all 6 repos. No third-party stats services. Just my own SVG components, generated by GitHub Actions.
+
 ---
 
-### Current focus
+### Future ideas
 
-```
-building:  interactive simulations, real-time multiplayer
-learning:   game AI, resilient systems architecture
-shipping:   small, polished tools — regularly
-```
+Things I'm exploring, not promising:
+
+- A deeper motorsport sim — pit strategy with tyre degradation models tied to real track temperature data, maybe a full season with driver market dynamics beyond what Velocity's "Silly Season" does now
+- Real-time multiplayer games outside cricket — the tournament/lobby/spectate infrastructure from Computer Cricket is generic, it wants a second game
+- Better AI opponents — the Minimax + Alpha-Beta in Quantum Tic-Tac-Toe is a start; I'd like to try MCTS for larger state spaces, maybe a racing AI that actually learns a line
+- Android tooling around resilience — CRPapp proved the checkpoint/recover pattern works for document readers, the same engine could protect other kinds of long-running mobile sessions
+- Data storytelling tools in the GroupDNA / Salary_Decoder vein — take messy real-world exports, turn them into something people screenshot and share. "Spotify Wrapped" as an interaction pattern, applied elsewhere
+
+Mostly: keep building interactive things, keep them fast, keep them honest, keep shipping.
 
 ---
-
-### GitHub statistics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=GVaishanth&show_icons=true&theme=transparent&hide_border=true&title_color=E6E6E6&text_color=9AA0A6&icon_color=FF3340&bg_color=00000000&count_private=true" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GVaishanth&layout=compact&theme=transparent&hide_border=true&title_color=E6E6E6&text_color=9AA0A6&bg_color=00000000&langs_count=6" height="165" />
+> *Championships are engineered.*
+> <br><sub>— Velocity</sub>
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=GVaishanth&theme=dark&hide_border=true&background=0D111700&stroke=1E232E&ring=FF3340&fire=FF3340&currStreakLabel=9AA0A6&sideLabels=9AA0A6&currStreakNum=E6E6E6&sideNums=E6E6E6&dates=9AA0A6" height="165" />
+<a href="https://github.com/GVaishanth">github.com/GVaishanth</a>
 
 <br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=GVaishanth&theme=github-compact&hide_border=true&bg_color=0d1117&color=9AA0A6&line=FF3340&point=E6E6E6" width="100%" />
-
-<br>
-
-<img src="https://github-profile-trophy.vercel.app/?username=GVaishanth&theme=discord&no-frame=true&no-bg=true&row=1&column=6&margin-w=15" />
-
-</div>
-
----
-
-### Fun facts
-
-```
-- I build games with 7 rule sets just to see what breaks
-- F1 sim has a full thermal model and a livery editor — details matter
-- Vanilla JS + Canvas over frameworks for simulation work
-- "Cowboy Coding" — ship fast, then clean it up properly
-- Broadcast / telemetry UI is a recurring theme
-```
-
-<div align="center">
-
-> <em>"Championships are engineered."</em><br>
-> <sub>— Velocity</sub>
-
----
-
-### Connect
-
-<a href="https://github.com/GVaishanth">
-<img src="https://img.shields.io/badge/GitHub-GVaishanth-11151C?style=flat-square&logo=github&logoColor=E6E6E6" />
-</a>
-
+<sub>AI · Android · Web — Open Source • Learning</sub>
 <br><br>
-<sub>AI · Android · Web</sub><br>
-<sub>Open Source • Learning</sub>
-
-<br>
-
-<sub><a href="#top">↑ back to top</a></sub>
+<sub><a href="#top">↑ top</a></sub>
 
 </div>

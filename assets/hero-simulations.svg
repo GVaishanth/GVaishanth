@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="hsTitle hsDesc">
+  <defs>
+    <pattern id="hg" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#181d27" stroke-width="1"/>
+    </pattern>
+    <!-- car glow -->
+    <filter id="glo" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+    </filter>
+    <style>
+      @font-face { font-family: 'Inter Fallback'; src: local('Inter'), local('SF Pro Display'), local('Segoe UI'), local('Helvetica Neue'), local('Arial'), local('system-ui'); }
+    </style>
+  </defs>
+
+  <!-- bg -->
+  <rect width="1400" height="560" fill="#0b0d11"/>
+  <rect width="1400" height="560" fill="url(#hg)" opacity="0.9"/>
+  
+  <!-- top bar -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" fill="#5b616e">
+    <text x="64" y="52">GVaishanth — AI · Android · Web</text>
+    <text x="1336" y="52" text-anchor="end" fill="#7a808c">TELEMETRY — LIVE
+      <tspan fill="#ff3340"> ●</tspan>
+    </text>
+  </g>
+  <line x1="64" y1="68" x2="1336" y2="68" stroke="#1c212d" stroke-width="1"/>
+
+  <!-- LEFT — HEADLINE -->
+  <g font-family="'Inter','SF Pro Display',system-ui,-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif">
+    <!-- kicker -->
+    <text x="64" y="210" fill="#7a808c" font-size="12.5" font-weight="600" letter-spacing="3.8" style="text-transform:uppercase">Simulations Engineer</text>
+    <!-- main -->
+    <text x="60" y="316" fill="#e8e8e8" font-size="104" font-weight="760" letter-spacing="-3">Simulations</text>
+    <!-- sub -->
+    <text x="66" y="356" fill="#9aa0a6" font-size="22" font-weight="500">real-time · multiplayer · 60fps</text>
+    
+    <!-- live status pill -->
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace">
+      <rect x="64" y="384" width="460" height="42" rx="22" fill="#12151d" stroke="#252a36" stroke-width="1"/>
+      <circle cx="86" cy="405" r="3.8" fill="#ff3340">
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="102" y="409.5" fill="#9aa0a6" font-size="12.5">LIVE</text>
+      <text x="146" y="409.5" fill="#3a3f4c" font-size="12.5">│</text>
+      <text x="164" y="409.5" fill="#d4d4d4" font-size="12.5">VELOCITY — F1 Constructor Sim</text>
+      <!-- PLAY – visual affordance only, actual link is in the wrapping <a> in README -->
+      <text x="498" y="409.5" fill="#ff3340" font-size="11.5" letter-spacing="0.3" text-anchor="end" opacity="0.95">PLAY →</text>
+    </g>
+
+    <!-- micro spec -->
+    <text x="66" y="458" fill="#5b616e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11">Python · JavaScript · Kotlin — PeerJS · Canvas · Android</text>
+  </g>
+
+  <!-- RIGHT — TELEMETRY CONSOLE -->
+  <g>
+    <!-- card -->
+    <rect x="760" y="116" width="576" height="312" rx="18" fill="#10131b" stroke="#252a36" stroke-width="1.2"/>
+    <!-- card header -->
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" fill="#7a808c" letter-spacing="0.4">
+      <text x="788" y="148">VELOCITY — TELEMETRY</text>
+      <!-- LAP counter – increments every 8s, synced with car lap -->
+      <text x="1308" y="148" text-anchor="end" fill="#9aa0a6">LAP 
+        <tspan font-weight="600" fill="#d4d4d4">
+          42
+          <animate attributeName="opacity" values="1;1;1;0;1" dur="8s" repeatCount="indefinite" begin="0s"/>
+          <!-- swap text via discrete animation – hack: overlay 3 texts fading -->
+        </tspan>
+      </text>
+      <!-- we fake a counter with 3 overlapping texts crossfading -->
+      <text x="1288" y="148" text-anchor="end" fill="#d4d4d4" font-weight="600" opacity="0">43
+        <animate attributeName="opacity" values="0;0;0;1;0;0" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </text>
+      <text x="1288" y="148" text-anchor="end" fill="#d4d4d4" font-weight="600" opacity="0">44
+        <animate attributeName="opacity" values="0;0;0;0;0;1;0" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </text>
+    </g>
+    <line x1="788" y1="158" x2="1308" y2="158" stroke="#1e232e" stroke-width="1"/>
+
+    <!-- timing tower -->
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="15">
+      <text x="788" y="196" fill="#5b616e" font-size="11">P1</text>
+      <text x="822" y="196" fill="#e6e6e6" font-weight="600">VER</text>
+      <text x="910" y="196" fill="#ff3340">1:28.442</text>
+      <text x="788" y="222" fill="#5b616e" font-size="11">P2</text>
+      <text x="822" y="222" fill="#9aa0a6">HAM</text>
+      <text x="910" y="222" fill="#9aa0a6">1:27.946</text>
+      <text x="788" y="248" fill="#5b616e" font-size="11">P3</text>
+      <text x="822" y="248" fill="#9aa0a6">LEC</text>
+      <text x="910" y="248" fill="#9aa0a6">1:28.168</text>
+    </g>
+
+    <!-- mini spark – subtle, 1.5s draw loop -->
+    <polyline points="1000,176 1018,172 1036,178 1054,165 1072,171 1090,163 1108,170 1126,158 1144,165 1162,157 1180,164 1198,154 1216,160 1234,152 1252,159 1270,151 1288,158 1306,152"
+      fill="none" stroke="#ff3340" stroke-width="1.35" opacity="0.85"
+      stroke-dasharray="340" stroke-dashoffset="340">
+      <animate attributeName="stroke-dashoffset" values="340;0;0" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 0 0" keyTimes="0;0.35;1"/>
+    </polyline>
+
+    <!-- circuit – right side of the telemetry card -->
+    <!-- track path – clean F1-style loop -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- track casing -->
+      <path id="trackPath2"
+        d="M 1048 320 C 1092 300, 1128 282, 1170 276 C 1206 270, 1222 294, 1248 282 C 1270 270, 1298 244, 1306 218 C 1310 198, 1288 194, 1268 208 C 1244 224, 1222 216, 1202 202 C 1180 186, 1158 180, 1132 193 C 1108 205, 1088 198, 1068 182 C 1048 167, 1028 178, 1032 202 C 1036 224, 1018 240, 1002 256 C 988 270, 992 292, 1010 306 C 1028 318, 1028 334, 1048 320Z"
+        stroke="#2a303c" stroke-width="7.5" opacity="0.95"/>
+      <!-- racing line -->
+      <path d="M 1048 320 C 1092 300, 1128 282, 1170 276 C 1206 270, 1222 294, 1248 282 C 1270 270, 1298 244, 1306 218 C 1310 198, 1288 194, 1268 208 C 1244 224, 1222 216, 1202 202 C 1180 186, 1158 180, 1132 193 C 1108 205, 1088 198, 1068 182 C 1048 167, 1028 178, 1032 202 C 1036 224, 1018 240, 1002 256 C 988 270, 992 292, 1010 306 C 1028 318, 1028 334, 1048 320Z"
+        stroke="#ff3340" stroke-width="1.7" opacity="0.95"/>
+      <!-- car – laps every 8s, synced with lap counter -->
+      <circle r="3.8" fill="#ff3340">
+        <animate attributeName="opacity" values="1;1;0.85;1" dur="8s" repeatCount="indefinite"/>
+        <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#trackPath2"/>
+        </animateMotion>
+      </circle>
+      <!-- car glow -->
+      <circle r="7" fill="#ff3340" opacity="0.12">
+        <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#trackPath2"/>
+        </animateMotion>
+      </circle>
+    </g>
+
+    <!-- telemetry footer – with animated values -->
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#5b616e">
+      <text x="788" y="398">12 DRIVERS · P2P · 60 FPS</text>
+      <!-- ERS % – cycles 84 → 71 → 96 -->
+      <text x="1308" y="398" text-anchor="end">
+        <tspan>E</tspan>RS 
+        <tspan fill="#9aa0a6">84%</tspan>
+        <animate attributeName="opacity" values="1;1;0;0;0;1" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </text>
+      <text x="1282" y="398" text-anchor="end" fill="#9aa0a6" opacity="0">71%
+        <animate attributeName="opacity" values="0;0;1;1;0;0" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </text>
+      <text x="1282" y="398" text-anchor="end" fill="#9aa0a6" opacity="0">96%
+        <animate attributeName="opacity" values="0;0;0;0;1;1" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </text>
+      <!-- Tyre temp – flickers 102.4 / 102.7 / 102.1 -->
+      <text x="1308" y="414" text-anchor="end" fill="#5b616e">T° 
+        <tspan fill="#9aa0a6">102.4</tspan>
+        <animate attributeName="opacity" values="1;1;0;0;1" dur="3.2s" repeatCount="indefinite"/>
+      </text>
+      <text x="1280" y="414" text-anchor="end" fill="#9aa0a6" opacity="0">102.7
+        <animate attributeName="opacity" values="0;0;1;0;0" dur="3.2s" repeatCount="indefinite"/>
+      </text>
+      <text x="1280" y="414" text-anchor="end" fill="#9aa0a6" opacity="0">102.1
+        <animate attributeName="opacity" values="0;0;0;1;0" dur="3.2s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- bottom rule -->
+  <line x1="64" y1="492" x2="1336" y2="492" stroke="#1c212d" stroke-width="1"/>
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#4b505c" letter-spacing="0.15">
+    <text x="64" y="518">BUILD · RACE · DOMINATE</text>
+    <text x="1336" y="518" text-anchor="end">4 SYSTEMS · 0 DEPS · OPEN SOURCE</text>
+  </g>
+
+  <title id="hsTitle">Simulations — GVaishanth</title>
+  <desc id="hsDesc">Engineering telemetry dashboard. Left: Simulations, real-time · multiplayer · 60fps, LIVE: Velocity F1 Constructor Sim. Right: F1 timing tower with live lapping car, ERS and tyre telemetry updating in real-time. Design: Ferrari / Linear / Apple / Nothing / GitHub dark.</desc>
+</svg>

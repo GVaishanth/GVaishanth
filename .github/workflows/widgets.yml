@@ -1,0 +1,44 @@
+name: telemetry-widgets
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/build_widgets.py"
+      - "data/**"
+      - ".github/workflows/widgets.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build telemetry SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/build_widgets.py
+
+      - name: Commit updated widgets
+        run: |
+          if [ -n "$(git status --porcelain assets/widgets/)" ]; then
+            git config user.name "telemetry-bot"
+            git config user.email "bot@noreply.github.com"
+            git add assets/widgets/
+            git commit -m "chore: refresh telemetry [skip ci]"
+            git push
+          else
+            echo "No changes."
+          fi
