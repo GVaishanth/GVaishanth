@@ -2,21 +2,21 @@
   <rect width="720" height="138" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="137" rx="14" fill="none" stroke="#1c212d"/>
   
-  <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">COMMIT TELEMETRY</text>
-  <text x="692" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">12 weeks</text>
+  <text x="28" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">COMMIT TELEMETRY</text>
+  <text x="692" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">total 96 · 12 wk</text>
   <line x1="48" y1="34.0" x2="696.0" y2="34.0" stroke="#181d27" stroke-width="0.7"/><line x1="48" y1="72.0" x2="696.0" y2="72.0" stroke="#181d27" stroke-width="0.7"/><line x1="48" y1="110.0" x2="696.0" y2="110.0" stroke="#181d27" stroke-width="0.7"/>
-  <polygon points="48.0,97.3 106.9,110.0 165.8,72.0 224.7,46.7 283.6,84.7 342.5,59.3 401.5,110.0 460.4,97.3 519.3,34.0 578.2,72.0 637.1,84.7 696.0,59.3 696.0,110.0 48.0,110.0" fill="#ff3340" opacity="0.06"/>
+  <polygon points="48.0,110.0 106.9,110.0 165.8,110.0 224.7,110.0 283.6,74.7 342.5,110.0 401.5,72.0 460.4,96.4 519.3,85.6 578.2,66.6 637.1,80.1 696.0,34.0 696.0,110.0 48.0,110.0" fill="#ff3340" opacity="0.06"/>
   <!-- draw-in: line appears over 2.4s with ease-out -->
-  <polyline points="48.0,97.3 106.9,110.0 165.8,72.0 224.7,46.7 283.6,84.7 342.5,59.3 401.5,110.0 460.4,97.3 519.3,34.0 578.2,72.0 637.1,84.7 696.0,59.3" fill="none" stroke="#ff3340" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"
+  <polyline points="48.0,110.0 106.9,110.0 165.8,110.0 224.7,110.0 283.6,74.7 342.5,110.0 401.5,72.0 460.4,96.4 519.3,85.6 578.2,66.6 637.1,80.1 696.0,34.0" fill="none" stroke="#ff3340" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"
     stroke-dasharray="745" stroke-dashoffset="745">
     <animate attributeName="stroke-dashoffset" values="745;0" dur="2.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
   </polyline>
   <!-- endpoint dot appears after draw completes, then pulses -->
-  <circle cx="696.0" cy="59.3" r="2.8" fill="#ff3340" opacity="0">
+  <circle cx="696.0" cy="34.0" r="2.8" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;1;1;0.55;1" dur="3.4s" begin="2.4s" repeatCount="indefinite"/>
   </circle>
-  <text x="46" y="38.0" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">6</text>
-  <text x="46" y="113.0" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">0</text>
+  <text x="24" y="38.0" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">28</text>
+  <text x="24" y="113.0" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">0</text>
   <text x="48" y="128" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">-12w</text>
   <text x="696.0" y="128" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">now</text>
 </svg>

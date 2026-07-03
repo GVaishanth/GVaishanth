@@ -2,7 +2,7 @@
   <rect width="720" height="240" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="239" rx="14" fill="none" stroke="#1c212d"/>
   
-  <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">ARCHITECTURE — VELOCITY</text>
+  <text x="28" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">ARCHITECTURE — VELOCITY</text>
   <text x="692" y="26" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">ES6 · 22 modules · 52 files</text>
   <defs>
     <!-- Single closed subpath — animateMotion orbits all 4 edges -->
@@ -34,11 +34,10 @@
       </animateMotion>
     </circle>
   </g>
-      <line x1="364" y1="56" x2="364" y2="195" stroke="#2a303c" stroke-width="0.8" stroke-dasharray="3,4"/>
-  <text x="380" y="95" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Canvas · 60 fps</text>
-    <text x="380" y="117" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Physics · 120 Hz</text>
-    <text x="380" y="139" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">WebRTC · P2P</text>
-    <text x="380" y="161" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Memory · &lt; 45MB</text>
+      <text x="420" y="84" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Canvas · 60 fps</text>
+    <text x="420" y="106" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Physics · 120 Hz</text>
+    <text x="420" y="128" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">WebRTC · P2P</text>
+    <text x="420" y="150" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Memory · &lt; 45MB</text>
 
   <text x="692" y="230" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" text-anchor="end">data flow — live system map</text>
 </svg>

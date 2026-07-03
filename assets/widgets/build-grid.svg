@@ -1,44 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="100" viewBox="0 0 720 100" role="img" aria-labelledby="bgTitle">
-  <title id="bgTitle">Build grid — repository health across 6 repos</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="100" viewBox="0 0 720 100" role="img">
   <rect width="720" height="100" rx="14" fill="#11151c"/>
   <rect x=".5" y=".5" width="719" height="99" rx="14" fill="none" stroke="#1c212d"/>
-
+  
   <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">BUILD GRID</text>
   <text x="692" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">health · 6 repos</text>
-
+  
   <circle cx="52" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.0s" repeatCount="indefinite"/>
   </circle>
-  <text x="52" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">GroupDNA</text>
+  <text x="52" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">DNA</text>
   <text x="52" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 3d</text>
-
-  <circle cx="164" cy="50" r="7" fill="#22c55e" opacity="0.9">
+  <circle cx="160" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.25s" repeatCount="indefinite"/>
   </circle>
-  <text x="164" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Salary</text>
-  <text x="164" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 3d</text>
-
-  <circle cx="276" cy="50" r="7" fill="#22c55e" opacity="0.9">
+  <text x="160" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">SAL</text>
+  <text x="160" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 4d</text>
+  <circle cx="268" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="276" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">CRPapp</text>
-  <text x="276" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 5d</text>
-
-  <circle cx="388" cy="50" r="7" fill="#22c55e" opacity="0.9">
+  <text x="268" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">CRP</text>
+  <text x="268" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 5d</text>
+  <circle cx="376" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.75s" repeatCount="indefinite"/>
   </circle>
-  <text x="388" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Velocity</text>
-  <text x="388" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 10d</text>
-
-  <circle cx="500" cy="50" r="7" fill="#eab308" opacity="0.9">
+  <text x="376" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">VEL</text>
+  <text x="376" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 10d</text>
+  <circle cx="484" cy="50" r="7" fill="#eab308" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.0s" repeatCount="indefinite"/>
   </circle>
-  <text x="500" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Cricket</text>
-  <text x="500" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">IDLE · 23d</text>
-
-  <circle cx="612" cy="50" r="7" fill="#eab308" opacity="0.9">
+  <text x="484" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">CKT</text>
+  <text x="484" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">IDLE · 23d</text>
+  <circle cx="592" cy="50" r="7" fill="#eab308" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.25s" repeatCount="indefinite"/>
   </circle>
-  <text x="612" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">Quantum</text>
-  <text x="612" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">IDLE · 54d</text>
+  <text x="592" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">QTT</text>
+  <text x="592" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">IDLE · 54d</text>
 </svg>
