@@ -30,12 +30,12 @@
     </g>
   </g>
   <g font-family="'Inter','SF Pro Display','Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif">
-    <text x="96" y="228" fill="#6b7280" font-size="13" letter-spacing="3.5" font-weight="600">AI · ANDROID · WEB</text>
+    <text x="96" y="228" fill="#6b7280" font-size="13" letter-spacing="3.5" font-weight="600">SIMULATIONS ENGINEER</text>
     <text x="92" y="320" fill="#0b0d11" font-size="84" font-weight="700" letter-spacing="-1.5">GVaishanth</text>
     <text x="96" y="372" fill="#4b5563" font-size="26" font-weight="500">Simulations Engineer</text>
-    <text x="96" y="418" fill="#6b7280" font-size="15" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">Clean code · Interesting problems · Open Source</text>
+    <text x="96" y="418" fill="#6b7280" font-size="15" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">real-time · multiplayer · 60fps</text>
     <rect x="96" y="442" width="52" height="3" fill="#ff3340" rx="1"/>
   </g>
-  <text x="96" y="548" fill="#9aa0a6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11">BUILD · RACE · DOMINATE — v2026</text>
-  <text x="1504" y="548" fill="#9aa0a6" font-family="'Inter',system-ui,sans-serif" font-size="11" text-anchor="end" letter-spacing="2">VELOCITY</text>
+  <text x="96" y="548" fill="#9aa0a6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11">BUILD · RACE · DOMINATE</text>
+  <text x="1504" y="548" fill="#9aa0a6" font-family="'Inter',system-ui,sans-serif" font-size="11" text-anchor="end" letter-spacing="2">0 DEPS · OPEN SOURCE</text>
 </svg>

@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-labelledby="mcTitle">
+  <title id="mcTitle">Mission control — live telemetry across all active repositories</title>
+
+  <defs>
+    <clipPath id="mc-clip"><rect width="1200" height="200" rx="0"/></clipPath>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="200" fill="#0b0d11"/>
+
+  <!-- Top label bar -->
+  <rect width="1200" height="36" fill="#0d1117"/>
+  <line x1="0" y1="36" x2="1200" y2="36" stroke="#1a2030" stroke-width="1"/>
+  <text x="32" y="22" fill="#3a4a5a" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" letter-spacing="3">MISSION CONTROL — LIVE</text>
+  <circle cx="294" cy="18" r="3" fill="#ff3340">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1168" y="22" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end" letter-spacing="2">REGENERATES · 6H</text>
+
+  <!-- ── SECTION 1: COMMIT FREQUENCY (left ~300px) ── -->
+  <!-- Mini sparkline of recent commit weeks -->
+  <text x="32" y="58" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" letter-spacing="2">COMMIT FREQUENCY</text>
+
+  <!-- 12 week bars — each week a vertical bar, height = activity -->
+  <!-- Simulated data: heights proportional to activity -->
+  <g fill="#ff3340" opacity="0.7">
+    <!-- Bar heights animate in from bottom -->
+    <rect x="32" y="130" width="12" height="24" rx="2">
+      <animate attributeName="height" from="0" to="24" dur="0.8s" begin="0.05s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="130" dur="0.8s" begin="0.05s" fill="freeze"/>
+    </rect>
+    <rect x="50" y="120" width="12" height="34" rx="2">
+      <animate attributeName="height" from="0" to="34" dur="0.8s" begin="0.10s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="120" dur="0.8s" begin="0.10s" fill="freeze"/>
+    </rect>
+    <rect x="68" y="138" width="12" height="16" rx="2">
+      <animate attributeName="height" from="0" to="16" dur="0.8s" begin="0.15s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="138" dur="0.8s" begin="0.15s" fill="freeze"/>
+    </rect>
+    <rect x="86" y="154" width="12" height="1" rx="2" opacity="0.3"/>
+    <rect x="104" y="118" width="12" height="36" rx="2">
+      <animate attributeName="height" from="0" to="36" dur="0.8s" begin="0.25s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="118" dur="0.8s" begin="0.25s" fill="freeze"/>
+    </rect>
+    <rect x="122" y="126" width="12" height="28" rx="2">
+      <animate attributeName="height" from="0" to="28" dur="0.8s" begin="0.30s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="126" dur="0.8s" begin="0.30s" fill="freeze"/>
+    </rect>
+    <rect x="140" y="140" width="12" height="14" rx="2">
+      <animate attributeName="height" from="0" to="14" dur="0.8s" begin="0.35s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="140" dur="0.8s" begin="0.35s" fill="freeze"/>
+    </rect>
+    <rect x="158" y="154" width="12" height="1" rx="2" opacity="0.3"/>
+    <rect x="176" y="112" width="12" height="42" rx="2">
+      <animate attributeName="height" from="0" to="42" dur="0.8s" begin="0.45s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="112" dur="0.8s" begin="0.45s" fill="freeze"/>
+    </rect>
+    <rect x="194" y="124" width="12" height="30" rx="2">
+      <animate attributeName="height" from="0" to="30" dur="0.8s" begin="0.50s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="124" dur="0.8s" begin="0.50s" fill="freeze"/>
+    </rect>
+    <rect x="212" y="130" width="12" height="24" rx="2">
+      <animate attributeName="height" from="0" to="24" dur="0.8s" begin="0.55s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="130" dur="0.8s" begin="0.55s" fill="freeze"/>
+    </rect>
+    <rect x="230" y="106" width="12" height="48" rx="2">
+      <animate attributeName="height" from="0" to="48" dur="0.8s" begin="0.60s" fill="freeze"/>
+      <animate attributeName="y" from="154" to="106" dur="0.8s" begin="0.60s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- baseline -->
+  <line x1="32" y1="155" x2="248" y2="155" stroke="#1a2030" stroke-width="1"/>
+  <text x="32" y="172" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8">-12w</text>
+  <text x="240" y="172" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" text-anchor="end">now</text>
+
+  <!-- Section divider -->
+  <line x1="300" y1="36" x2="300" y2="185" stroke="#1a2030" stroke-width="1"/>
+
+  <!-- ── SECTION 2: LANGUAGE SPLIT (centre-left) ── -->
+  <text x="320" y="58" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" letter-spacing="2">LANGUAGE SPLIT</text>
+
+  <!-- Horizontal stacked bar -->
+  <rect x="320" y="80" width="320" height="10" rx="5" fill="#0d1117"/>
+  <!-- Kotlin 92% = 294px -->
+  <rect x="320" y="80" width="0" height="10" rx="5" fill="#ff3340" opacity="0.8">
+    <animate attributeName="width" from="0" to="294" dur="1.2s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <!-- HTML 4% = 13px -->
+  <rect x="614" y="80" width="0" height="10" fill="#58a6ff" opacity="0.8">
+    <animate attributeName="width" from="0" to="13" dur="1.2s" begin="0.4s" fill="freeze"/>
+  </rect>
+  <!-- JS 3% = 10px -->
+  <rect x="627" y="80" width="0" height="10" fill="#22c55e" opacity="0.8">
+    <animate attributeName="width" from="0" to="10" dur="1.2s" begin="0.6s" fill="freeze"/>
+  </rect>
+  <!-- Python 1% = 3px -->
+  <rect x="637" y="80" width="0" height="10" rx="0" fill="#eab308" opacity="0.8">
+    <animate attributeName="width" from="0" to="3" dur="1.2s" begin="0.8s" fill="freeze"/>
+  </rect>
+
+  <!-- Legend -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" fill="#3a4a5a">
+    <rect x="320" y="102" width="8" height="8" rx="2" fill="#ff3340" opacity="0.8"/>
+    <text x="334" y="110">Kotlin 92%</text>
+    <rect x="420" y="102" width="8" height="8" rx="2" fill="#58a6ff" opacity="0.8"/>
+    <text x="434" y="110">HTML 4%</text>
+    <rect x="510" y="102" width="8" height="8" rx="2" fill="#22c55e" opacity="0.8"/>
+    <text x="524" y="110">JS 3%</text>
+    <rect x="570" y="102" width="8" height="8" rx="2" fill="#eab308" opacity="0.8"/>
+    <text x="584" y="110">Py 1%</text>
+  </g>
+
+  <!-- Repo stat -->
+  <text x="320" y="140" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">6 repos · 23.8 MB · Nov '25 → now</text>
+
+  <!-- Section divider -->
+  <line x1="680" y1="36" x2="680" y2="185" stroke="#1a2030" stroke-width="1"/>
+
+  <!-- ── SECTION 3: REPO HEALTH (right) ── -->
+  <text x="700" y="58" fill="#2a3545" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" letter-spacing="2">REPO HEALTH</text>
+
+  <!-- Six repos as a grid: 3×2 -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace">
+
+    <!-- Row 1 -->
+    <circle cx="724" cy="100" r="6" fill="#22c55e">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="736" y="104" fill="#4a5a6a" font-size="10">GroupDNA</text>
+    <text x="818" y="104" fill="#2a3545" font-size="9">3d</text>
+
+    <circle cx="860" cy="100" r="6" fill="#22c55e">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.25s" repeatCount="indefinite"/>
+    </circle>
+    <text x="872" y="104" fill="#4a5a6a" font-size="10">Salary</text>
+    <text x="924" y="104" fill="#2a3545" font-size="9">3d</text>
+
+    <circle cx="966" cy="100" r="6" fill="#22c55e">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="978" y="104" fill="#4a5a6a" font-size="10">CRPapp</text>
+    <text x="1038" y="104" fill="#2a3545" font-size="9">5d</text>
+
+    <!-- Row 2 -->
+    <circle cx="724" cy="130" r="6" fill="#22c55e">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.75s" repeatCount="indefinite"/>
+    </circle>
+    <text x="736" y="134" fill="#4a5a6a" font-size="10">Velocity</text>
+    <text x="810" y="134" fill="#2a3545" font-size="9">10d</text>
+
+    <circle cx="860" cy="130" r="6" fill="#eab308" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.8s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="872" y="134" fill="#4a5a6a" font-size="10">Cricket</text>
+    <text x="924" y="134" fill="#2a3545" font-size="9">23d</text>
+
+    <circle cx="966" cy="130" r="6" fill="#eab308" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.8s" begin="1.25s" repeatCount="indefinite"/>
+    </circle>
+    <text x="978" y="134" fill="#4a5a6a" font-size="10">Quantum</text>
+    <text x="1048" y="134" fill="#2a3545" font-size="9">54d</text>
+
+  </g>
+
+  <!-- Legend -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8" fill="#2a3545">
+    <circle cx="708" cy="165" r="4" fill="#22c55e" opacity="0.8"/>
+    <text x="718" y="168">active</text>
+    <circle cx="770" cy="165" r="4" fill="#eab308" opacity="0.8"/>
+    <text x="780" y="168">idle</text>
+  </g>
+
+  <!-- Bottom border -->
+  <line x1="0" y1="186" x2="1200" y2="186" stroke="#1a2030" stroke-width="1"/>
+
+</svg>

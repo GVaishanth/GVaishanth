@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="720" viewBox="0 0 800 720">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="720" viewBox="0 0 800 720" role="img" aria-labelledby="svgTitle">
+  <title id="svgTitle">Quantum Tic-Tac-Toe — Quantum State Resolution</title>
   <defs>
     <filter id="sh" x="-3%" y="-3%" width="106%" height="110%">
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
