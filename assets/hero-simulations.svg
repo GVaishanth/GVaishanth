@@ -1,162 +1,237 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="hsTitle hsDesc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="hsTitle hsDesc">
+  <title id="hsTitle">GVaishanth — Simulations Engineer</title>
+  <desc id="hsDesc">Engineering telemetry dashboard. Live project status, animated waveform, timing tower, circuit trace, and system metrics.</desc>
+
   <defs>
-    <pattern id="hg" width="44" height="44" patternUnits="userSpaceOnUse">
-      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#181d27" stroke-width="1"/>
+    <!-- subtle grid -->
+    <pattern id="bg" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 L0 0 0 48" fill="none" stroke="#161b22" stroke-width="0.6"/>
     </pattern>
-    <!-- car glow -->
-    <filter id="glo" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="1.6" result="b"/>
+    <!-- waveform gradient: fades in from left -->
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff3340" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#ff3340" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff3340" stop-opacity="1"/>
+    </linearGradient>
+    <!-- glow for active elements -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
     </filter>
-    <style>
-      @font-face { font-family: 'Inter Fallback'; src: local('Inter'), local('SF Pro Display'), local('Segoe UI'), local('Helvetica Neue'), local('Arial'), local('system-ui'); }
-    </style>
+    <!-- soft ambient glow -->
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <!-- drop shadow for cards -->
+    <filter id="sh" x="-2%" y="-4%" width="104%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
   </defs>
 
-  <!-- bg -->
-  <rect width="1400" height="560" fill="#0b0d11"/>
-  <rect width="1400" height="560" fill="url(#hg)" opacity="0.9"/>
-  
-  <!-- top bar -->
-  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" fill="#5b616e">
-    <text x="64" y="52">GVaishanth — AI · Android · Web</text>
-    <text x="1336" y="52" text-anchor="end" fill="#7a808c">TELEMETRY — LIVE
-      <tspan fill="#ff3340"> ●</tspan>
+  <!-- ════════════════════════════════════════ -->
+  <!-- BACKGROUND                               -->
+  <!-- ════════════════════════════════════════ -->
+  <rect width="1280" height="480" fill="#0b0d11"/>
+  <rect width="1280" height="480" fill="url(#bg)"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- TOP BAR                                  -->
+  <!-- ════════════════════════════════════════ -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#484f58" letter-spacing="0.3">
+    <text x="56" y="44">GVaishanth — AI · Android · Web</text>
+    <text x="1224" y="44" text-anchor="end" fill="#6e7681">TELEMETRY — LIVE <tspan fill="#ff3340"> ●</tspan></text>
+  </g>
+  <line x1="56" y1="56" x2="1224" y2="56" stroke="#181d27" stroke-width="1"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- LEFT — IDENTITY                          -->
+  <!-- ════════════════════════════════════════ -->
+  <g font-family="'Inter','SF Pro Display',system-ui,-apple-system,sans-serif">
+    <text x="56" y="108" fill="#6e7681" font-size="12" font-weight="500" letter-spacing="4">SIMULATIONS ENGINEER</text>
+    <text x="56" y="168" fill="#e6edf3" font-size="68" font-weight="700" letter-spacing="-1.5">Simulations</text>
+    <text x="56" y="200" fill="#8b949e" font-size="18" font-weight="400">real-time · multiplayer · 60fps</text>
+  </g>
+
+  <!-- live status pill -->
+  <rect x="56" y="220" width="440" height="36" rx="18" fill="#161b22" stroke="#21262d" stroke-width="1" filter="url(#sh)"/>
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="12">
+    <circle cx="74" cy="238" r="4" fill="#ff3340">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="86" y="242.5" fill="#e6edf3" font-weight="500">LIVE</text>
+    <text x="124" y="242.5" fill="#21262d">│</text>
+    <text x="138" y="242.5" fill="#8b949e">VELOCITY — F1 Constructor</text>
+    <text x="478" y="242.5" fill="#ff3340" font-size="11" letter-spacing="0.4" text-anchor="end" opacity="0.8">PLAY →</text>
+  </g>
+
+  <!-- tech stack -->
+  <text x="56" y="288" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" letter-spacing="0.2">Python · JavaScript · Kotlin — PeerJS · Canvas · Android · Qiskit</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- LEFT — METRICS PANEL                     -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="56" y="312" width="520" height="100" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <text x="76" y="336" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="1.5">SYSTEM METRICS</text>
+  <line x1="76" y1="346" x2="556" y2="346" stroke="#181d27" stroke-width="1"/>
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" text-anchor="middle">
+    <text x="120" y="372" fill="#e6edf3" font-size="24" font-weight="600">22</text>
+    <text x="120" y="392" fill="#6e7681" font-size="9">SUBSYSTEMS</text>
+    <text x="240" y="372" fill="#e6edf3" font-size="24" font-weight="600">52</text>
+    <text x="240" y="392" fill="#6e7681" font-size="9">FILES</text>
+    <text x="360" y="372" fill="#e6edf3" font-size="24" font-weight="600">60</text>
+    <text x="360" y="392" fill="#6e7681" font-size="9">FPS</text>
+    <text x="480" y="372" fill="#e6edf3" font-size="24" font-weight="600">45<tspan font-size="13" fill="#6e7681">MB</tspan></text>
+    <text x="480" y="392" fill="#6e7681" font-size="9">MEMORY</text>
+  </g>
+  <g stroke="#181d27" stroke-width="1">
+    <line x1="180" y1="354" x2="180" y2="400"/>
+    <line x1="300" y1="354" x2="300" y2="400"/>
+    <line x1="420" y1="354" x2="420" y2="400"/>
+  </g>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- RIGHT — TELEMETRY PANEL                  -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="616" y="96" width="608" height="208" rx="12" fill="#161b22" stroke="#21262d" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- panel header -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace">
+    <text x="640" y="124" fill="#484f58" font-size="10" letter-spacing="1.5">VELOCITY — TELEMETRY</text>
+    <!-- lap counter cycles 42→43→44 every 8s -->
+    <text x="1200" y="124" text-anchor="end" fill="#6e7681" font-size="10">LAP</text>
+    <text x="1172" y="124" text-anchor="end" fill="#e6edf3" font-size="10" font-weight="600" opacity="1">
+      42
+      <animate attributeName="opacity" values="1;1;0;0;0;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="1172" y="124" text-anchor="end" fill="#e6edf3" font-size="10" font-weight="600" opacity="0">
+      43
+      <animate attributeName="opacity" values="0;0;1;1;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="1172" y="124" text-anchor="end" fill="#e6edf3" font-size="10" font-weight="600" opacity="0">
+      44
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="8s" repeatCount="indefinite"/>
     </text>
   </g>
-  <line x1="64" y1="68" x2="1336" y2="68" stroke="#1c212d" stroke-width="1"/>
+  <line x1="640" y1="134" x2="1200" y2="134" stroke="#181d27" stroke-width="1"/>
 
-  <!-- LEFT — HEADLINE -->
-  <g font-family="'Inter','SF Pro Display',system-ui,-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif">
-    <!-- kicker -->
-    <text x="64" y="210" fill="#7a808c" font-size="12.5" font-weight="600" letter-spacing="3.8" style="text-transform:uppercase">Simulations Engineer</text>
-    <!-- main -->
-    <text x="60" y="316" fill="#e8e8e8" font-size="104" font-weight="760" letter-spacing="-3">Simulations</text>
-    <!-- sub -->
-    <text x="66" y="356" fill="#9aa0a6" font-size="22" font-weight="500">real-time · multiplayer · 60fps</text>
-    
-    <!-- live status pill -->
-    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace">
-      <rect x="64" y="384" width="460" height="42" rx="22" fill="#12151d" stroke="#252a36" stroke-width="1"/>
-      <circle cx="86" cy="405" r="3.8" fill="#ff3340">
-        <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
-      </circle>
-      <text x="102" y="409.5" fill="#9aa0a6" font-size="12.5">LIVE</text>
-      <text x="146" y="409.5" fill="#3a3f4c" font-size="12.5">│</text>
-      <text x="164" y="409.5" fill="#d4d4d4" font-size="12.5">VELOCITY — F1 Constructor Sim</text>
-      <!-- PLAY – visual affordance only, actual link is in the wrapping <a> in README -->
-      <text x="498" y="409.5" fill="#ff3340" font-size="11.5" letter-spacing="0.3" text-anchor="end" opacity="0.95">PLAY →</text>
-    </g>
-
-    <!-- micro spec -->
-    <text x="66" y="458" fill="#5b616e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11">Python · JavaScript · Kotlin — PeerJS · Canvas · Android</text>
+  <!-- timing rows -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="13">
+    <text x="640" y="162" fill="#484f58" font-size="10">P1</text>
+    <text x="668" y="162" fill="#e6edf3" font-weight="600">VER</text>
+    <text x="760" y="162" fill="#ff3340" font-size="13">1:28.442</text>
+    <text x="640" y="186" fill="#484f58" font-size="10">P2</text>
+    <text x="668" y="186" fill="#8b949e" font-weight="500">HAM</text>
+    <text x="760" y="186" fill="#6e7681" font-size="13">1:27.946</text>
+    <text x="640" y="210" fill="#484f58" font-size="10">P3</text>
+    <text x="668" y="210" fill="#8b949e" font-weight="500">LEC</text>
+    <text x="760" y="210" fill="#6e7681" font-size="13">1:28.168</text>
   </g>
 
-  <!-- RIGHT — TELEMETRY CONSOLE -->
-  <g>
-    <!-- card -->
-    <rect x="760" y="116" width="576" height="312" rx="18" fill="#10131b" stroke="#252a36" stroke-width="1.2"/>
-    <!-- card header -->
-    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="11" fill="#7a808c" letter-spacing="0.4">
-      <text x="788" y="148">VELOCITY — TELEMETRY</text>
-      <!-- LAP counter – increments every 8s, synced with car lap -->
-      <text x="1308" y="148" text-anchor="end" fill="#9aa0a6">LAP 
-        <tspan font-weight="600" fill="#d4d4d4">
-          42
-          <animate attributeName="opacity" values="1;1;1;0;1" dur="8s" repeatCount="indefinite" begin="0s"/>
-          <!-- swap text via discrete animation – hack: overlay 3 texts fading -->
-        </tspan>
-      </text>
-      <!-- we fake a counter with 3 overlapping texts crossfading -->
-      <text x="1288" y="148" text-anchor="end" fill="#d4d4d4" font-weight="600" opacity="0">43
-        <animate attributeName="opacity" values="0;0;0;1;0;0" dur="8s" repeatCount="indefinite" begin="0s"/>
-      </text>
-      <text x="1288" y="148" text-anchor="end" fill="#d4d4d4" font-weight="600" opacity="0">44
-        <animate attributeName="opacity" values="0;0;0;0;0;1;0" dur="8s" repeatCount="indefinite" begin="0s"/>
-      </text>
-    </g>
-    <line x1="788" y1="158" x2="1308" y2="158" stroke="#1e232e" stroke-width="1"/>
+  <!-- ════════════════════════════════════════ -->
+  <!-- MAIN WAVEFORM — draws in, pulses at end  -->
+  <!-- Meaning: data is flowing through system  -->
+  <!-- Cycle: 4s draw-in → 4s hold → repeat     -->
+  <!-- ════════════════════════════════════════ -->
+  <path id="wf1"
+    d="M 860,156 C 878,152, 896,160, 914,155 C 932,150, 950,140, 968,145 C 986,150, 1004,162, 1022,157 C 1040,152, 1058,142, 1076,148 C 1094,154, 1112,164, 1130,159 C 1148,154, 1166,148, 1184,154 C 1196,158, 1206,160, 1216,160"
+    fill="none" stroke="url(#wg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+    stroke-dasharray="400" stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" values="400;0;0" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 0 0" keyTimes="0;0.4;1"/>
+  </path>
+  <!-- endpoint glow -->
+  <circle cx="1216" cy="160" r="4.5" fill="#ff3340" opacity="0" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;1;1;0.6;1" dur="4s" repeatCount="indefinite" keyTimes="0;0.4;0.55;0.75;1"/>
+  </circle>
+  <circle cx="1216" cy="160" r="9" fill="#ff3340" opacity="0" filter="url(#glow2)">
+    <animate attributeName="opacity" values="0;0.15;0.15;0.05;0.15" dur="4s" repeatCount="indefinite" keyTimes="0;0.4;0.55;0.75;1"/>
+  </circle>
 
-    <!-- timing tower -->
-    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="15">
-      <text x="788" y="196" fill="#5b616e" font-size="11">P1</text>
-      <text x="822" y="196" fill="#e6e6e6" font-weight="600">VER</text>
-      <text x="910" y="196" fill="#ff3340">1:28.442</text>
-      <text x="788" y="222" fill="#5b616e" font-size="11">P2</text>
-      <text x="822" y="222" fill="#9aa0a6">HAM</text>
-      <text x="910" y="222" fill="#9aa0a6">1:27.946</text>
-      <text x="788" y="248" fill="#5b616e" font-size="11">P3</text>
-      <text x="822" y="248" fill="#9aa0a6">LEC</text>
-      <text x="910" y="248" fill="#9aa0a6">1:28.168</text>
-    </g>
+  <!-- ════════════════════════════════════════ -->
+  <!-- CYCLING WAVEFORMS — crossfade between 3  -->
+  <!-- Meaning: different telemetry streams     -->
+  <!-- Cycle: 6s per waveform, staggered        -->
+  <!-- ════════════════════════════════════════ -->
+  <!-- Waveform A: smooth sine-like -->
+  <path d="M 860,196 C 878,192, 896,200, 914,196 C 932,192, 950,186, 968,190 C 986,194, 1004,198, 1022,194 C 1040,190, 1058,184, 1076,188 C 1094,192, 1112,196, 1130,192 C 1148,188, 1166,194, 1184,192 C 1196,191, 1206,193, 1216,192"
+    fill="none" stroke="#ff3340" stroke-width="1.5" opacity="1" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="1;1;0;0;0;1" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <!-- Waveform B: sharper zigzag -->
+  <path d="M 860,204 L 878,188 L 896,198 L 914,184 L 932,194 L 950,180 L 968,192 L 986,178 L 1004,190 L 1022,178 L 1040,190 L 1058,178 L 1076,190 L 1094,180 L 1112,192 L 1130,182 L 1148,194 L 1166,184 L 1184,192 L 1196,188 L 1216,192"
+    fill="none" stroke="#ff3340" stroke-width="1.5" opacity="0" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <!-- Waveform C: smooth undulating -->
+  <path d="M 860,190 C 875,200, 890,182, 905,194 C 920,206, 935,184, 950,196 C 965,208, 980,186, 995,198 C 1010,210, 1025,188, 1040,200 C 1055,212, 1070,190, 1085,202 C 1100,214, 1115,192, 1130,204 C 1145,216, 1160,194, 1175,206 C 1190,218, 1200,200, 1216,196"
+    fill="none" stroke="#ff3340" stroke-width="1.5" opacity="0" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="0;0;0;0;1;1" dur="6s" repeatCount="indefinite"/>
+  </path>
 
-    <!-- mini spark – subtle, 1.5s draw loop -->
-    <polyline points="1000,176 1018,172 1036,178 1054,165 1072,171 1090,163 1108,170 1126,158 1144,165 1162,157 1180,164 1198,154 1216,160 1234,152 1252,159 1270,151 1288,158 1306,152"
-      fill="none" stroke="#ff3340" stroke-width="1.35" opacity="0.85"
-      stroke-dasharray="340" stroke-dashoffset="340">
-      <animate attributeName="stroke-dashoffset" values="340;0;0" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 0 0" keyTimes="0;0.35;1"/>
-    </polyline>
-
-    <!-- circuit – right side of the telemetry card -->
-    <!-- track path – clean F1-style loop -->
-    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <!-- track casing -->
-      <path id="trackPath2"
-        d="M 1048 320 C 1092 300, 1128 282, 1170 276 C 1206 270, 1222 294, 1248 282 C 1270 270, 1298 244, 1306 218 C 1310 198, 1288 194, 1268 208 C 1244 224, 1222 216, 1202 202 C 1180 186, 1158 180, 1132 193 C 1108 205, 1088 198, 1068 182 C 1048 167, 1028 178, 1032 202 C 1036 224, 1018 240, 1002 256 C 988 270, 992 292, 1010 306 C 1028 318, 1028 334, 1048 320Z"
-        stroke="#2a303c" stroke-width="7.5" opacity="0.95"/>
-      <!-- racing line -->
-      <path d="M 1048 320 C 1092 300, 1128 282, 1170 276 C 1206 270, 1222 294, 1248 282 C 1270 270, 1298 244, 1306 218 C 1310 198, 1288 194, 1268 208 C 1244 224, 1222 216, 1202 202 C 1180 186, 1158 180, 1132 193 C 1108 205, 1088 198, 1068 182 C 1048 167, 1028 178, 1032 202 C 1036 224, 1018 240, 1002 256 C 988 270, 992 292, 1010 306 C 1028 318, 1028 334, 1048 320Z"
-        stroke="#ff3340" stroke-width="1.7" opacity="0.95"/>
-      <!-- car – laps every 8s, synced with lap counter -->
-      <circle r="3.8" fill="#ff3340">
-        <animate attributeName="opacity" values="1;1;0.85;1" dur="8s" repeatCount="indefinite"/>
-        <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#trackPath2"/>
-        </animateMotion>
-      </circle>
-      <!-- car glow -->
-      <circle r="7" fill="#ff3340" opacity="0.12">
-        <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#trackPath2"/>
-        </animateMotion>
-      </circle>
-    </g>
-
-    <!-- telemetry footer – with animated values -->
-    <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#5b616e">
-      <text x="788" y="398">12 DRIVERS · P2P · 60 FPS</text>
-      <!-- ERS % – cycles 84 → 71 → 96 -->
-      <text x="1308" y="398" text-anchor="end">
-        <tspan>E</tspan>RS 
-        <tspan fill="#9aa0a6">84%</tspan>
-        <animate attributeName="opacity" values="1;1;0;0;0;1" dur="8s" repeatCount="indefinite" begin="0s"/>
-      </text>
-      <text x="1282" y="398" text-anchor="end" fill="#9aa0a6" opacity="0">71%
-        <animate attributeName="opacity" values="0;0;1;1;0;0" dur="8s" repeatCount="indefinite" begin="0s"/>
-      </text>
-      <text x="1282" y="398" text-anchor="end" fill="#9aa0a6" opacity="0">96%
-        <animate attributeName="opacity" values="0;0;0;0;1;1" dur="8s" repeatCount="indefinite" begin="0s"/>
-      </text>
-      <!-- Tyre temp – flickers 102.4 / 102.7 / 102.1 -->
-      <text x="1308" y="414" text-anchor="end" fill="#5b616e">T° 
-        <tspan fill="#9aa0a6">102.4</tspan>
-        <animate attributeName="opacity" values="1;1;0;0;1" dur="3.2s" repeatCount="indefinite"/>
-      </text>
-      <text x="1280" y="414" text-anchor="end" fill="#9aa0a6" opacity="0">102.7
-        <animate attributeName="opacity" values="0;0;1;0;0" dur="3.2s" repeatCount="indefinite"/>
-      </text>
-      <text x="1280" y="414" text-anchor="end" fill="#9aa0a6" opacity="0">102.1
-        <animate attributeName="opacity" values="0;0;0;1;0" dur="3.2s" repeatCount="indefinite"/>
-      </text>
-    </g>
+  <!-- ════════════════════════════════════════ -->
+  <!-- CIRCUIT TRACE — right side of panel      -->
+  <!-- Meaning: simulation loop is running      -->
+  <!-- Cycle: 6s orbit                            -->
+  <!-- ════════════════════════════════════════ -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- track casing -->
+    <path id="circuit"
+      d="M 680,270 C 710,260, 740,240, 770,235 C 800,230, 820,250, 840,240 C 860,230, 880,208, 890,198 C 900,188, 888,180, 876,188 C 860,196, 840,184, 826,174 C 810,162, 790,158, 776,168 C 760,178, 740,170, 726,156 C 712,142, 694,152, 700,170 C 706,186, 688,202, 674,218 C 662,230, 666,246, 682,256 C 686,258, 678,264, 680,270Z"
+      stroke="#1c212d" stroke-width="8"/>
+    <!-- racing line -->
+    <path d="M 680,270 C 710,260, 740,240, 770,235 C 800,230, 820,250, 840,240 C 860,230, 880,208, 890,198 C 900,188, 888,180, 876,188 C 860,196, 840,184, 826,174 C 810,162, 790,158, 776,168 C 760,178, 740,170, 726,156 C 712,142, 694,152, 700,170 C 706,186, 688,202, 674,218 C 662,230, 666,246, 682,256 C 686,258, 678,264, 680,270Z"
+      stroke="#ff3340" stroke-width="1.5" opacity="0.8"/>
+    <!-- car dot -->
+    <circle r="4" fill="#ff3340" opacity="0.9" filter="url(#glow)">
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#circuit"/>
+      </animateMotion>
+    </circle>
+    <!-- car glow trail -->
+    <circle r="8" fill="#ff3340" opacity="0.08">
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#circuit"/>
+      </animateMotion>
+    </circle>
   </g>
 
-  <!-- bottom rule -->
-  <line x1="64" y1="492" x2="1336" y2="492" stroke="#1c212d" stroke-width="1"/>
-  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#4b505c" letter-spacing="0.15">
-    <text x="64" y="518">BUILD · RACE · DOMINATE</text>
-    <text x="1336" y="518" text-anchor="end">4 SYSTEMS · 0 DEPS · OPEN SOURCE</text>
+  <!-- telemetry footer with cycling values -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">
+    <text x="640" y="290" fill="#484f58">12 DRIVERS · P2P · 60 FPS · 0 DEPS</text>
+    <!-- ERS cycles 84% → 71% → 96% -->
+    <text x="1200" y="290" text-anchor="end" fill="#6e7681">
+      ERS <tspan fill="#8b949e">84%</tspan>
+      <animate attributeName="opacity" values="1;1;0;0;0;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="1172" y="290" text-anchor="end" fill="#8b949e" opacity="0">
+      ERS <tspan fill="#8b949e">71%</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="1172" y="290" text-anchor="end" fill="#8b949e" opacity="0">
+      ERS <tspan fill="#8b949e">96%</tspan>
+      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <!-- tyre temp cycles -->
+    <text x="1200" y="304" text-anchor="end" fill="#484f58">
+      T° <tspan fill="#6e7681">102.4°C</tspan>
+      <animate attributeName="opacity" values="1;1;0;0;1" dur="3.2s" repeatCount="indefinite"/>
+    </text>
+    <text x="1162" y="304" text-anchor="end" fill="#6e7681" opacity="0">
+      T° <tspan fill="#6e7681">102.7°C</tspan>
+      <animate attributeName="opacity" values="0;0;1;0;0" dur="3.2s" repeatCount="indefinite"/>
+    </text>
+    <text x="1162" y="304" text-anchor="end" fill="#6e7681" opacity="0">
+      T° <tspan fill="#6e7681">102.1°C</tspan>
+      <animate attributeName="opacity" values="0;0;0;1;0" dur="3.2s" repeatCount="indefinite"/>
+    </text>
   </g>
 
-  <title id="hsTitle">Simulations — GVaishanth</title>
-  <desc id="hsDesc">Engineering telemetry dashboard. Left: Simulations, real-time · multiplayer · 60fps, LIVE: Velocity F1 Constructor Sim. Right: F1 timing tower with live lapping car, ERS and tyre telemetry updating in real-time. Design: Ferrari / Linear / Apple / Nothing / GitHub dark.</desc>
+  <!-- ════════════════════════════════════════ -->
+  <!-- BOTTOM BAR                               -->
+  <!-- ════════════════════════════════════════ -->
+  <line x1="56" y1="432" x2="1224" y2="432" stroke="#181d27" stroke-width="1"/>
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" fill="#484f58" letter-spacing="0.2">
+    <text x="56" y="454">BUILD · RACE · DOMINATE</text>
+    <text x="1224" y="454" text-anchor="end">4 SYSTEMS · 0 DEPS · OPEN SOURCE</text>
+  </g>
 </svg>

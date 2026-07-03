@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="720" viewBox="0 0 800 720">
+  <defs>
+    <filter id="sh" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <clipPath id="cv"><rect x="48" y="128" width="704" height="280" rx="14"/></clipPath>
+    <linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff3340"/>
+      <stop offset="100%" stop-color="#ff6b4a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card body -->
+  <rect width="800" height="720" rx="22" fill="#0d1117"/>
+  <rect x=".5" y=".5" width="799" height="719" rx="22" fill="none" stroke="#1c212d" stroke-width="1"/>
+
+  <!-- ═══════ STATUS BAR ═══════ -->
+  <circle cx="56" cy="38" r="4.5" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="72" y="42" fill="#22c55e" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10" font-weight="600" letter-spacing="2">ACTIVE</text>
+  <text x="752" y="42" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10" text-anchor="end">v4 · 2026</text>
+
+  <!-- ═══════ TITLE ═══════ -->
+  <text x="48" y="88" fill="#e6edf3" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="42" font-weight="700" letter-spacing="-0.5">Velocity</text>
+  <text x="48" y="114" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="15">F1 Constructor Championship Simulator</text>
+
+  <!-- ═══════ COVER IMAGE ═══════ -->
+  <image href="cover-velocity.png" x="48" y="128" width="704" height="280" preserveAspectRatio="xMidYMid slice" clip-path="url(#cv)"/>
+  <rect x="48" y="128" width="704" height="280" rx="14" fill="none" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ═══════ COMPLEXITY METER ═══════ -->
+  <text x="48" y="442" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="8" letter-spacing="2.5">COMPLEXITY</text>
+  <rect x="48" y="452" width="32" height="5" rx="2.5" fill="#ff3340"/>
+  <rect x="84" y="452" width="32" height="5" rx="2.5" fill="#ff3340"/>
+  <rect x="120" y="452" width="32" height="5" rx="2.5" fill="#ff3340"/>
+  <rect x="156" y="452" width="32" height="5" rx="2.5" fill="#ff3340"/>
+  <rect x="192" y="452" width="32" height="5" rx="2.5" fill="#1c212d"/>
+  <text x="236" y="457" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10">4 / 5 · Advanced</text>
+
+  <!-- ═══════ TECHNOLOGIES ═══════ -->
+  <text x="48" y="486" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="8" letter-spacing="2.5">TECHNOLOGIES</text>
+  <rect x="48" y="496" width="76" height="22" rx="11" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+  <text x="86" y="511" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9.5" text-anchor="middle">JavaScript</text>
+  <rect x="130" y="496" width="56" height="22" rx="11" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+  <text x="158" y="511" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9.5" text-anchor="middle">Canvas</text>
+  <rect x="192" y="496" width="60" height="22" rx="11" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+  <text x="222" y="511" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9.5" text-anchor="middle">WebRTC</text>
+  <rect x="258" y="496" width="44" height="22" rx="11" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+  <text x="280" y="511" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9.5" text-anchor="middle">CSS3</text>
+  <rect x="308" y="496" width="40" height="22" rx="11" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+  <text x="328" y="511" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="9.5" text-anchor="middle">ES6</text>
+
+  <!-- ═══════ ARCHITECTURE ═══════ -->
+  <text x="48" y="546" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="8" letter-spacing="2.5">ARCHITECTURE</text>
+  <text x="48" y="564" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12">22 subsystems · Host-authority P2P · Thermal simulation · Pit lane physics · R&amp;D engine</text>
+
+  <!-- ═══════ STATS ROW ═══════ -->
+  <line x1="48" y1="584" x2="752" y2="584" stroke="#1c212d" stroke-width="0.5"/>
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10" fill="#6e7681">
+    <text x="48" y="604">Difficulty: Hard</text>
+    <text x="200" y="604">52 files</text>
+    <text x="320" y="604">60fps</text>
+    <text x="430" y="604">12 players</text>
+    <text x="550" y="604">0 deps</text>
+    <text x="660" y="604" text-anchor="end">~180 hrs</text>
+  </g>
+
+  <!-- ═══════ INTERESTING FACTS ═══════ -->
+  <text x="48" y="634" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="8" letter-spacing="2.5">DID YOU KNOW</text>
+  <text x="48" y="652" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Exceed 125°C thermal limit mid-race and you DNF — no second chances</text>
+  <text x="48" y="670" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Hall of Glory features 3 historic title shootouts you can drop into directly</text>
+  <text x="48" y="688" fill="#8b949e" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="12"><tspan fill="#ff3340">●</tspan> Pure ES6 modules + CSS3 — zero dependencies, runs from a static HTML file</text>
+
+  <!-- ═══════ ACTION BUTTONS ═══════ -->
+  <a href="https://gvaishanth.github.io/Velocity/" target="_blank">
+    <rect x="540" y="664" width="90" height="30" rx="15" fill="#ff3340" filter="url(#sh)"/>
+    <text x="585" y="683" fill="#fff" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10.5" text-anchor="middle" font-weight="600">PLAY →</text>
+  </a>
+  <a href="https://github.com/GVaishanth/Velocity" target="_blank">
+    <rect x="642" y="664" width="100" height="30" rx="15" fill="#1c212d" stroke="#2a303c" stroke-width="0.5"/>
+    <text x="692" y="683" fill="#e6edf3" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="10.5" text-anchor="middle">GITHUB →</text>
+  </a>
+</svg>
