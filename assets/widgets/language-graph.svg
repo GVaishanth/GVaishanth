@@ -3,14 +3,14 @@
   <rect x=".5" y=".5" width="719" height="175" rx="14" fill="none" stroke="#1c212d"/>
   
   <text x="28" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">LANGUAGES</text>
-  <text x="692" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">4 langs · 24351kb total</text>
+  <text x="692" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">4 langs · 24568kb total</text>
   
   <text x="28" y="46" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Kotlin</text>
   <!-- bar fills from 0 → width with stagger delay -->
   <rect x="150" y="38" width="400" height="10" rx="4" fill="#ff3340" opacity="0.7">
     <animate attributeName="width" from="0" to="400" dur="1.2s" begin="0.00s" fill="freeze"/>
   </rect>
-  <text x="562" y="46" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">92% · 22421kb</text>
+  <text x="562" y="46" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">91% · 22421kb</text>
   <text x="28" y="78" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">HTML</text>
   <!-- bar fills from 0 → width with stagger delay -->
   <rect x="150" y="70" width="17" height="10" rx="4" fill="#58a6ff" opacity="0.7">
@@ -25,8 +25,8 @@
   <text x="562" y="110" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">3% · 677kb</text>
   <text x="28" y="142" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Jupyter Notebook</text>
   <!-- bar fills from 0 → width with stagger delay -->
-  <rect x="150" y="134" width="5" height="10" rx="4" fill="#eab308" opacity="0.7">
-    <animate attributeName="width" from="0" to="5" dur="1.2s" begin="0.45s" fill="freeze"/>
+  <rect x="150" y="134" width="9" height="10" rx="4" fill="#eab308" opacity="0.7">
+    <animate attributeName="width" from="0" to="9" dur="1.2s" begin="0.45s" fill="freeze"/>
   </rect>
-  <text x="562" y="142" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">1% · 290kb</text>
+  <text x="562" y="142" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">2% · 507kb</text>
 </svg>
