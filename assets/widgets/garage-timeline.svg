@@ -41,8 +41,8 @@
   <text x="597.6" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">VEL</text>
   <text x="597.6" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">12d</text>
   
-  <circle cx="511.2" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
-  <text x="511.2" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
-  <text x="511.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">24d</text>
+  <circle cx="504.0" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
+  <text x="504.0" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
+  <text x="504.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">25d</text>
 
 </svg>
