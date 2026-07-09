@@ -5,27 +5,27 @@
   <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">GARAGE — ACTIVITY</text>
   <text x="692" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">90d → now</text>
   <line x1="36" y1="54" x2="684" y2="54" stroke="#181d27" stroke-width="2"/>
-    <circle cx="655.2" cy="54.0" r="12" fill="#ff3340" opacity="0">
+    <circle cx="648.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.0s"/>
   </circle>
-  <circle cx="655.2" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="655.2" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SPE</text>
-  <text x="655.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">4d</text>
-  <circle cx="619.2" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="648.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="648.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SPE</text>
+  <text x="648.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">5d</text>
+  <circle cx="612.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.5s"/>
   </circle>
-  <circle cx="619.2" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="619.2" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
-  <text x="619.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">9d</text>
-  <circle cx="619.2" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="612.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="612.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
+  <text x="612.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
+  <circle cx="612.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.0s"/>
   </circle>
-  <circle cx="619.2" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="619.2" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
-  <text x="619.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">9d</text>
+  <circle cx="612.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="612.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
+  <text x="612.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
   <circle cx="604.8" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.5s"/>
