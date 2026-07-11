@@ -19,7 +19,7 @@
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
   </circle>
   <text x="268" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">DNA</text>
-  <text x="268" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 11d</text>
+  <text x="268" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 12d</text>
   <circle cx="376" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.75s" repeatCount="indefinite"/>
   </circle>
@@ -29,10 +29,10 @@
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.0s" repeatCount="indefinite"/>
   </circle>
   <text x="484" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">CRP</text>
-  <text x="484" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 13d</text>
+  <text x="484" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 14d</text>
   <circle cx="592" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.25s" repeatCount="indefinite"/>
   </circle>
   <text x="592" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">VEL</text>
-  <text x="592" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 18d</text>
+  <text x="592" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 19d</text>
 </svg>
