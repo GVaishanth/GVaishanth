@@ -14,17 +14,17 @@
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.25s" repeatCount="indefinite"/>
   </circle>
   <text x="160" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">RED</text>
-  <text x="160" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 6d</text>
+  <text x="160" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 7d</text>
   <circle cx="268" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
   </circle>
   <text x="268" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">SQU</text>
-  <text x="268" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 8d</text>
+  <text x="268" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 9d</text>
   <circle cx="376" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="0.75s" repeatCount="indefinite"/>
   </circle>
   <text x="376" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">SPE</text>
-  <text x="376" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 14d</text>
+  <text x="376" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 15d</text>
   <circle cx="484" cy="50" r="7" fill="#22c55e" opacity="0.9">
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.0s" repeatCount="indefinite"/>
   </circle>
@@ -34,5 +34,5 @@
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.8s" begin="1.25s" repeatCount="indefinite"/>
   </circle>
   <text x="592" y="74" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10">SAL</text>
-  <text x="592" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 19d</text>
+  <text x="592" y="88" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="8.5">OK · 20d</text>
 </svg>
