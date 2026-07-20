@@ -12,27 +12,27 @@
   <circle cx="640.8" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
   <text x="640.8" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
   <text x="640.8" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">6d</text>
-  <circle cx="633.6" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="626.4" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.5s"/>
   </circle>
-  <circle cx="633.6" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="633.6" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">RED</text>
-  <text x="633.6" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">7d</text>
-  <circle cx="619.2" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="626.4" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="626.4" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">RED</text>
+  <text x="626.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">8d</text>
+  <circle cx="612.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.0s"/>
   </circle>
-  <circle cx="619.2" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="619.2" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SQU</text>
-  <text x="619.2" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">9d</text>
-  <circle cx="576.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="612.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="612.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SQU</text>
+  <text x="612.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">10d</text>
+  <circle cx="568.8" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="1.5s"/>
   </circle>
-  <circle cx="576.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="576.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SPE</text>
-  <text x="576.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">15d</text>
+  <circle cx="568.8" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="568.8" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SPE</text>
+  <text x="568.8" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">16d</text>
   <circle cx="540.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="2.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="2.0s"/>
@@ -40,12 +40,12 @@
   <circle cx="540.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
   <text x="540.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
   <text x="540.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">20d</text>
-  <circle cx="540.0" cy="54.0" r="12" fill="#ff3340" opacity="0">
+  <circle cx="532.8" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="2.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="2.5s"/>
   </circle>
-  <circle cx="540.0" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="540.0" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
-  <text x="540.0" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">20d</text>
+  <circle cx="532.8" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="532.8" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
+  <text x="532.8" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">21d</text>
 
 </svg>
