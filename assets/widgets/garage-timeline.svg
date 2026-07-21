@@ -5,13 +5,13 @@
   <text x="28" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">GARAGE — ACTIVITY</text>
   <text x="692" y="24" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">90d → now</text>
   <line x1="36" y1="54" x2="684" y2="54" stroke="#181d27" stroke-width="2"/>
-    <circle cx="633.6" cy="54.0" r="12" fill="#ff3340" opacity="0">
+    <circle cx="626.4" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.0s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.0s"/>
   </circle>
-  <circle cx="633.6" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
-  <text x="633.6" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
-  <text x="633.6" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">7d</text>
+  <circle cx="626.4" cy="54.0" r="6" fill="#ff3340" stroke="#ff3340" stroke-width="1.7"/>
+  <text x="626.4" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">CKT</text>
+  <text x="626.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">8d</text>
   <circle cx="619.2" cy="54.0" r="12" fill="#ff3340" opacity="0">
     <animate attributeName="opacity" values="0;0.12;0" dur="3s" repeatCount="indefinite" begin="0.5s"/>
     <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" begin="0.5s"/>
