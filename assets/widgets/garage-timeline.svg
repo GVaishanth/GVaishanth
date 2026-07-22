@@ -34,9 +34,9 @@
   <text x="554.4" y="40.0" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SPE</text>
   <text x="554.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">18d</text>
   
-  <circle cx="525.6" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
-  <text x="525.6" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
-  <text x="525.6" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">22d</text>
+  <circle cx="518.4" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
+  <text x="518.4" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">DNA</text>
+  <text x="518.4" y="76.0" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9">23d</text>
   
   <circle cx="518.4" cy="54.0" r="6" fill="#11151c" stroke="#2a303c" stroke-width="1.7"/>
   <text x="518.4" y="40.0" text-anchor="middle" fill="#6e7681" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5" font-weight="600">SAL</text>
