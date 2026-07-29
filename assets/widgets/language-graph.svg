@@ -3,7 +3,7 @@
   <rect x=".5" y=".5" width="719" height="207" rx="14" fill="none" stroke="#1c212d"/>
   
   <text x="28" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10" letter-spacing="2">LANGUAGES</text>
-  <text x="692" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">6 langs · 42433kb total</text>
+  <text x="692" y="22" fill="#484f58" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="9" text-anchor="end">5 langs · 42247kb total</text>
   
   <text x="28" y="46" fill="#8b949e" font-family="'JetBrains Mono','SF Mono',Consolas,ui-monospace,monospace" font-size="10.5">Kotlin</text>
   <!-- bar fills from 0 → width with stagger delay -->
