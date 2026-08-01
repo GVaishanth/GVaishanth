@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="144" viewBox="0 0 1200 144" role="img">
+  <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d0a"/><stop offset=".52" stop-color="#111812"/><stop offset="1" stop-color="#070908"/></linearGradient>
+      <radialGradient id="halo" cx="78%" cy="44%" r="62%"><stop stop-color="#79e95d" stop-opacity=".19"/><stop offset=".48" stop-color="#1e632a" stop-opacity=".07"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9ffaf"/><stop offset=".45" stop-color="#79e95d"/><stop offset="1" stop-color="#2a8537"/></linearGradient>
+      <linearGradient id="race" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f2b51d"/><stop offset=".48" stop-color="#e53c3c"/><stop offset="1" stop-color="#79e95d"/></linearGradient>
+      <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000" flood-opacity=".65"/></filter>
+      <pattern id="grain" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#d7ead7" opacity=".05"/><circle cx="7" cy="4" r=".5" fill="#d7ead7" opacity=".035"/></pattern>
+      </defs>
+  <rect width="1200" height="144" rx="20" fill="url(#bg)"/><rect width="1200" height="144" rx="20" fill="url(#grain)"/>
+      <path d="M0 143H1200" stroke="#e53c3c" stroke-opacity=".42"/><g transform="translate(30 30)"><rect width="54" height="54" rx="16" fill="#e53c3c" fill-opacity=".12" stroke="#e53c3c" stroke-opacity=".58"/><text x="27" y="35" text-anchor="middle" fill="#e53c3c" font-family="DejaVu Sans Mono" font-size="16" font-weight="700">03</text></g>
+      <text x="107" y="55" fill="#f0f5ee" font-family="DejaVu Sans" font-size="27" font-weight="700">ENGINEERING NOTES</text>
+      <text x="109" y="82" fill="#9aab9e" font-family="DejaVu Sans Mono" font-size="12" letter-spacing="1">THE LOOP THAT TURNS INPUT INTO BETTER SYSTEMS</text><path d="M108 105H492" stroke="#3a493c"/>
+      <g transform="translate(720 27)"><circle cx="175" cy="45" r="42" fill="none" stroke="#e53c3c" stroke-opacity=".58" stroke-width="3"/><path d="M175 3a42 42 0 0 1 41 42" fill="none" stroke="#79e95d" stroke-width="5"/><path d="M216 45l-10 -7m10 7l-8 10" stroke="#79e95d" stroke-width="3"/><path d="M28 45H126M224 45H420" stroke="#f2b51d" stroke-opacity=".64" stroke-width="2"/><circle cx="28" cy="45" r="6" fill="#f2b51d"/><circle cx="420" cy="45" r="6" fill="#79e95d"/><text x="0" y="92" fill="#879889" font-family="DejaVu Sans Mono" font-size="10">INPUT</text><text x="143" y="92" fill="#879889" font-family="DejaVu Sans Mono" font-size="10">MODEL</text><text x="320" y="92" fill="#879889" font-family="DejaVu Sans Mono" font-size="10">ITERATE</text></g><text x="1168" y="121" text-anchor="end" fill="#718174" font-family="DejaVu Sans Mono" font-size="10" letter-spacing="1.6">GVAISHANTH / PROFILE</text>
+</svg>

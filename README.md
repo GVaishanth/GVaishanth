@@ -1,190 +1,131 @@
-<div align="center"><a name="top"></a>
+<div align="center">
+  <a id="top"></a>
+  <picture>
+    <source srcset="assets/profile/hero-systems.svg" type="image/svg+xml">
+    <img src="assets/profile/hero-systems.png" width="100%" alt="G. Vaishanth — interactive systems, simulations, and browser-native tools">
+  </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-hero-light.svg" type="image/svg+xml">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/boot-sequence.svg" type="image/svg+xml">
-  <img src="assets/hero-simulations.png" width="100%" alt="GVaishanth — Simulations Engineer. System initialising.">
-</picture>
-
+  <br>
+  <sub><b>B.Tech CSE @ VIT Vellore</b> · Interactive systems · Local-first web apps · AI & data</sub>
 </div>
 
 ---
 
-I build things to understand how they work — starting with a game loop, a physics tick, or a state machine that needs to survive a crash.
+I’m **G. Vaishanth**. I build browser-native products that invite people to try them: a racing championship where strategy compounds over a season, a cricket game with an adaptive opponent, a private card room, and now a local-first development environment.
 
-Most of what I ship is interactive — simulations, games, tools people can click — because feedback is immediate and honest. No tests pass like a friend picking it up and figuring it out.
+The common thread is **systems with feedback**. A good game loop, a durable state model, useful local persistence, and an interface that makes the underlying rules feel legible all matter more to me than a static demo.
 
-You can't fake a simulation. If the physics are wrong, people notice in the first three seconds.
+> **Build it. Click it. Break it. Make the next iteration better.**
 
-And I like that.
+## Current focus
 
----
+<img src="assets/profile/section-current-focus.svg" width="100%" alt="Current focus — local-first tools, interactive simulations, social browser experiences, and data storytelling">
 
-<div align="center">
+| | Building | What it means in practice |
+|:--|:--|:--|
+| ⚡ | **Local-first tools** | Browser software that keeps work on the device and remains useful without a backend. |
+| 🎮 | **Interactive simulations** | Game loops, state machines, strategy, progression, and systems players can actually feel. |
+| 🌐 | **Social browser experiences** | Private rooms and peer-to-peer play built around WebRTC / PeerJS rather than accounts. |
+| 📊 | **Data with a point of view** | Turning messy inputs, telemetry, and chat data into clear, useful stories. |
 
-```
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-  THE STACK — what's installed
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-```
+## Selected builds
 
-</div>
+<img src="assets/profile/section-selected-builds.svg" width="100%" alt="Selected builds — Volt, Velocity, Computer Cricket, and Velvet Stack">
 
-> **`[01]`** Simulations & game systems → Canvas · ES6 · game loops
->
-> **`[02]`** Real-time multiplayer → WebRTC · PeerJS · host-authority · 12 players, 0 servers
->
-> **`[03]`** Game AI → Minimax · Alpha-Beta · quantum state resolution
->
-> **`[04]`** Resilient systems → Proto DataStore · checkpoint/recover
->
-> **`[05]`** Data as story → NumPy · Pandas · Seaborn
->
-> **`[06]`** Motorsport engineering → telemetry · lap data · race strategy
->
-> **`[07]`** Polished tools → things people actually want to play with
-
-I enjoy building things where someone's face changes when they see it work. A kid playing hand cricket against an AI, losing three times before they figure out the pattern. A friend joining a 12-player lobby, realizing the physics feel right.
-
-That's the metric. Not installs, not stars — the moment it clicks.
-
----
-
-<div align="center">
-
-<sub>TELEMETRY</sub>
-
-<img src="assets/mission-control.svg" width="100%" alt="Mission control — live commit frequency, language split, and repository health">
-
-</div>
-
-<sub>Six repos in eight months. Regenerates every six hours — not manually updated, not estimated.</sub>
-
----
-
-The data confirms what the code already knows. Here is how the system is designed, and what it learned.
-
-<div align="center">
-
-<sub>BLUEPRINTS</sub>
-
-<img src="assets/widgets/architecture.svg" width="100%" alt="Velocity architecture — two data packets orbiting a closed system loop">
-</div>
-
-F1 is already a feedback loop: lap, data, adjustment, next lap. The telemetry aesthetic — timing panels, live tickers, data packets orbiting a closed system — is the accurate visual language for what the code does. Two packets orbit this loop every 4.4 seconds. If any link breaks, they stop. **The animation runs only if every connection is intact.**
-
-Think of it as a heartbeat monitor for the architecture. Flatline means something broke.
-
-<div align="center">
-<img src="assets/widgets/principles.svg" width="100%" alt="Engineering principles — five rules that survived four rewrites, revealed one by one">
-</div>
-
-These aren't aspirational. They're what survived four complete rewrites — each thrown away, each necessary. Not from reading about engineering. From shipping something, watching it break, building it differently. "Cowboy Coding" is about pace, not sloppiness — you can't see the right architecture until you've built the wrong one twice.
-
----
-
-<div align="center">
-
-<img src="assets/field-notes.svg" width="100%" alt="Field notes — seven engineering lessons recovered from four complete builds">
-
-</div>
-
----
-
-<div align="center">
-
-```
-▸ FEATURED BUILDS — two simulations, zero installs, zero accounts
-```
-
-<br>
-
-<a href="https://github.com/GVaishanth/Velocity">
-<img src="assets/showcase-velocity.svg" width="100%" alt="Velocity — F1 Constructor Championship Simulator">
+### ⚡ [Volt — Local-First Development Operating Environment](https://gvaishanth.github.io/Volt/)
+<a href="https://gvaishanth.github.io/Volt/">
+  <picture>
+    <source srcset="assets/profile/card-volt.svg" type="image/svg+xml">
+    <img src="assets/profile/card-volt.png" width="100%" alt="Volt — local-first development environment">
+  </picture>
 </a>
 
-<br><br>
+**A desktop-like development workspace that runs entirely in the browser.** Volt is built around local storage and browser capabilities—not a cloud backend—with an OPFS / IndexedDB-backed virtual filesystem, a terminal, editor, file explorer, web preview and API client, SQLite workspace, local Git simulation, and task manager.
 
-<a href="https://github.com/GVaishanth/Computer-Cricket">
-<img src="assets/showcase-cricket.svg" width="100%" alt="Computer Cricket — Hand Cricket Club">
+[`Live workspace ↗`](https://gvaishanth.github.io/Volt/) · [`Source code`](https://github.com/GVaishanth/Volt) · `TypeScript` `WebAssembly` `Web Workers` `OPFS` `IndexedDB`
+
+### 🏁 [Velocity — Constructor Championship](https://gvaishanth.github.io/Velocity/)
+<a href="https://gvaishanth.github.io/Velocity/">
+  <picture>
+    <source srcset="assets/profile/card-velocity.svg" type="image/svg+xml">
+    <img src="assets/profile/card-velocity.png" width="100%" alt="Velocity — constructor championship simulator">
+  </picture>
 </a>
 
-<br><br>
+**Build. Race. Dominate.** An F1 constructor championship simulator focused on racing strategy, telemetry, tyre and weather decisions, historical scenarios, and broadcast-style race presentation. It is a simulation where the consequences of a decision carry forward rather than disappear after a lap.
 
-<details>
-<summary><b>Archive</b> — CRPapp · Quantum Tic-Tac-Toe · GroupDNA · Salary_Decoder</summary>
+[`Race now ↗`](https://gvaishanth.github.io/Velocity/) · [`Source code`](https://github.com/GVaishanth/Velocity) · `JavaScript` `Canvas` `Game systems`
 
-<br>
-
-<a href="https://github.com/GVaishanth/CRPapp">
-<img src="assets/showcase-crpapp.svg" width="100%" alt="CRPapp — Predictive Crash Resilience Framework">
+### 🏏 [Computer Cricket — Hand Cricket Club](https://gvaishanth.github.io/Computer-Cricket/game.html)
+<a href="https://gvaishanth.github.io/Computer-Cricket/game.html">
+  <picture>
+    <source srcset="assets/profile/card-cricket.svg" type="image/svg+xml">
+    <img src="assets/profile/card-cricket.png" width="100%" alt="Computer Cricket — hand cricket built for a crowd">
+  </picture>
 </a>
 
-<br><br>
+**Seven modes. One honest scoreboard.** A hand-cricket game with solo play against an adaptive CPU, persistent local profiles and career history, season mode, and private peer-to-peer leagues for up to 12 players. Modes range from classic hand cricket to short B10 sprints and two-innings Test matches.
 
-<a href="https://github.com/GVaishanth/Quantum-Tic-Tac-Toe">
-<img src="assets/showcase-quantum.svg" width="100%" alt="Quantum Tic-Tac-Toe — Quantum State Resolution">
+[`Play the Nets ↗`](https://gvaishanth.github.io/Computer-Cricket/game.html) · [`Source code`](https://github.com/GVaishanth/Computer-Cricket) · `HTML` `CSS` `JavaScript` `PeerJS` `WebRTC`
+
+### ♠️ [Velvet Stack — The Social Card Room](https://gvaishanth.github.io/VelvetStack/)
+<a href="https://gvaishanth.github.io/VelvetStack/">
+  <picture>
+    <source srcset="assets/profile/card-velvet.svg" type="image/svg+xml">
+    <img src="assets/profile/card-velvet.png" width="100%" alt="Velvet Stack — a social card room for every game">
+  </picture>
 </a>
 
-<br><br>
+**One table. Every game.** A browser-native card-game collection with Texas Hold’em, Rummy, and UNO. Play solo against bots, share a device for local play, or open a private online room for friends—without accounts or a traditional backend.
 
-<a href="https://github.com/GVaishanth/GroupDNA">
-<img src="assets/showcase-groupdna.svg" width="100%" alt="GroupDNA — WhatsApp Chat Analyzer">
-</a>
+[`Choose a table ↗`](https://gvaishanth.github.io/VelvetStack/) · [`Source code`](https://github.com/GVaishanth/VelvetStack) · `JavaScript` `PeerJS` `WebRTC` `GitHub Pages`
 
-<br><br>
+---
 
-<a href="https://github.com/GVaishanth/Salary_Decoder">
-<img src="assets/showcase-salary.svg" width="100%" alt="Salary_Decoder — Bangalore Tech Salary Decoder">
-</a>
+## Engineering notes
 
-<br>
+<img src="assets/profile/section-engineering-notes.svg" width="100%" alt="Engineering notes — input, model, feedback, iteration">
 
-</details>
+```text
+INPUT → MODEL → FEEDBACK → ITERATION
+```
 
+- **The interface is part of the system.** A rules-heavy game or tool only works when someone can understand its state at a glance.
+- **Local-first is a product decision.** Keeping profiles, workspaces, saves, and progress in the browser makes a project immediate to try and resilient by default.
+- **Multiplayer needs clear authority.** Private peer-to-peer rooms are most dependable when one host owns the room state and every action is explicit.
+- **Polish exposes flaws early.** Animations, timing panels, and real user input reveal state and logic bugs that a happy-path demo hides.
+
+## More from the workshop
+
+<img src="assets/profile/section-workshop.svg" width="100%" alt="More from the workshop — experiments, data projects, and earlier builds">
+
+| Project | Area | Repository |
+|:--|:--|:--|
+| **Re-OS** | Browser desktop / operating-system experiments | [Explore →](https://github.com/GVaishanth/Re-OS) |
+| **Squad Timetable** | Collaborative timetable tooling | [Explore →](https://github.com/GVaishanth/Squad_Timetable) |
+| **CRPapp** | Predictive crash-resilience framework for Android | [Explore →](https://github.com/GVaishanth/CRPapp) |
+| **Quantum Tic-Tac-Toe** | Quantum-state twist on a classic game | [Explore →](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe) |
+| **RedFlag Fraud Detection** | Fraud-detection exploration | [Explore →](https://github.com/GVaishanth/RedFlag-Fraud-Detection) |
+| **SpendDNA · GroupDNA · Salary Decoder** | Data exploration and visual storytelling | [SpendDNA](https://github.com/GVaishanth/SpendDNA) · [GroupDNA](https://github.com/GVaishanth/GroupDNA) · [Salary Decoder](https://github.com/GVaishanth/Salary_Decoder) |
+
+## Now shipping
+
+<div align="center">
+  <picture>
+    <source srcset="assets/profile/current-build.svg" type="image/svg+xml">
+    <img src="assets/profile/current-build.png" width="100%" alt="Current build, refreshed from public GitHub repository activity">
+  </picture>
+  <br>
+  <sub>Project activity, current build, and featured-card metadata refresh from public GitHub data every six hours.</sub>
 </div>
 
 ---
 
 <div align="center">
 
-```
-·  ·  ·  ·  →  →  →  →  →  →  →  →  →  →  →  →  →  ·  ·  ·  ·
-H O R I Z O N
-exploring, not promising
-```
+**[GitHub](https://github.com/GVaishanth)** · **[Volt](https://gvaishanth.github.io/Volt/)** · **[Velocity](https://gvaishanth.github.io/Velocity/)** · **[Computer Cricket](https://gvaishanth.github.io/Computer-Cricket/game.html)** · **[Velvet Stack](https://gvaishanth.github.io/VelvetStack/)**
 
-</div>
+<sub>Building in the open · from systems that race to tools that stay local</sub>
 
-> **Simulations, tighter** — the physics are good enough that you notice when something is slightly wrong. I want to get to the point where you notice when something is exactly right.
-
-> **Multiplayer, larger** — the lobby, spectate, and reconnect infrastructure from Cricket works for 12 players. It doesn't know it's a cricket game. It wants a second use.
-
-> **Deeper motorsport sim** — a full constructor season where tyre temperature changes the fastest lap and the fastest lap changes the championship. One number cascading into everything.
-
-> **Better AI opponents** — a racing AI that doesn't follow a fixed line but learns one. Lap by lap. Getting faster in a way you can actually feel.
-
-> **Data storytelling** — the kind of output someone doesn't explain, they just show their phone. Take a messy export, return something worth a screenshot.
-
-<div align="center">
-
-<br>
-
-<img src="assets/widgets/ticker.svg" width="100%" alt="Project ticker — all active repositories">
-
-<br><br>
-
-> *Championships are engineered.*
-> <br><sub>— Velocity</sub>
-
-<br>
-
-<a href="https://github.com/GVaishanth">github.com/GVaishanth</a>
-
-<br><br>
-<sub>Simulations · AI · Android — building in the open</sub>
-<br><br>
-<sub><a href="#top">↑ top</a></sub>
-<br>
-
+[↑ top](#top)
 </div>

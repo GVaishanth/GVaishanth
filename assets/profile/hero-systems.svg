@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img">
+  <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d0a"/><stop offset=".52" stop-color="#111812"/><stop offset="1" stop-color="#070908"/></linearGradient>
+      <radialGradient id="halo" cx="78%" cy="44%" r="62%"><stop stop-color="#79e95d" stop-opacity=".19"/><stop offset=".48" stop-color="#1e632a" stop-opacity=".07"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9ffaf"/><stop offset=".45" stop-color="#79e95d"/><stop offset="1" stop-color="#2a8537"/></linearGradient>
+      <linearGradient id="race" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f2b51d"/><stop offset=".48" stop-color="#e53c3c"/><stop offset="1" stop-color="#79e95d"/></linearGradient>
+      <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000" flood-opacity=".65"/></filter>
+      <pattern id="grain" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#d7ead7" opacity=".05"/><circle cx="7" cy="4" r=".5" fill="#d7ead7" opacity=".035"/></pattern>
+      </defs>
+  <rect width="1600" height="620" rx="30" fill="url(#bg)"/><rect width="1600" height="620" rx="30" fill="url(#grain)"/><rect width="1600" height="620" rx="30" fill="url(#halo)"/>
+      <path d="M0 497 C240 337 422 612 694 438 S1160 262 1640 424" fill="none" stroke="url(#race)" stroke-opacity=".44" stroke-width="2"/>
+      <path d="M0 509 C240 349 422 624 694 450 S1160 274 1640 436" fill="none" stroke="#d7efd6" stroke-opacity=".13"/>
+      <g transform="translate(84 82)"><rect width="247" height="38" rx="19" fill="#79e95d" fill-opacity=".1" stroke="#79e95d" stroke-opacity=".55"/><circle cx="23" cy="19" r="5" fill="#79e95d" filter="url(#glow)"/><text x="42" y="24" fill="#baffad" font-family="DejaVu Sans Mono" font-size="13" letter-spacing="1.5">PROFILE / SYSTEM ONLINE</text></g>
+      <text x="85" y="238" fill="#f2f6ef" font-family="DejaVu Sans" font-size="66" font-weight="700">G. Vaishanth</text>
+      <text x="89" y="293" fill="#b1c0b4" font-family="DejaVu Sans" font-size="25">Building systems that race, play, and stay local.</text>
+      <text x="89" y="354" fill="#8cf579" font-family="DejaVu Sans Mono" font-size="16" letter-spacing="2">SIMULATE  ·  CONNECT  ·  ITERATE</text>
+      <g transform="translate(89 414)"><rect width="154" height="45" rx="9" fill="#17311c" stroke="#79e95d" stroke-opacity=".5"/><text x="77" y="29" text-anchor="middle" fill="#d8ffd2" font-family="DejaVu Sans Mono" font-size="13">LOCAL-FIRST</text>
+        <rect x="169" width="143" height="45" rx="9" fill="#311f12" stroke="#f2b51d" stroke-opacity=".55"/><text x="241" y="29" text-anchor="middle" fill="#ffe5a3" font-family="DejaVu Sans Mono" font-size="13">SIMULATIONS</text>
+        <rect x="327" width="129" height="45" rx="9" fill="#361417" stroke="#e53c3c" stroke-opacity=".55"/><text x="391" y="29" text-anchor="middle" fill="#ffb8b8" font-family="DejaVu Sans Mono" font-size="13">WEB GAMES</text></g>
+      <text x="90" y="541" fill="#647568" font-family="DejaVu Sans Mono" font-size="12" letter-spacing="1.2">CURRENT BUILD / VOLT</text>
+      <g>
+      <circle cx="1280" cy="293" r="168.84" fill="#050705" stroke="#304334" stroke-opacity=".48"/>
+      <!-- Deliberately angular ring segments echo the avatar's red / amber / green track. -->
+      <g fill="#f2b51d"><rect x="1111.16" y="215.28" width="16.080000000000002" height="93.80000000000001" rx="6.7"/><rect x="1129.92" y="180.44" width="49.580000000000005" height="16.080000000000002" rx="6.7"/></g>
+      <g fill="#e53c3c"><rect x="1207.64" y="132.2" width="101.84" height="16.080000000000002" rx="6.7"/><rect x="1312.16" y="148.28" width="57.620000000000005" height="16.080000000000002" rx="6.7"/></g>
+      <g fill="#79e95d"><rect x="1419.3600000000001" y="306.4" width="16.080000000000002" height="73.7" rx="6.7"/><rect x="1347.0" y="416.28" width="75.04" height="16.080000000000002" rx="6.7"/></g>
+      <circle cx="1371.12" cy="188.48" r="13.4" fill="#eff2e8" stroke="#a5aa9c" stroke-width="1.34"/>
+      <path d="M1360.4 183.12q10.72 -12.06 21.44 0M1359.06 192.5q12.06 9.38 24.12 0" fill="none" stroke="#bdc1b6" stroke-width="1.34"/>
+      <g opacity="1" filter="url(#shadow)">
+      <path d="M1196.92 270.97040000000004 L1215.68 260.84000000000003 L1234.44 270.97040000000004 L1215.68 281.10080000000005" fill="#b9ff9f"/>
+      <path d="M1196.92 270.97040000000004 L1215.68 281.10080000000005 L1215.68 298.36 L1196.92 288.2296" fill="#3d983f"/>
+      <path d="M1215.68 281.10080000000005 L1234.44 270.97040000000004 L1234.44 288.2296 L1215.68 298.36" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1238.46 236.1304 L1257.22 226.0 L1275.98 236.1304 L1257.22 246.26080000000002" fill="#b9ff9f"/>
+      <path d="M1238.46 236.1304 L1257.22 246.26080000000002 L1257.22 263.52 L1238.46 253.38959999999997" fill="#3d983f"/>
+      <path d="M1257.22 246.26080000000002 L1275.98 236.1304 L1275.98 253.38959999999997 L1257.22 263.52" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1280.0 270.97040000000004 L1298.76 260.84000000000003 L1317.52 270.97040000000004 L1298.76 281.10080000000005" fill="#b9ff9f"/>
+      <path d="M1280.0 270.97040000000004 L1298.76 281.10080000000005 L1298.76 298.36 L1280.0 288.2296" fill="#3d983f"/>
+      <path d="M1298.76 281.10080000000005 L1317.52 270.97040000000004 L1317.52 288.2296 L1298.76 298.36" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1196.92 305.8104 L1215.68 295.68 L1234.44 305.8104 L1215.68 315.9408" fill="#b9ff9f"/>
+      <path d="M1196.92 305.8104 L1215.68 315.9408 L1215.68 333.2 L1196.92 323.0696" fill="#3d983f"/>
+      <path d="M1215.68 315.9408 L1234.44 305.8104 L1234.44 323.0696 L1215.68 333.2" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1238.46 305.8104 L1257.22 295.68 L1275.98 305.8104 L1257.22 315.9408" fill="#b9ff9f"/>
+      <path d="M1238.46 305.8104 L1257.22 315.9408 L1257.22 333.2 L1238.46 323.0696" fill="#3d983f"/>
+      <path d="M1257.22 315.9408 L1275.98 305.8104 L1275.98 323.0696 L1257.22 333.2" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1280.0 305.8104 L1298.76 295.68 L1317.52 305.8104 L1298.76 315.9408" fill="#b9ff9f"/>
+      <path d="M1280.0 305.8104 L1298.76 315.9408 L1298.76 333.2 L1280.0 323.0696" fill="#3d983f"/>
+      <path d="M1298.76 315.9408 L1317.52 305.8104 L1317.52 323.0696 L1298.76 333.2" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1321.54 305.8104 L1340.3 295.68 L1359.06 305.8104 L1340.3 315.9408" fill="#b9ff9f"/>
+      <path d="M1321.54 305.8104 L1340.3 315.9408 L1340.3 333.2 L1321.54 323.0696" fill="#3d983f"/>
+      <path d="M1340.3 315.9408 L1359.06 305.8104 L1359.06 323.0696 L1340.3 333.2" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1196.92 340.6504 L1215.68 330.52 L1234.44 340.6504 L1215.68 350.7808" fill="#b9ff9f"/>
+      <path d="M1196.92 340.6504 L1215.68 350.7808 L1215.68 368.03999999999996 L1196.92 357.90959999999995" fill="#3d983f"/>
+      <path d="M1215.68 350.7808 L1234.44 340.6504 L1234.44 357.90959999999995 L1215.68 368.03999999999996" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1238.46 340.6504 L1257.22 330.52 L1275.98 340.6504 L1257.22 350.7808" fill="#b9ff9f"/>
+      <path d="M1238.46 340.6504 L1257.22 350.7808 L1257.22 368.03999999999996 L1238.46 357.90959999999995" fill="#3d983f"/>
+      <path d="M1257.22 350.7808 L1275.98 340.6504 L1275.98 357.90959999999995 L1257.22 368.03999999999996" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1321.54 340.6504 L1340.3 330.52 L1359.06 340.6504 L1340.3 350.7808" fill="#b9ff9f"/>
+      <path d="M1321.54 340.6504 L1340.3 350.7808 L1340.3 368.03999999999996 L1321.54 357.90959999999995" fill="#3d983f"/>
+      <path d="M1340.3 350.7808 L1359.06 340.6504 L1359.06 357.90959999999995 L1340.3 368.03999999999996" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1363.08 340.6504 L1381.84 330.52 L1400.6 340.6504 L1381.84 350.7808" fill="#b9ff9f"/>
+      <path d="M1363.08 340.6504 L1381.84 350.7808 L1381.84 368.03999999999996 L1363.08 357.90959999999995" fill="#3d983f"/>
+      <path d="M1381.84 350.7808 L1400.6 340.6504 L1400.6 357.90959999999995 L1381.84 368.03999999999996" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1196.92 375.4904 L1215.68 365.36 L1234.44 375.4904 L1215.68 385.62080000000003" fill="#b9ff9f"/>
+      <path d="M1196.92 375.4904 L1215.68 385.62080000000003 L1215.68 402.88 L1196.92 392.7496" fill="#3d983f"/>
+      <path d="M1215.68 385.62080000000003 L1234.44 375.4904 L1234.44 392.7496 L1215.68 402.88" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1238.46 375.4904 L1257.22 365.36 L1275.98 375.4904 L1257.22 385.62080000000003" fill="#b9ff9f"/>
+      <path d="M1238.46 375.4904 L1257.22 385.62080000000003 L1257.22 402.88 L1238.46 392.7496" fill="#3d983f"/>
+      <path d="M1257.22 385.62080000000003 L1275.98 375.4904 L1275.98 392.7496 L1257.22 402.88" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1280.0 375.4904 L1298.76 365.36 L1317.52 375.4904 L1298.76 385.62080000000003" fill="#b9ff9f"/>
+      <path d="M1280.0 375.4904 L1298.76 385.62080000000003 L1298.76 402.88 L1280.0 392.7496" fill="#3d983f"/>
+      <path d="M1298.76 385.62080000000003 L1317.52 375.4904 L1317.52 392.7496 L1298.76 402.88" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1321.54 375.4904 L1340.3 365.36 L1359.06 375.4904 L1340.3 385.62080000000003" fill="#b9ff9f"/>
+      <path d="M1321.54 375.4904 L1340.3 385.62080000000003 L1340.3 402.88 L1321.54 392.7496" fill="#3d983f"/>
+      <path d="M1340.3 385.62080000000003 L1359.06 375.4904 L1359.06 392.7496 L1340.3 402.88" fill="#1b5428"/>
+    </g><g opacity="1" filter="url(#shadow)">
+      <path d="M1363.08 375.4904 L1381.84 365.36 L1400.6 375.4904 L1381.84 385.62080000000003" fill="#b9ff9f"/>
+      <path d="M1363.08 375.4904 L1381.84 385.62080000000003 L1381.84 402.88 L1363.08 392.7496" fill="#3d983f"/>
+      <path d="M1381.84 385.62080000000003 L1400.6 375.4904 L1400.6 392.7496 L1381.84 402.88" fill="#1b5428"/>
+    </g><path d="M1147.3 405.6v34.8" stroke="#79e95d" stroke-opacity="0.16"/><text x="1144.3" y="423.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1144.3" y="438.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1144.3" y="453.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1144.3" y="468.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1170.8 412.6v46.0" stroke="#79e95d" stroke-opacity="0.25"/><text x="1167.8" y="430.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1167.8" y="445.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1167.8" y="460.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1167.8" y="475.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1167.8" y="490.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1194.2 419.6v57.2" stroke="#79e95d" stroke-opacity="0.34"/><text x="1191.2" y="437.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1191.2" y="452.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1191.2" y="467.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1191.2" y="482.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1191.2" y="497.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1191.2" y="512.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1217.6 426.6v68.3" stroke="#79e95d" stroke-opacity="0.43"/><text x="1214.6" y="444.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1214.6" y="459.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1214.6" y="474.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1214.6" y="489.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1214.6" y="504.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1214.6" y="519.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1214.6" y="534.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1241.1 405.6v79.5" stroke="#79e95d" stroke-opacity="0.16"/><text x="1238.1" y="423.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1238.1" y="438.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1238.1" y="453.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1238.1" y="468.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1264.5 412.6v90.7" stroke="#79e95d" stroke-opacity="0.25"/><text x="1261.5" y="430.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1261.5" y="445.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1261.5" y="460.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1261.5" y="475.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1261.5" y="490.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1288.0 419.6v34.8" stroke="#79e95d" stroke-opacity="0.34"/><text x="1285.0" y="437.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1285.0" y="452.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1285.0" y="467.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1285.0" y="482.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1285.0" y="497.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1285.0" y="512.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1311.5 426.6v46.0" stroke="#79e95d" stroke-opacity="0.43"/><text x="1308.5" y="444.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1308.5" y="459.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1308.5" y="474.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1308.5" y="489.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1308.5" y="504.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1308.5" y="519.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1308.5" y="534.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1334.9 405.6v57.2" stroke="#79e95d" stroke-opacity="0.16"/><text x="1331.9" y="423.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1331.9" y="438.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1331.9" y="453.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1331.9" y="468.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1358.3 412.6v68.3" stroke="#79e95d" stroke-opacity="0.25"/><text x="1355.3" y="430.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1355.3" y="445.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1355.3" y="460.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1355.3" y="475.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1355.3" y="490.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1381.8 419.6v79.5" stroke="#79e95d" stroke-opacity="0.34"/><text x="1378.8" y="437.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1378.8" y="452.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1378.8" y="467.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1378.8" y="482.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1378.8" y="497.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1378.8" y="512.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">1</text><path d="M1405.2 426.6v90.7" stroke="#79e95d" stroke-opacity="0.43"/><text x="1402.2" y="444.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1402.2" y="459.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1402.2" y="474.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1402.2" y="489.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1402.2" y="504.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text><text x="1402.2" y="519.6" fill="#79e95d" fill-opacity="0.44" font-family="DejaVu Sans Mono" font-size="8">0</text><text x="1402.2" y="534.6" fill="#79e95d" fill-opacity="0.28" font-family="DejaVu Sans Mono" font-size="8">1</text>
+    </g>
+      <text x="1280" y="561" text-anchor="middle" fill="#aab8ab" font-family="DejaVu Sans Mono" font-size="12" letter-spacing="2">VOXEL / MOTION / CODE</text>
+</svg>
