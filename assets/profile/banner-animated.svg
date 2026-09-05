@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="G. VAISHANTH — Local-first web apps · Interactive front-ends · Mobile tools">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .rm{display:none}
+      .bar{transform-origin:83px 92px;animation:barIn .8s ease-out both}
+      @keyframes barIn{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+      .fadeUp{opacity:0;animation:fadeUp .7s ease-out .1s forwards}
+      @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+      .dot{animation:dot 1.6s ease-in-out infinite}
+      @keyframes dot{0%,100%{opacity:.35}50%{opacity:1}}
+      .sheen{animation:sheen 14s linear infinite}
+      @keyframes sheen{from{transform:translateX(0)}to{transform:translateX(1540px)}}
+      @media (prefers-reduced-motion:reduce){
+        *{animation:none!important}
+        .anim{display:none}
+        .rm{display:block}
+        .fadeUp{opacity:1}
+      }
+    </style>
+  </defs>
+
+  <rect width="1280" height="360" fill="#0d1117"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+  <rect class="sheen" x="-260" y="0" width="260" height="360" fill="url(#sheen)"/>
+
+  <!-- status -->
+  <text x="1200" y="62" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">building in public</text>
+  <circle class="dot" cx="1015" cy="56" r="6" fill="#3fb950"/>
+
+  <!-- accent bar + identity -->
+  <rect class="bar" x="80" y="92" width="6" height="140" fill="#3fb950"/>
+  <g class="fadeUp">
+    <text x="116" y="146" fill="#e6edf3" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="2">G. VAISHANTH</text>
+    <text x="118" y="196" fill="#8b949e" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24">Local-first web apps · Interactive front-ends · Mobile tools</text>
+  </g>
+
+  <!-- animated typing rotation (one group per concept, staggered) -->
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="0s" repeatCount="indefinite"/>
+    <clipPath id="c0">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;320;336;352;368;384;400;416;432;448;464;480;496;511" keyTimes="0.0000;0.0016;0.0031;0.0047;0.0063;0.0078;0.0094;0.0109;0.0125;0.0141;0.0156;0.0172;0.0188;0.0203;0.0219;0.0234;0.0250;0.0266;0.0281;0.0297;0.0312;0.0328;0.0344;0.0359;0.0375;0.0391;0.0406;0.0422;0.0438;0.0453;0.0469;0.0484;1"
+                 calcMode="discrete" dur="36s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c0)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ local-first development tools</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;422;438;454;470;486;502;518;534;550;566;582;598;614;629" keyTimes="0.0000;0.0016;0.0031;0.0047;0.0063;0.0078;0.0094;0.0109;0.0125;0.0141;0.0156;0.0172;0.0188;0.0203;0.0219;0.0234;0.0250;0.0266;0.0281;0.0297;0.0312;0.0328;0.0344;0.0359;0.0375;0.0391;0.0406;0.0422;0.0438;0.0453;0.0469;0.0484;1"
+               calcMode="discrete" dur="36s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="-6s" repeatCount="indefinite"/>
+    <clipPath id="c1">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;320;336;352;368;384;400;416;431" keyTimes="0.0000;0.0019;0.0037;0.0056;0.0074;0.0093;0.0111;0.0130;0.0148;0.0167;0.0185;0.0204;0.0222;0.0241;0.0259;0.0278;0.0296;0.0315;0.0333;0.0352;0.0370;0.0389;0.0407;0.0426;0.0444;0.0463;0.0481;1"
+                 calcMode="discrete" dur="36s" begin="-6s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c1)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ peer-to-peer multiplayer</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;422;438;454;470;486;502;518;534;549" keyTimes="0.0000;0.0019;0.0037;0.0056;0.0074;0.0093;0.0111;0.0130;0.0148;0.0167;0.0185;0.0204;0.0222;0.0241;0.0259;0.0278;0.0296;0.0315;0.0333;0.0352;0.0370;0.0389;0.0407;0.0426;0.0444;0.0463;0.0481;1"
+               calcMode="discrete" dur="36s" begin="-6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="-12s" repeatCount="indefinite"/>
+    <clipPath id="c2">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;320;336;352;368;384;400;416;432;448;463" keyTimes="0.0000;0.0017;0.0034;0.0052;0.0069;0.0086;0.0103;0.0121;0.0138;0.0155;0.0172;0.0190;0.0207;0.0224;0.0241;0.0259;0.0276;0.0293;0.0310;0.0328;0.0345;0.0362;0.0379;0.0397;0.0414;0.0431;0.0448;0.0466;0.0483;1"
+                 calcMode="discrete" dur="36s" begin="-12s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c2)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ systems-driven game design</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;422;438;454;470;486;502;518;534;550;566;581" keyTimes="0.0000;0.0017;0.0034;0.0052;0.0069;0.0086;0.0103;0.0121;0.0138;0.0155;0.0172;0.0190;0.0207;0.0224;0.0241;0.0259;0.0276;0.0293;0.0310;0.0328;0.0345;0.0362;0.0379;0.0397;0.0414;0.0431;0.0448;0.0466;0.0483;1"
+               calcMode="discrete" dur="36s" begin="-12s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="-18s" repeatCount="indefinite"/>
+    <clipPath id="c3">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;303" keyTimes="0.0000;0.0026;0.0053;0.0079;0.0105;0.0132;0.0158;0.0184;0.0211;0.0237;0.0263;0.0289;0.0316;0.0342;0.0368;0.0395;0.0421;0.0447;0.0474;1"
+                 calcMode="discrete" dur="36s" begin="-18s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c3)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ adaptive game ai</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;421" keyTimes="0.0000;0.0026;0.0053;0.0079;0.0105;0.0132;0.0158;0.0184;0.0211;0.0237;0.0263;0.0289;0.0316;0.0342;0.0368;0.0395;0.0421;0.0447;0.0474;1"
+               calcMode="discrete" dur="36s" begin="-18s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="-24s" repeatCount="indefinite"/>
+    <clipPath id="c4">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;320;336;352;368;384;400;416;432;448;464;480;495" keyTimes="0.0000;0.0016;0.0032;0.0048;0.0065;0.0081;0.0097;0.0113;0.0129;0.0145;0.0161;0.0177;0.0194;0.0210;0.0226;0.0242;0.0258;0.0274;0.0290;0.0306;0.0323;0.0339;0.0355;0.0371;0.0387;0.0403;0.0419;0.0435;0.0452;0.0468;0.0484;1"
+                 calcMode="discrete" dur="36s" begin="-24s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c4)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ resilient mobile engineering</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;422;438;454;470;486;502;518;534;550;566;582;598;613" keyTimes="0.0000;0.0016;0.0032;0.0048;0.0065;0.0081;0.0097;0.0113;0.0129;0.0145;0.0161;0.0177;0.0194;0.0210;0.0226;0.0242;0.0258;0.0274;0.0290;0.0306;0.0323;0.0339;0.0355;0.0371;0.0387;0.0403;0.0419;0.0435;0.0452;0.0468;0.0484;1"
+               calcMode="discrete" dur="36s" begin="-24s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g class="anim">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;0.1667" calcMode="discrete" dur="36s" begin="-30s" repeatCount="indefinite"/>
+    <clipPath id="c5">
+      <rect x="118" y="226" width="0" height="44">
+        <animate attributeName="width" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;319" keyTimes="0.0000;0.0025;0.0050;0.0075;0.0100;0.0125;0.0150;0.0175;0.0200;0.0225;0.0250;0.0275;0.0300;0.0325;0.0350;0.0375;0.0400;0.0425;0.0450;0.0475;1"
+                 calcMode="discrete" dur="36s" begin="-30s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <text x="118" y="256" clip-path="url(#c5)" fill="#7ee787"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ data storytelling</text>
+    <rect x="118" y="230" width="11" height="30" fill="#3fb950">
+      <animate attributeName="x" values="118;134;150;166;182;198;214;230;246;262;278;294;310;326;342;358;374;390;406;422;437" keyTimes="0.0000;0.0025;0.0050;0.0075;0.0100;0.0125;0.0150;0.0175;0.0200;0.0225;0.0250;0.0275;0.0300;0.0325;0.0350;0.0375;0.0400;0.0425;0.0450;0.0475;1"
+               calcMode="discrete" dur="36s" begin="-30s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- static fallback for prefers-reduced-motion -->
+  <g class="rm">
+    <text x="118" y="256" fill="#7ee787" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26">$ local-first development tools</text>
+  </g>
+</svg>

@@ -1,124 +1,108 @@
 <div align="center">
   <a id="top"></a>
-  <img src="assets/profile/hero-systems.png" width="100%" alt="G. Vaishanth — interactive systems, simulations, and browser-native tools">
-
-  <br>
-
-  <img src="assets/profile/current-build.png" width="100%" alt="Current build, refreshed from public GitHub repository activity">
-
-  <br>
-
-  <p><b>I build browser-native systems with feedback.</b><br>
-  <sub>From an OPFS-backed development operating environment to real-time WebRTC card rooms, my work focuses on legible state models, local-first resilience, and interactive loops.</sub></p>
+  <!-- Self-contained animated SVG — CSS + SMIL only, zero JS, zero external
+       assets (a hard GitHub/camo requirement). Static fallback if ever
+       needed: assets/profile/hero-systems.png (already in this repo) -->
+  <img src="assets/profile/banner-animated.svg" width="100%" alt="G. Vaishanth — software developer: local-first web apps, interactive front-ends, mobile tools">
 </div>
+
+Software developer building **local-first web applications**, **interactive front-ends**, and **mobile tools**.
+
+I like systems whose state you can see — development environments you can open without an account, multiplayer games with clear rules of authority, and data you can actually interrogate.
+
+`TypeScript` · `JavaScript` · `Kotlin` · `Python` · WebRTC · OPFS / browser storage · Jupyter
 
 ---
 
-| | Engineering Focus | Architectural Practice |
+## Concept spotlight
+
+<!-- AUTO:SPOTLIGHT:START -->
+**Resilient mobile engineering** — **[CRPapp](https://github.com/GVaishanth/CRPapp)**
+
+A predictive crash-resilience framework for Android — my first Kotlin build.
+
+`Kotlin` · last push 27 Jun 2026
+
+<sub>Rotates daily across shipped work — updated by a scheduled GitHub Action.</sub>
+<!-- AUTO:SPOTLIGHT:END -->
+
+---
+
+## Flagship — Volt
+
+A local-first development environment that runs entirely in the browser. Workspaces persist in OPFS, so there is no account, no backend, and nothing between you and a running project.
+
+**[Launch the workspace ↗](https://gvaishanth.github.io/Volt/)** · [Source](https://github.com/GVaishanth/Volt) · `TypeScript`
+
+---
+
+## Front-end & multiplayer games
+
+| Project | What it is | Links |
 |:--|:--|:--|
-| ⚡ | **Local-first tools** | Browser software that keeps work on the device and remains useful without a backend. |
-| 🎮 | **Interactive simulations** | Game loops, state machines, strategy, progression, and systems players can actually feel. |
-| 🌐 | **Social browser experiences** | Private rooms and peer-to-peer play built around WebRTC / PeerJS rather than accounts. |
-| 📊 | **Data with a point of view** | Turning messy inputs, telemetry, and chat data into clear, useful stories. |
+| **Velocity** | F1 constructor-championship simulator — build a team, make strategy calls, and run a full season in the browser. | [Race ↗](https://gvaishanth.github.io/Velocity/) · [Source](https://github.com/GVaishanth/Velocity) |
+| **Velvet Stack** | Private, peer-to-peer multiplayer card rooms over WebRTC (PeerJS) — host-authoritative room state, no accounts. | [Open a table ↗](https://gvaishanth.github.io/VelvetStack/) · [Source](https://github.com/GVaishanth/VelvetStack) |
+| **Computer Cricket** | Hand cricket with an adaptive AI opponent and house-rule variants (Normal, Crazy, Insane, B10) — playable in the browser. | [Play ↗](https://gvaishanth.github.io/Computer-Cricket/game.html) · [Source](https://github.com/GVaishanth/Computer-Cricket) |
 
----
+## Mobile
 
-## 01 / Flagship System — Volt
-
-<a href="https://gvaishanth.github.io/Volt/">
-  <img src="assets/profile/card-volt.png" width="100%" alt="Volt — local-first development environment">
-</a>
-
-<div align="center">
-  <a href="https://gvaishanth.github.io/Volt/"><b>Launch Live Workspace ↗</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GVaishanth/Volt">Source Code</a>
-</div>
-
----
-
-## 02 / Interactive Suite — Velocity, Computer Cricket, Velvet Stack
-
-<a href="https://gvaishanth.github.io/Velocity/">
-  <img src="assets/profile/card-velocity.png" width="100%" alt="Velocity — constructor championship simulator">
-</a>
-
-<div align="center">
-  <a href="https://gvaishanth.github.io/Velocity/"><b>Race Control ↗</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GVaishanth/Velocity">Source Code</a>
-</div>
-
-<br>
-
-<a href="https://gvaishanth.github.io/Computer-Cricket/game.html">
-  <img src="assets/profile/card-cricket.png" width="100%" alt="Computer Cricket — hand cricket built for a crowd">
-</a>
-
-<div align="center">
-  <a href="https://gvaishanth.github.io/Computer-Cricket/game.html"><b>Play the Nets ↗</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GVaishanth/Computer-Cricket">Source Code</a>
-</div>
-
-<br>
-
-<a href="https://gvaishanth.github.io/VelvetStack/">
-  <img src="assets/profile/card-velvet.png" width="100%" alt="Velvet Stack — a social card room for every game">
-</a>
-
-<div align="center">
-  <a href="https://gvaishanth.github.io/VelvetStack/"><b>Choose a Table ↗</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GVaishanth/VelvetStack">Source Code</a>
-</div>
-
----
-
-## 03 / Systems Architecture & Engineering Rules
-
-<div align="left" style="padding: 16px 20px;">
-  <sub><b>ENGINEERING ARCHITECTURE SPECIFICATION</b></sub>
-  <br><br>
-  <code>INPUT → MODEL → FEEDBACK → ITERATION</code>
-  <br><br>
-  <p><b>The interface is part of the system.</b> A rules-heavy game or tool only works when someone can understand its state at a glance.</p>
-  <p><b>Local-first is a product decision.</b> Keeping profiles, workspaces, and progress in the browser makes a project immediate to try and resilient by default.</p>
-  <p><b>Multiplayer needs clear authority.</b> Private peer-to-peer rooms are most dependable when one host owns room state and every action is explicit.</p>
-</div>
-
----
-
-## 04 / The Open Source Lab & Archive
-
-<sub>Experimental operating systems, predictive resilience frameworks, and data storytelling · <b><a href="https://github.com/GVaishanth?tab=repositories">View all repositories →</a></b></sub>
-
-<br>
-
-| Project | Focus Area | Repository |
+| Project | What it is | Links |
 |:--|:--|:--|
-| **Re-OS** | Browser desktop / operating-system experiments | [Explore →](https://github.com/GVaishanth/Re-OS) |
-| **Squad Timetable** | Collaborative timetable tooling | [Explore →](https://github.com/GVaishanth/Squad_Timetable) |
-| **CRPapp** | Predictive crash-resilience framework for Android | [Explore →](https://github.com/GVaishanth/CRPapp) |
-| **Quantum Tic-Tac-Toe** | Quantum-state twist on a classic game | [Explore →](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe) |
-| **RedFlag Fraud Detection** | Fraud-detection exploration | [Explore →](https://github.com/GVaishanth/RedFlag-Fraud-Detection) |
-| **SpendDNA · GroupDNA · Salary Decoder** | Data exploration and visual storytelling | [SpendDNA](https://github.com/GVaishanth/SpendDNA) · [GroupDNA](https://github.com/GVaishanth/GroupDNA) · [Salary Decoder](https://github.com/GVaishanth/Salary_Decoder) |
+| **CRPapp** | My first Android app — a predictive crash-resilience framework, written in Kotlin. | [Source](https://github.com/GVaishanth/CRPapp) |
+
+## Data & analysis
+
+| Project | What it is | Repository |
+|:--|:--|:--|
+| **Social Engagement Analysis** | Python tooling for measuring engagement patterns across social platforms. *(actively in progress)* | [Explore →](https://github.com/GVaishanth/Social_Engagement_Analysis) |
+| **Salary Decoder** | Notebook that decodes compensation (CTC) structures into real take-home components. | [Explore →](https://github.com/GVaishanth/Salary_Decoder) |
+| **SpendDNA** | Exploratory analysis and visual storytelling over personal spending data. | [Explore →](https://github.com/GVaishanth/SpendDNA) |
+| **GroupDNA** | Group-chat analysis — participation, activity rhythms, and conversation dynamics. | [Explore →](https://github.com/GVaishanth/GroupDNA) |
+| **RedFlag — Fraud Detection** | Exploring red-flag heuristics and models for fraudulent-transaction detection. | [Explore →](https://github.com/GVaishanth/RedFlag-Fraud-Detection) |
+
+## Experiments
+
+- **[Re-OS](https://github.com/GVaishanth/Re-OS)** — experimental desktop environment that runs entirely in the browser.
+- **[Quantum Tic-Tac-Toe](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe)** — tic-tac-toe with superposition and entanglement rules.
+- **[Squad Timetable](https://github.com/GVaishanth/Squad_Timetable)** — collaborative timetable and scheduling tool.
 
 ---
 
-## 05 / Live GitHub Telemetry
+## Recently active
+
+<!-- AUTO:RECENT:START -->
+| Project | Focus | Last push |
+|:--|:--|:--|
+| **[Social_Engagement_Analysis](https://github.com/GVaishanth/Social_Engagement_Analysis)** | Project | 05 Sep 2026 |
+| **[Volt](https://github.com/GVaishanth/Volt)** ([demo ↗](https://gvaishanth.github.io/Volt/)) | A development environment that lives entirely in the browser | 01 Aug 2026 |
+| **[Squad_Timetable](https://github.com/GVaishanth/Squad_Timetable)** | Project | 30 Jul 2026 |
+| **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** ([demo ↗](https://gvaishanth.github.io/VelvetStack/)) | Private card rooms over WebRTC where one host owns the state and every action is an explicit message | 30 Jul 2026 |
+| **[Re-OS](https://github.com/GVaishanth/Re-OS)** | Project | 29 Jul 2026 |
+
+**Active over the last 90 days:** `Python` · `TypeScript` · `HTML` · `JavaScript` · `Jupyter Notebook` · `Kotlin`
+
+<sub>Refreshed daily from public GitHub activity · excludes automated commits to this profile repo.</sub>
+<!-- AUTO:RECENT:END -->
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=GVaishanth&bg_color=070a09&color=79e95d&line=79e95d&point=eef2e8&area=true&hide_border=true" width="100%" alt="Contribution Graph">
+  <img src="assets/profile/divider.svg" width="100%" height="12" alt="">
 </div>
+
+## How I build
+
+- **Local-first where possible.** Software you can try instantly and that keeps working without a backend.
+- **State you can read.** A championship table, a card room, a file system — the interface should make complex state legible at a glance.
+- **Explicit authority in multiplayer.** One host owns room state; every action is an explicit message.
+
+<img src="assets/profile/current-build.png" width="100%" alt="Currently active project, refreshed automatically from public GitHub activity">
+
+<sub>↑ This panel is regenerated by a scheduled GitHub Action from public repository activity — a small example of how I automate the boring parts.</sub>
 
 ---
 
-<div align="center">
+### Contact
 
-**[GitHub](https://github.com/GVaishanth)** · **[Volt](https://gvaishanth.github.io/Volt/)** · **[Velocity](https://gvaishanth.github.io/Velocity/)** · **[Computer Cricket](https://gvaishanth.github.io/Computer-Cricket/game.html)** · **[Velvet Stack](https://gvaishanth.github.io/VelvetStack/)**
+- GitHub — [@GVaishanth](https://github.com/GVaishanth)
+- <!-- Add your professional links here, e.g.: LinkedIn — https://linkedin.com/in/… · Email — …@… · Portfolio — https://… -->
 
-<sub>Building in the open · from systems that race to tools that stay local</sub>
-
-[↑ top](#top)
-</div>
+[↑ Back to top](#top)

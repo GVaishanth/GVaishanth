@@ -1,0 +1,62 @@
+name: profile-updater
+
+on:
+  schedule:
+    # Daily (UTC). The spotlight rotation is day-based, so anything more
+    # frequent only creates bot-commit noise.
+    - cron: "5 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-updater.yml"
+
+# Unique concurrency group — never share this with another workflow.
+# (The old setup shared one group between two workflows and they
+# cancelled each other mid-run.)
+concurrency:
+  group: profile-updater-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update README sections (spotlight + recently active)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_profile.py
+
+      - name: Refresh "currently building" HUD image
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_profile_art.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md assets/profile/current-build.png data/repos.json
+
+          if git diff --cached --quiet; then
+            echo "No changes — nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(profile): automated daily refresh [skip ci]"
+          git pull --rebase origin ${{ github.ref_name }} --autostash
+          git push
+          echo "Profile updates committed and pushed."
