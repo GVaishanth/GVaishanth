@@ -14,7 +14,7 @@ Fixes vs. previous version
    its fallback key "4" lexicographically outranked real ISO timestamps
    like "2026-08-01T..." and the HUD displayed the wrong active project.
 2. The composited PNG is now optimised on write (stripped metadata,
-   capped at 1600px wide) — the old pipeline shipped ~1.1 MB panels.
+   capped at 1600px wide) - the old pipeline shipped ~1.1 MB panels.
 3. Temp-file cleanup is guaranteed with try/finally.
 """
 from datetime import datetime, timezone
@@ -37,7 +37,7 @@ FEATURED = ("Volt", "Velocity", "Computer-Cricket", "VelvetStack")
 def github_snapshot():
     """Fetch featured-repository facts; remain usable offline or rate-limited."""
     fallback = {
-        # sort = 0.0 means "no data" — it can never outrank a real timestamp.
+        # sort = 0.0 means "no data" - it can never outrank a real timestamp.
         name: {"language": lang, "pushed": "LIVE", "sort": 0.0}
         for name, lang in (
             ("Volt", "TypeScript"),

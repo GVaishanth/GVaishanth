@@ -1,14 +1,14 @@
 <div align="center">
   <a id="top"></a>
-  <!-- Self-contained animated SVG — CSS + SMIL only, zero JS, zero external
+  <!-- Self-contained animated SVG. CSS + SMIL only, zero JS, zero external
        assets (a hard GitHub/camo requirement). Static fallback if ever
        needed: assets/profile/hero-systems.png (already in this repo) -->
-  <img src="assets/profile/banner-animated.svg" width="100%" alt="G. Vaishanth — software developer: local-first web apps, interactive front-ends, mobile tools">
+  <img src="assets/profile/banner-animated.svg" width="100%" alt="G. Vaishanth, software developer: local-first web apps, interactive front-ends, mobile tools">
 </div>
 
 Software developer building **local-first web applications**, **interactive front-ends**, and **mobile tools**.
 
-I like systems whose state you can see — development environments you can open without an account, multiplayer games with clear rules of authority, and data you can actually interrogate.
+I like systems whose state you can see. Development environments you can open without an account, multiplayer games with clear rules of authority, and data you can actually interrogate.
 
 `TypeScript` · `JavaScript` · `Kotlin` · `Python` · WebRTC · OPFS / browser storage · Jupyter
 
@@ -17,18 +17,18 @@ I like systems whose state you can see — development environments you can open
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Resilient mobile engineering** — **[CRPapp](https://github.com/GVaishanth/CRPapp)**
+**Resilient mobile engineering**: **[CRPapp](https://github.com/GVaishanth/CRPapp)**
 
-A predictive crash-resilience framework for Android — my first Kotlin build.
+A predictive crash-resilience framework for Android. My first Kotlin project.
 
 `Kotlin` · last push 27 Jun 2026
 
-<sub>Rotates daily across shipped work — updated by a scheduled GitHub Action.</sub>
+<sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
 
 ---
 
-## Flagship — Volt
+## Flagship: Volt
 
 A local-first development environment that runs entirely in the browser. Workspaces persist in OPFS, so there is no account, no backend, and nothing between you and a running project.
 
@@ -40,15 +40,15 @@ A local-first development environment that runs entirely in the browser. Workspa
 
 | Project | What it is | Links |
 |:--|:--|:--|
-| **Velocity** | F1 constructor-championship simulator — build a team, make strategy calls, and run a full season in the browser. | [Race ↗](https://gvaishanth.github.io/Velocity/) · [Source](https://github.com/GVaishanth/Velocity) |
-| **Velvet Stack** | Private, peer-to-peer multiplayer card rooms over WebRTC (PeerJS) — host-authoritative room state, no accounts. | [Open a table ↗](https://gvaishanth.github.io/VelvetStack/) · [Source](https://github.com/GVaishanth/VelvetStack) |
-| **Computer Cricket** | Hand cricket with an adaptive AI opponent and house-rule variants (Normal, Crazy, Insane, B10) — playable in the browser. | [Play ↗](https://gvaishanth.github.io/Computer-Cricket/game.html) · [Source](https://github.com/GVaishanth/Computer-Cricket) |
+| **Velocity** | F1 constructor-championship simulator. Build a team, make strategy calls, and run a full season in the browser. | [Race ↗](https://gvaishanth.github.io/Velocity/) · [Source](https://github.com/GVaishanth/Velocity) |
+| **Velvet Stack** | Private, peer-to-peer multiplayer card rooms over WebRTC (PeerJS). Host-authoritative room state, no accounts. | [Open a table ↗](https://gvaishanth.github.io/VelvetStack/) · [Source](https://github.com/GVaishanth/VelvetStack) |
+| **Computer Cricket** | Hand cricket with an adaptive AI opponent and house-rule variants (Normal, Crazy, Insane, B10), playable in the browser. | [Play ↗](https://gvaishanth.github.io/Computer-Cricket/game.html) · [Source](https://github.com/GVaishanth/Computer-Cricket) |
 
 ## Mobile
 
 | Project | What it is | Links |
 |:--|:--|:--|
-| **CRPapp** | My first Android app — a predictive crash-resilience framework, written in Kotlin. | [Source](https://github.com/GVaishanth/CRPapp) |
+| **CRPapp** | My first Android app: a predictive crash-resilience framework written in Kotlin. | [Source](https://github.com/GVaishanth/CRPapp) |
 
 ## Data & analysis
 
@@ -57,14 +57,14 @@ A local-first development environment that runs entirely in the browser. Workspa
 | **Social Engagement Analysis** | Python tooling for measuring engagement patterns across social platforms. *(actively in progress)* | [Explore →](https://github.com/GVaishanth/Social_Engagement_Analysis) |
 | **Salary Decoder** | Notebook that decodes compensation (CTC) structures into real take-home components. | [Explore →](https://github.com/GVaishanth/Salary_Decoder) |
 | **SpendDNA** | Exploratory analysis and visual storytelling over personal spending data. | [Explore →](https://github.com/GVaishanth/SpendDNA) |
-| **GroupDNA** | Group-chat analysis — participation, activity rhythms, and conversation dynamics. | [Explore →](https://github.com/GVaishanth/GroupDNA) |
-| **RedFlag — Fraud Detection** | Exploring red-flag heuristics and models for fraudulent-transaction detection. | [Explore →](https://github.com/GVaishanth/RedFlag-Fraud-Detection) |
+| **GroupDNA** | Group-chat analysis: participation, activity rhythms, and conversation dynamics. | [Explore →](https://github.com/GVaishanth/GroupDNA) |
+| **RedFlag: Fraud Detection** | Exploring red-flag heuristics and models for fraudulent-transaction detection. | [Explore →](https://github.com/GVaishanth/RedFlag-Fraud-Detection) |
 
 ## Experiments
 
-- **[Re-OS](https://github.com/GVaishanth/Re-OS)** — experimental desktop environment that runs entirely in the browser.
-- **[Quantum Tic-Tac-Toe](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe)** — tic-tac-toe with superposition and entanglement rules.
-- **[Squad Timetable](https://github.com/GVaishanth/Squad_Timetable)** — collaborative timetable and scheduling tool.
+- **[Re-OS](https://github.com/GVaishanth/Re-OS)**: experimental desktop environment that runs entirely in the browser.
+- **[Quantum Tic-Tac-Toe](https://github.com/GVaishanth/Quantum-Tic-Tac-Toe)**: tic-tac-toe with superposition and entanglement rules.
+- **[Squad Timetable](https://github.com/GVaishanth/Squad_Timetable)**: collaborative timetable and scheduling tool.
 
 ---
 
@@ -88,21 +88,17 @@ A local-first development environment that runs entirely in the browser. Workspa
   <img src="assets/profile/divider.svg" width="100%" height="12" alt="">
 </div>
 
-## How I build
-
-- **Local-first where possible.** Software you can try instantly and that keeps working without a backend.
-- **State you can read.** A championship table, a card room, a file system — the interface should make complex state legible at a glance.
-- **Explicit authority in multiplayer.** One host owns room state; every action is an explicit message.
+## Currently building
 
 <img src="assets/profile/current-build.png" width="100%" alt="Currently active project, refreshed automatically from public GitHub activity">
 
-<sub>↑ This panel is regenerated by a scheduled GitHub Action from public repository activity — a small example of how I automate the boring parts.</sub>
+<sub>↑ Regenerated from public repository activity by a scheduled GitHub Action.</sub>
 
 ---
 
 ### Contact
 
-- GitHub — [@GVaishanth](https://github.com/GVaishanth)
-- <!-- Add your professional links here, e.g.: LinkedIn — https://linkedin.com/in/… · Email — …@… · Portfolio — https://… -->
+- GitHub: [@GVaishanth](https://github.com/GVaishanth)
+- <!-- Add your professional links here, e.g.: LinkedIn: https://linkedin.com/in/… · Email: …@… · Portfolio: https://… -->
 
 [↑ Back to top](#top)

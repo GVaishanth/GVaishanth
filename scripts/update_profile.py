@@ -4,7 +4,7 @@ Runs daily via .github/workflows/profile-updater.yml and refreshes the
 marked sections of README.md using *real* public GitHub data only:
 
   <!-- AUTO:SPOTLIGHT:START --> ... <!-- AUTO:SPOTLIGHT:END -->
-      A rotating "concept spotlight" — one shipped project per day,
+      A rotating "concept spotlight" - one shipped project per day,
       framed by the engineering concept behind it. Deterministic
       (day-of-year rotation), so it changes at most once every 24 hours.
 
@@ -13,13 +13,15 @@ marked sections of README.md using *real* public GitHub data only:
       languages active over the last 90 days. The profile repo itself is
       excluded so bot commits never feed the "activity" signal.
 
-Design rules (intentional — do not loosen):
+Design rules (intentional - do not loosen):
   * If nothing changed, the README is not rewritten and the workflow
     commits nothing. No content churn, no fake freshness.
   * Everything rendered is derived from the GitHub API; nothing here
     invents activity. A quiet month renders as a quiet month.
-  * Fully offline-safe: the last good API response is cached in
-    data/repos.json and reused when the API is unavailable.
+  * Failure-safe: if the API is unavailable, the run falls back to the
+    committed snapshot in data/repos.json, so the profile still renders
+    from recent data instead of skipping. If no snapshot exists either,
+    the README is simply left untouched for the day.
 """
 from __future__ import annotations
 
@@ -46,12 +48,12 @@ SPOTLIGHTS = [
     {
         "repo": "Volt",
         "concept": "Local-first development tools",
-        "line": "A development environment that lives entirely in the browser — workspaces persist in OPFS, so no account or backend is ever required.",
+        "line": "A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.",
     },
     {
         "repo": "VelvetStack",
         "concept": "Peer-to-peer multiplayer",
-        "line": "Private card rooms over WebRTC where one host owns the state and every action is an explicit message — no accounts, no central server.",
+        "line": "Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.",
     },
     {
         "repo": "Velocity",
@@ -66,18 +68,18 @@ SPOTLIGHTS = [
     {
         "repo": "CRPapp",
         "concept": "Resilient mobile engineering",
-        "line": "A predictive crash-resilience framework for Android — my first Kotlin build.",
+        "line": "A predictive crash-resilience framework for Android. My first Kotlin project.",
     },
     {
         "repo": "Salary_Decoder",
         "concept": "Data storytelling",
-        "line": "Notebooks that turn messy inputs — salary breakups, spending logs, chat exports — into stories you can act on.",
+        "line": "Notebooks that turn messy inputs (salary breakups, spending logs, chat exports) into stories you can act on.",
     },
 ]
 
 # Fallback one-liners for repos without a description on GitHub,
 # used by the "recently active" table.
-FALLBACK_FOCUS = {s["repo"]: s["line"].split("—")[0].strip().rstrip(".")
+FALLBACK_FOCUS = {s["repo"]: s["line"].split(". ")[0].strip().rstrip(".")
                   for s in SPOTLIGHTS}
 
 
@@ -115,7 +117,7 @@ def fetch_repos() -> list[dict] | None:
         if CACHE.exists():
             print("Using cached snapshot in data/repos.json.")
             return json.loads(CACHE.read_text(encoding="utf-8"))
-        print("No cache found — leaving README untouched.")
+        print("No cache found - leaving README untouched.")
         return None
 
 
@@ -123,7 +125,7 @@ def human_date(iso: str) -> str:
     try:
         return datetime.fromisoformat(iso.replace("Z", "+00:00")).strftime("%d %b %Y")
     except ValueError:
-        return "—"
+        return "-"
 
 
 def is_active(repo: dict, now: datetime) -> bool:
@@ -138,7 +140,7 @@ def render_spotlight(repos: list[dict], now: datetime) -> str:
     by_name = {r["name"]: r for r in repos}
     pool = [s for s in SPOTLIGHTS if s["repo"] in by_name]
     if not pool:
-        return "_(spotlight unavailable — no featured repos found)_"
+        return "_(spotlight unavailable; no featured repos found)_"
     pick = pool[now.toordinal() % len(pool)]
     repo = by_name[pick["repo"]]
     meta = []
@@ -153,10 +155,10 @@ def render_spotlight(repos: list[dict], now: datetime) -> str:
         else ""
     )
     return (
-        f"**{pick['concept']}** — **[{pick['repo']}]({repo['html_url']})**{live}\n\n"
+        f"**{pick['concept']}**: **[{pick['repo']}]({repo['html_url']})**{live}\n\n"
         f"{pick['line']}\n\n"
         f"{meta_str}\n\n"
-        f"<sub>Rotates daily across shipped work — updated by a scheduled GitHub Action.</sub>"
+        f"<sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>"
     )
 
 
@@ -177,7 +179,7 @@ def render_recent(repos: list[dict], now: datetime) -> str:
     for r in sorted(public_work, key=lambda r: r["pushed_at"], reverse=True):
         if r["language"] and is_active(r, now) and r["language"] not in languages:
             languages.append(r["language"])
-    stack = " · ".join(f"`{lang}`" for lang in languages) or "`—`"
+    stack = " · ".join(f"`{lang}`" for lang in languages) or "`-`"
 
     return (
         "\n".join(rows)
@@ -194,13 +196,13 @@ def replace_section(content: str, tag: str, body: str) -> tuple[str, bool]:
     replacement = lambda m: f"{m.group(1)}\n{body}\n{m.group(2)}"  # noqa: E731
     new, count = pattern.subn(replacement, content)
     if count == 0:
-        print(f"Warning: marker AUTO:{tag} not found in README.md — section skipped.")
+        print(f"Warning: marker AUTO:{tag} not found in README.md - section skipped.")
     return new, count > 0
 
 
 def main() -> int:
     if not README.exists():
-        print("README.md not found — nothing to update.")
+        print("README.md not found - nothing to update.")
         return 0
 
     repos = fetch_repos()
@@ -214,7 +216,7 @@ def main() -> int:
     updated, _ = replace_section(updated, "RECENT", render_recent(repos, now))
 
     if updated == content:
-        print("Sections already current — no changes.")
+        print("Sections already current - no changes.")
         return 0
 
     README.write_text(updated, encoding="utf-8")

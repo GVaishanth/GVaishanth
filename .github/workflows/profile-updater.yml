@@ -12,7 +12,7 @@ on:
       - "scripts/**"
       - ".github/workflows/profile-updater.yml"
 
-# Unique concurrency group — never share this with another workflow.
+# Unique concurrency group - never share this with another workflow.
 # (The old setup shared one group between two workflows and they
 # cancelled each other mid-run.)
 concurrency:
@@ -44,15 +44,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/build_profile_art.py
 
+      # if: always() so a HUD failure cannot block committing the README
+      # sections that DID succeed. Failure stays visible; progress is kept.
       - name: Commit updates
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # current-build.png is the HUD; README.md holds the auto sections;
+          # data/repos.json is the committed API snapshot the updater falls
+          # back to on API-down days. All three are staged wholesale.
           git add README.md assets/profile/current-build.png data/repos.json
 
           if git diff --cached --quiet; then
-            echo "No changes — nothing to commit."
+            echo "No changes - nothing to commit."
             exit 0
           fi
 

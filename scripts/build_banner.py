@@ -1,10 +1,10 @@
 """Generate the animated SVG banners for the GitHub profile.
 
 Outputs (regenerate any time with `python scripts/build_banner.py`):
-  * assets/profile/banner-animated.svg — hero banner. Terminal-style typing
+  * assets/profile/banner-animated.svg - hero banner. Terminal-style typing
     rotates through the engineering concepts behind shipped projects, with a
     sliding caret, a pulsing status dot and a one-time load-in.
-  * assets/profile/divider.svg       — thin section divider with a slow
+  * assets/profile/divider.svg       - thin section divider with a slow
     travelling pulse.
 
 Technical ground rules for GitHub READMEs (the reason this file exists):
@@ -18,7 +18,7 @@ Technical ground rules for GitHub READMEs (the reason this file exists):
   * `prefers-reduced-motion` swaps the animated layer for a fully static,
     readable banner via CSS `display` toggling (SMIL itself cannot be
     cancelled by CSS, so the animated group is hidden instead).
-  * All timings are computed from CONCEPTS below — edit the list and re-run;
+  * All timings are computed from CONCEPTS below - edit the list and re-run;
     the keyTimes rebalance automatically.
 """
 from pathlib import Path
@@ -43,7 +43,7 @@ CONCEPTS = [
     "$ data storytelling",
 ]
 
-# Palette — GitHub dark, deliberately restrained.
+# Palette - GitHub dark, deliberately restrained.
 BG = "#0d1117"
 GRID = "#161b22"
 TEXT = "#e6edf3"
@@ -114,7 +114,7 @@ def build_banner() -> str:
 
     anim_groups = "\n".join(groups)
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{escape(NAME)} — {escape(TAGLINE)}">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{escape(NAME)} | {escape(TAGLINE)}">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="{GRID}" stroke-width="1"/>
