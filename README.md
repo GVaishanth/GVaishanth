@@ -88,17 +88,12 @@ A local-first development environment that runs entirely in the browser. Workspa
   <img src="assets/profile/divider.svg" width="100%" height="12" alt="">
 </div>
 
-## Currently building
-
-<img src="assets/profile/current-build.png" width="100%" alt="Currently active project, refreshed automatically from public GitHub activity">
-
-<sub>↑ Regenerated from public repository activity by a scheduled GitHub Action.</sub>
-
----
-
 ### Contact
 
 - GitHub: [@GVaishanth](https://github.com/GVaishanth)
-- <!-- Add your professional links here, e.g.: LinkedIn: https://linkedin.com/in/… · Email: …@… · Portfolio: https://… -->
+- Location: Chennai, India
+- Education: B.Tech CSE @ VIT Vellore
+
+<!-- Add LinkedIn / email / portfolio links here when available. -->
 
 [↑ Back to top](#top)
