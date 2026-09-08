@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Local-first development tools**: **[Volt](https://github.com/GVaishanth/Volt)** · **[Live ↗](https://gvaishanth.github.io/Volt/)**
+**Peer-to-peer multiplayer**: **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** · **[Live ↗](https://gvaishanth.github.io/VelvetStack/)**
 
-A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.
+Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.
 
-`TypeScript` · last push 01 Aug 2026
+`JavaScript` · last push 30 Jul 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,11 +73,11 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
+| **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 07 Sep 2026 |
 | **[Social_Engagement_Analysis](https://github.com/GVaishanth/Social_Engagement_Analysis)** | Project | 05 Sep 2026 |
 | **[Volt](https://github.com/GVaishanth/Volt)** ([demo ↗](https://gvaishanth.github.io/Volt/)) | A development environment that lives entirely in the browser | 01 Aug 2026 |
 | **[Squad_Timetable](https://github.com/GVaishanth/Squad_Timetable)** | Project | 30 Jul 2026 |
 | **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** ([demo ↗](https://gvaishanth.github.io/VelvetStack/)) | Private card rooms over WebRTC where one host owns the state and every action is an explicit message | 30 Jul 2026 |
-| **[Re-OS](https://github.com/GVaishanth/Re-OS)** | Project | 29 Jul 2026 |
 
 **Active over the last 90 days:** `Python` · `TypeScript` · `HTML` · `JavaScript` · `Jupyter Notebook` · `Kotlin`
 
