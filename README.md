@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Peer-to-peer multiplayer**: **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** · **[Live ↗](https://gvaishanth.github.io/VelvetStack/)**
+**Systems-driven game design**: **[Velocity](https://github.com/GVaishanth/Velocity)** · **[Live ↗](https://gvaishanth.github.io/Velocity/)**
 
-Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.
+An F1 constructor-championship simulator: build the team, make the strategy calls, and live with them over a full season.
 
-`JavaScript` · last push 30 Jul 2026
+`JavaScript` · last push 22 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
