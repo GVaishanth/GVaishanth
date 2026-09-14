@@ -1,11 +1,19 @@
 [
   {
+    "name": "CheckMate",
+    "html_url": "https://github.com/GVaishanth/CheckMate",
+    "homepage": "https://gvaishanth.github.io/CheckMate/",
+    "description": "A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge.",
+    "language": "TypeScript",
+    "pushed_at": "2026-09-13T17:08:51Z"
+  },
+  {
     "name": "GVaishanth",
     "html_url": "https://github.com/GVaishanth/GVaishanth",
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-09-12T08:33:36Z"
+    "pushed_at": "2026-09-13T09:23:18Z"
   },
   {
     "name": "ADAS",
@@ -27,15 +35,15 @@
     "name": "Volt",
     "html_url": "https://github.com/GVaishanth/Volt",
     "homepage": "https://gvaishanth.github.io/Volt/",
-    "description": "",
+    "description": "VOLT is a 100% local-first, browser-native development operating environment and desktop experience. Designed entirely for the web, it runs completely client-side with zero backend dependencies, zero telemetry, and zero cloud fallbacks.",
     "language": "TypeScript",
     "pushed_at": "2026-08-01T14:22:03Z"
   },
   {
     "name": "Squad_Timetable",
     "html_url": "https://github.com/GVaishanth/Squad_Timetable",
-    "homepage": "",
-    "description": "",
+    "homepage": "https://gvaishanth.github.io/Squad_Timetable/",
+    "description": "A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format.",
     "language": "HTML",
     "pushed_at": "2026-07-30T17:37:40Z"
   },
@@ -43,15 +51,15 @@
     "name": "VelvetStack",
     "html_url": "https://github.com/GVaishanth/VelvetStack",
     "homepage": "https://gvaishanth.github.io/VelvetStack/",
-    "description": "",
+    "description": "Poker, Rummy & UNO",
     "language": "JavaScript",
     "pushed_at": "2026-07-30T16:05:18Z"
   },
   {
     "name": "Re-OS",
     "html_url": "https://github.com/GVaishanth/Re-OS",
-    "homepage": "",
-    "description": "",
+    "homepage": "https://gvaishanth.github.io/Re-OS/",
+    "description": "Online terminal with limited sets of commands.",
     "language": "TypeScript",
     "pushed_at": "2026-07-29T18:08:48Z"
   },
@@ -59,7 +67,7 @@
     "name": "Computer-Cricket",
     "html_url": "https://github.com/GVaishanth/Computer-Cricket",
     "homepage": "https://gvaishanth.github.io/Computer-Cricket/game.html",
-    "description": "A Python-based interactive hand cricket simulation game which includes toss mechanics, adaptive AI behavior, and various rule-based modes such as Normal, Crazy, Insane, and B10. It emphasizes modular programming, user interaction, and complex conditional logic to create an engaging command-line gaming experience.",
+    "description": "A Python-based interactive hand cricket simulation game which includes toss mechanics, adaptive AI behavior, and various rule-based modes such as Normal, Crazy, Insane, and B10. It emphasizes modular programming, user interaction, and complex conditional logic to create an engaging command-line gaming experience. Now, deployed as a staic website.",
     "language": "HTML",
     "pushed_at": "2026-07-13T17:14:03Z"
   },
@@ -114,7 +122,7 @@
   {
     "name": "Quantum-Tic-Tac-Toe",
     "html_url": "https://github.com/GVaishanth/Quantum-Tic-Tac-Toe",
-    "homepage": "",
+    "homepage": "https://gvaishanth.github.io/Quantum-Tic-Tac-Toe/QTic-QTac-QToe%20game.html",
     "description": "Tic-Tac-Toe with quantum implementation.",
     "language": "HTML",
     "pushed_at": "2026-05-10T03:35:36Z"
