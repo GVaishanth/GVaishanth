@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Systems-driven game design**: **[Velocity](https://github.com/GVaishanth/Velocity)** · **[Live ↗](https://gvaishanth.github.io/Velocity/)**
+**Adaptive game AI**: **[Computer-Cricket](https://github.com/GVaishanth/Computer-Cricket)** · **[Live ↗](https://gvaishanth.github.io/Computer-Cricket/game.html)**
 
-An F1 constructor-championship simulator: build the team, make the strategy calls, and live with them over a full season.
+Hand cricket against an opponent that adapts to your patterns, with house-rule variants from Normal to Insane.
 
-`JavaScript` · last push 22 Jun 2026
+`HTML` · last push 13 Jul 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
