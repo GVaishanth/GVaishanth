@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Data storytelling**: **[Salary_Decoder](https://github.com/GVaishanth/Salary_Decoder)**
+**Local-first development tools**: **[Volt](https://github.com/GVaishanth/Volt)** · **[Live ↗](https://gvaishanth.github.io/Volt/)**
 
-Notebooks that turn messy inputs (salary breakups, spending logs, chat exports) into stories you can act on.
+A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.
 
-`Jupyter Notebook` · last push 29 Jun 2026
+`TypeScript` · last push 01 Aug 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
