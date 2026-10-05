@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Adaptive game AI**: **[Computer-Cricket](https://github.com/GVaishanth/Computer-Cricket)** · **[Live ↗](https://gvaishanth.github.io/Computer-Cricket/game.html)**
+**Resilient mobile engineering**: **[CRPapp](https://github.com/GVaishanth/CRPapp)**
 
-Hand cricket against an opponent that adapts to your patterns, with house-rule variants from Normal to Insane.
+A predictive crash-resilience framework for Android. My first Kotlin project.
 
-`HTML` · last push 13 Jul 2026
+`Kotlin` · last push 27 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
