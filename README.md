@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Resilient mobile engineering**: **[CRPapp](https://github.com/GVaishanth/CRPapp)**
+**Data storytelling**: **[Salary_Decoder](https://github.com/GVaishanth/Salary_Decoder)**
 
-A predictive crash-resilience framework for Android. My first Kotlin project.
+Notebooks that turn messy inputs (salary breakups, spending logs, chat exports) into stories you can act on.
 
-`Kotlin` · last push 27 Jun 2026
+`Jupyter Notebook` · last push 29 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
