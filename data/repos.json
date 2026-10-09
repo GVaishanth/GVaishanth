@@ -1,11 +1,35 @@
 [
   {
+    "name": "LEXICON",
+    "html_url": "https://github.com/GVaishanth/LEXICON",
+    "homepage": "https://gvaishanth.github.io/LEXICON/",
+    "description": "A Formal Archive For Word Puzzles.",
+    "language": "JavaScript",
+    "pushed_at": "2026-10-09T02:01:55Z"
+  },
+  {
+    "name": "VelvetStack",
+    "html_url": "https://github.com/GVaishanth/VelvetStack",
+    "homepage": "https://gvaishanth.github.io/VelvetStack/",
+    "description": "Poker, Rummy & UNO",
+    "language": "JavaScript",
+    "pushed_at": "2026-10-08T19:01:39Z"
+  },
+  {
+    "name": "VSCMS",
+    "html_url": "https://github.com/GVaishanth/VSCMS",
+    "homepage": "",
+    "description": "Vehicle Service Center Management System",
+    "language": "",
+    "pushed_at": "2026-10-08T15:45:27Z"
+  },
+  {
     "name": "GVaishanth",
     "html_url": "https://github.com/GVaishanth/GVaishanth",
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-10-07T10:58:36Z"
+    "pushed_at": "2026-10-08T11:15:47Z"
   },
   {
     "name": "CheckMate",
@@ -46,14 +70,6 @@
     "description": "A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format.",
     "language": "HTML",
     "pushed_at": "2026-07-30T17:37:40Z"
-  },
-  {
-    "name": "VelvetStack",
-    "html_url": "https://github.com/GVaishanth/VelvetStack",
-    "homepage": "https://gvaishanth.github.io/VelvetStack/",
-    "description": "Poker, Rummy & UNO",
-    "language": "JavaScript",
-    "pushed_at": "2026-07-30T16:05:18Z"
   },
   {
     "name": "Re-OS",

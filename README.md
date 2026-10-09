@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Peer-to-peer multiplayer**: **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** · **[Live ↗](https://gvaishanth.github.io/VelvetStack/)**
+**Systems-driven game design**: **[Velocity](https://github.com/GVaishanth/Velocity)** · **[Live ↗](https://gvaishanth.github.io/Velocity/)**
 
-Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.
+An F1 constructor-championship simulator: build the team, make the strategy calls, and live with them over a full season.
 
-`JavaScript` · last push 30 Jul 2026
+`JavaScript` · last push 22 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,13 +73,13 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
+| **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 09 Oct 2026 |
+| **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** ([demo ↗](https://gvaishanth.github.io/VelvetStack/)) | Poker, Rummy & UNO | 08 Oct 2026 |
+| **[VSCMS](https://github.com/GVaishanth/VSCMS)** | Vehicle Service Center Management System | 08 Oct 2026 |
 | **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 13 Sep 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 07 Sep 2026 |
-| **[Social_Engagement_Analysis](https://github.com/GVaishanth/Social_Engagement_Analysis)** | Project | 05 Sep 2026 |
-| **[Volt](https://github.com/GVaishanth/Volt)** ([demo ↗](https://gvaishanth.github.io/Volt/)) | VOLT is a 100% local-first, browser-native development operating environment and desktop experience. Designed entirely for the web, it runs completely client-side with zero backend dependencies, zero telemetry, and zero cloud fallbacks. | 01 Aug 2026 |
-| **[Squad_Timetable](https://github.com/GVaishanth/Squad_Timetable)** ([demo ↗](https://gvaishanth.github.io/Squad_Timetable/)) | A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format. | 30 Jul 2026 |
 
-**Active over the last 90 days:** `TypeScript` · `Python` · `HTML` · `JavaScript`
+**Active over the last 90 days:** `JavaScript` · `TypeScript` · `Python` · `HTML`
 
 <sub>Refreshed daily from public GitHub activity · excludes automated commits to this profile repo.</sub>
 <!-- AUTO:RECENT:END -->
