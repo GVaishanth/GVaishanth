@@ -1,11 +1,11 @@
 [
   {
-    "name": "GVaishanth",
-    "html_url": "https://github.com/GVaishanth/GVaishanth",
-    "homepage": "",
-    "description": "",
-    "language": "Python",
-    "pushed_at": "2026-10-09T11:14:45Z"
+    "name": "Squad_Timetable",
+    "html_url": "https://github.com/GVaishanth/Squad_Timetable",
+    "homepage": "https://gvaishanth.github.io/Squad_Timetable/",
+    "description": "A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format.",
+    "language": "JavaScript",
+    "pushed_at": "2026-10-11T06:19:17Z"
   },
   {
     "name": "LEXICON",
@@ -13,7 +13,15 @@
     "homepage": "https://gvaishanth.github.io/LEXICON/",
     "description": "A Formal Archive For Word Puzzles.",
     "language": "JavaScript",
-    "pushed_at": "2026-10-09T02:01:55Z"
+    "pushed_at": "2026-10-10T18:32:30Z"
+  },
+  {
+    "name": "GVaishanth",
+    "html_url": "https://github.com/GVaishanth/GVaishanth",
+    "homepage": "",
+    "description": "",
+    "language": "Python",
+    "pushed_at": "2026-10-10T10:31:34Z"
   },
   {
     "name": "VelvetStack",
@@ -62,14 +70,6 @@
     "description": "VOLT is a 100% local-first, browser-native development operating environment and desktop experience. Designed entirely for the web, it runs completely client-side with zero backend dependencies, zero telemetry, and zero cloud fallbacks.",
     "language": "TypeScript",
     "pushed_at": "2026-08-01T14:22:03Z"
-  },
-  {
-    "name": "Squad_Timetable",
-    "html_url": "https://github.com/GVaishanth/Squad_Timetable",
-    "homepage": "https://gvaishanth.github.io/Squad_Timetable/",
-    "description": "A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format.",
-    "language": "HTML",
-    "pushed_at": "2026-07-30T17:37:40Z"
   },
   {
     "name": "Re-OS",

@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Adaptive game AI**: **[Computer-Cricket](https://github.com/GVaishanth/Computer-Cricket)** · **[Live ↗](https://gvaishanth.github.io/Computer-Cricket/game.html)**
+**Resilient mobile engineering**: **[CRPapp](https://github.com/GVaishanth/CRPapp)**
 
-Hand cricket against an opponent that adapts to your patterns, with house-rule variants from Normal to Insane.
+A predictive crash-resilience framework for Android. My first Kotlin project.
 
-`HTML` · last push 13 Jul 2026
+`Kotlin` · last push 27 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,11 +73,11 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
-| **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 09 Oct 2026 |
+| **[Squad_Timetable](https://github.com/GVaishanth/Squad_Timetable)** ([demo ↗](https://gvaishanth.github.io/Squad_Timetable/)) | A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format. | 11 Oct 2026 |
+| **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 10 Oct 2026 |
 | **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** ([demo ↗](https://gvaishanth.github.io/VelvetStack/)) | Poker, Rummy & UNO | 08 Oct 2026 |
 | **[VSCMS](https://github.com/GVaishanth/VSCMS)** | Vehicle Service Center Management System | 08 Oct 2026 |
 | **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 13 Sep 2026 |
-| **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 07 Sep 2026 |
 
 **Active over the last 90 days:** `JavaScript` · `TypeScript` · `Python` · `HTML`
 
