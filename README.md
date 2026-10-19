@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Data storytelling**: **[Salary_Decoder](https://github.com/GVaishanth/Salary_Decoder)**
+**Local-first development tools**: **[Volt](https://github.com/GVaishanth/Volt)** · **[Live ↗](https://gvaishanth.github.io/Volt/)**
 
-Notebooks that turn messy inputs (salary breakups, spending logs, chat exports) into stories you can act on.
+A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.
 
-`Jupyter Notebook` · last push 29 Jun 2026
+`TypeScript` · last push 01 Aug 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,13 +73,13 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
+| **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | 3D open-world street racing completely on browser. | 19 Oct 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 13 Oct 2026 |
 | **[SIXFOLD](https://github.com/GVaishanth/SIXFOLD)** ([demo ↗](https://gvaishanth.github.io/SIXFOLD/)) | A top-down 2D pixel-action roguelite that runs entirely in the browser. | 13 Oct 2026 |
 | **[Velocity](https://github.com/GVaishanth/Velocity)** ([demo ↗](https://gvaishanth.github.io/Velocity/)) | Build. Race. Dominate. An immersive F1 constructor championship simulator driven by real-time strategy and iconic race scenarios. | 12 Oct 2026 |
 | **[VSCMS](https://github.com/GVaishanth/VSCMS)** ([demo ↗](https://gvaishanth.github.io/VSCMS/)) | Vehicle Service Center Management System | 11 Oct 2026 |
-| **[Squad_Timetable](https://github.com/GVaishanth/Squad_Timetable)** ([demo ↗](https://gvaishanth.github.io/Squad_Timetable/)) | A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format. | 11 Oct 2026 |
 
-**Active over the last 90 days:** `Python` · `TypeScript` · `JavaScript`
+**Active over the last 90 days:** `TypeScript` · `Python` · `JavaScript`
 
 <sub>Refreshed daily from public GitHub activity · excludes automated commits to this profile repo.</sub>
 <!-- AUTO:RECENT:END -->

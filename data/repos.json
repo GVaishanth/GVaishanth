@@ -1,11 +1,19 @@
 [
   {
+    "name": "ETERNIX",
+    "html_url": "https://github.com/GVaishanth/ETERNIX",
+    "homepage": "",
+    "description": "3D open-world street racing completely on browser.",
+    "language": "TypeScript",
+    "pushed_at": "2026-10-19T08:58:07Z"
+  },
+  {
     "name": "GVaishanth",
     "html_url": "https://github.com/GVaishanth/GVaishanth",
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-10-17T08:27:48Z"
+    "pushed_at": "2026-10-18T08:46:15Z"
   },
   {
     "name": "ADAS",
