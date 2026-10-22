@@ -1,11 +1,19 @@
 [
   {
+    "name": "GALAXIA",
+    "html_url": "https://github.com/GVaishanth/GALAXIA",
+    "homepage": "",
+    "description": "An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype.",
+    "language": "TypeScript",
+    "pushed_at": "2026-10-22T01:48:11Z"
+  },
+  {
     "name": "GVaishanth",
     "html_url": "https://github.com/GVaishanth/GVaishanth",
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-10-20T09:19:44Z"
+    "pushed_at": "2026-10-21T09:16:23Z"
   },
   {
     "name": "ETERNIX",

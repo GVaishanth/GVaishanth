@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Systems-driven game design**: **[Velocity](https://github.com/GVaishanth/Velocity)** · **[Live ↗](https://gvaishanth.github.io/Velocity/)**
+**Adaptive game AI**: **[Computer-Cricket](https://github.com/GVaishanth/Computer-Cricket)** · **[Live ↗](https://gvaishanth.github.io/Computer-Cricket/game.html)**
 
-An F1 constructor-championship simulator: build the team, make the strategy calls, and live with them over a full season.
+Hand cricket against an opponent that adapts to your patterns, with house-rule variants from Normal to Insane.
 
-`JavaScript` · last push 12 Oct 2026
+`HTML` · last push 13 Jul 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,11 +73,11 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
+| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 22 Oct 2026 |
 | **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | Visionary: 3D open-world street racing completely on browser. | 19 Oct 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 13 Oct 2026 |
 | **[SIXFOLD](https://github.com/GVaishanth/SIXFOLD)** ([demo ↗](https://gvaishanth.github.io/SIXFOLD/)) | A top-down 2D pixel-action roguelite that runs entirely in the browser. | 13 Oct 2026 |
 | **[Velocity](https://github.com/GVaishanth/Velocity)** ([demo ↗](https://gvaishanth.github.io/Velocity/)) | Build. Race. Dominate. An immersive F1 constructor championship simulator driven by real-time strategy and iconic race scenarios. | 12 Oct 2026 |
-| **[VSCMS](https://github.com/GVaishanth/VSCMS)** ([demo ↗](https://gvaishanth.github.io/VSCMS/)) | Vehicle Service Center Management System | 11 Oct 2026 |
 
 **Active over the last 90 days:** `TypeScript` · `Python` · `JavaScript`
 
