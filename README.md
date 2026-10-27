@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Peer-to-peer multiplayer**: **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** · **[Live ↗](https://gvaishanth.github.io/VelvetStack/)**
+**Systems-driven game design**: **[Velocity](https://github.com/GVaishanth/Velocity)** · **[Live ↗](https://gvaishanth.github.io/Velocity/)**
 
-Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.
+An F1 constructor-championship simulator: build the team, make the strategy calls, and live with them over a full season.
 
-`JavaScript` · last push 08 Oct 2026
+`JavaScript` · last push 12 Oct 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,7 +73,7 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
-| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 26 Oct 2026 |
+| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 27 Oct 2026 |
 | **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | Visionary: 3D open-world street racing completely on browser. | 19 Oct 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 13 Oct 2026 |
 | **[SIXFOLD](https://github.com/GVaishanth/SIXFOLD)** ([demo ↗](https://gvaishanth.github.io/SIXFOLD/)) | A top-down 2D pixel-action roguelite that runs entirely in the browser. | 13 Oct 2026 |
