@@ -1,11 +1,19 @@
 [
   {
+    "name": "LEXICON",
+    "html_url": "https://github.com/GVaishanth/LEXICON",
+    "homepage": "https://gvaishanth.github.io/LEXICON/",
+    "description": "A Formal Archive For Word Puzzles.",
+    "language": "JavaScript",
+    "pushed_at": "2026-10-30T08:11:38Z"
+  },
+  {
     "name": "GALAXIA",
     "html_url": "https://github.com/GVaishanth/GALAXIA",
     "homepage": "https://gvaishanth.github.io/GALAXIA/",
     "description": "An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype.",
     "language": "TypeScript",
-    "pushed_at": "2026-10-29T04:06:42Z"
+    "pushed_at": "2026-10-30T03:52:52Z"
   },
   {
     "name": "GVaishanth",
@@ -13,7 +21,7 @@
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-10-28T10:29:02Z"
+    "pushed_at": "2026-10-29T10:49:12Z"
   },
   {
     "name": "ETERNIX",
@@ -62,14 +70,6 @@
     "description": "A fully offline, single-file HTML timetable tracker built for VIT Vellore students following the FFCS (Fully Flexible Credit System) scheduling format.",
     "language": "JavaScript",
     "pushed_at": "2026-10-11T06:19:17Z"
-  },
-  {
-    "name": "LEXICON",
-    "html_url": "https://github.com/GVaishanth/LEXICON",
-    "homepage": "https://gvaishanth.github.io/LEXICON/",
-    "description": "A Formal Archive For Word Puzzles.",
-    "language": "JavaScript",
-    "pushed_at": "2026-10-10T18:32:30Z"
   },
   {
     "name": "VelvetStack",
