@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Data storytelling**: **[Salary_Decoder](https://github.com/GVaishanth/Salary_Decoder)**
+**Local-first development tools**: **[Volt](https://github.com/GVaishanth/Volt)** · **[Live ↗](https://gvaishanth.github.io/Volt/)**
 
-Notebooks that turn messy inputs (salary breakups, spending logs, chat exports) into stories you can act on.
+A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.
 
-`Jupyter Notebook` · last push 29 Jun 2026
+`TypeScript` · last push 01 Aug 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,13 +73,13 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
+| **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 31 Oct 2026 |
+| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 31 Oct 2026 |
 | **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 30 Oct 2026 |
-| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 30 Oct 2026 |
 | **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | Visionary: 3D open-world street racing completely on browser. | 19 Oct 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 13 Oct 2026 |
-| **[SIXFOLD](https://github.com/GVaishanth/SIXFOLD)** ([demo ↗](https://gvaishanth.github.io/SIXFOLD/)) | A top-down 2D pixel-action roguelite that runs entirely in the browser. | 13 Oct 2026 |
 
-**Active over the last 90 days:** `JavaScript` · `TypeScript` · `Python`
+**Active over the last 90 days:** `TypeScript` · `JavaScript` · `Python`
 
 <sub>Refreshed daily from public GitHub activity · excludes automated commits to this profile repo.</sub>
 <!-- AUTO:RECENT:END -->
