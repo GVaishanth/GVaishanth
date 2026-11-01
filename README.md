@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Local-first development tools**: **[Volt](https://github.com/GVaishanth/Volt)** · **[Live ↗](https://gvaishanth.github.io/Volt/)**
+**Peer-to-peer multiplayer**: **[VelvetStack](https://github.com/GVaishanth/VelvetStack)** · **[Live ↗](https://gvaishanth.github.io/VelvetStack/)**
 
-A development environment that lives entirely in the browser. Workspaces persist in OPFS, so no account or backend is ever required.
+Private card rooms over WebRTC where one host owns the state and every action is an explicit message. No accounts, no central server.
 
-`TypeScript` · last push 01 Aug 2026
+`JavaScript` · last push 08 Oct 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,8 +73,8 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
-| **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 31 Oct 2026 |
-| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 31 Oct 2026 |
+| **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 01 Nov 2026 |
+| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 01 Nov 2026 |
 | **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 30 Oct 2026 |
 | **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | Visionary: 3D open-world street racing completely on browser. | 19 Oct 2026 |
 | **[ADAS](https://github.com/GVaishanth/ADAS)** | Advanced Driver Assistance Systems | 13 Oct 2026 |
