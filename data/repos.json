@@ -1,19 +1,19 @@
 [
   {
-    "name": "CheckMate",
-    "html_url": "https://github.com/GVaishanth/CheckMate",
-    "homepage": "https://gvaishanth.github.io/CheckMate/",
-    "description": "A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge.",
-    "language": "TypeScript",
-    "pushed_at": "2026-11-01T03:07:41Z"
-  },
-  {
     "name": "GALAXIA",
     "html_url": "https://github.com/GVaishanth/GALAXIA",
     "homepage": "https://gvaishanth.github.io/GALAXIA/",
     "description": "An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype.",
     "language": "TypeScript",
-    "pushed_at": "2026-11-01T03:06:12Z"
+    "pushed_at": "2026-11-02T02:08:38Z"
+  },
+  {
+    "name": "CheckMate",
+    "html_url": "https://github.com/GVaishanth/CheckMate",
+    "homepage": "https://gvaishanth.github.io/CheckMate/",
+    "description": "A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge.",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-02T02:06:40Z"
   },
   {
     "name": "GVaishanth",
@@ -21,7 +21,7 @@
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-10-31T10:17:15Z"
+    "pushed_at": "2026-11-01T11:11:00Z"
   },
   {
     "name": "LEXICON",
