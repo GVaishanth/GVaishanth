@@ -17,11 +17,11 @@ I like systems whose state you can see. Development environments you can open wi
 ## Concept spotlight
 
 <!-- AUTO:SPOTLIGHT:START -->
-**Adaptive game AI**: **[Computer-Cricket](https://github.com/GVaishanth/Computer-Cricket)** · **[Live ↗](https://gvaishanth.github.io/Computer-Cricket/game.html)**
+**Resilient mobile engineering**: **[CRPapp](https://github.com/GVaishanth/CRPapp)**
 
-Hand cricket against an opponent that adapts to your patterns, with house-rule variants from Normal to Insane.
+A predictive crash-resilience framework for Android. My first Kotlin project.
 
-`HTML` · last push 13 Jul 2026
+`Kotlin` · last push 27 Jun 2026
 
 <sub>Rotates daily across shipped work. Updated by a scheduled GitHub Action.</sub>
 <!-- AUTO:SPOTLIGHT:END -->
@@ -73,7 +73,7 @@ A local-first development environment that runs entirely in the browser. Workspa
 <!-- AUTO:RECENT:START -->
 | Project | Focus | Last push |
 |:--|:--|:--|
-| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 03 Nov 2026 |
+| **[GALAXIA](https://github.com/GVaishanth/GALAXIA)** ([demo ↗](https://gvaishanth.github.io/GALAXIA/)) | An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype. | 04 Nov 2026 |
 | **[CheckMate](https://github.com/GVaishanth/CheckMate)** ([demo ↗](https://gvaishanth.github.io/CheckMate/)) | A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge. | 02 Nov 2026 |
 | **[LEXICON](https://github.com/GVaishanth/LEXICON)** ([demo ↗](https://gvaishanth.github.io/LEXICON/)) | A Formal Archive For Word Puzzles. | 30 Oct 2026 |
 | **[ETERNIX](https://github.com/GVaishanth/ETERNIX)** | Visionary: 3D open-world street racing completely on browser. | 19 Oct 2026 |
