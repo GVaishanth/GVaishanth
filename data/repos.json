@@ -1,19 +1,19 @@
 [
   {
+    "name": "GVaishanth",
+    "html_url": "https://github.com/GVaishanth/GVaishanth",
+    "homepage": "",
+    "description": "",
+    "language": "Python",
+    "pushed_at": "2026-11-05T12:06:33Z"
+  },
+  {
     "name": "GALAXIA",
     "html_url": "https://github.com/GVaishanth/GALAXIA",
     "homepage": "https://gvaishanth.github.io/GALAXIA/",
     "description": "An original browser space game with two modes: a fixed-screen arcade shooter and an open-space exploration prototype.",
     "language": "TypeScript",
     "pushed_at": "2026-11-05T03:12:16Z"
-  },
-  {
-    "name": "GVaishanth",
-    "html_url": "https://github.com/GVaishanth/GVaishanth",
-    "homepage": "",
-    "description": "",
-    "language": "Python",
-    "pushed_at": "2026-11-04T11:59:02Z"
   },
   {
     "name": "CheckMate",
@@ -34,7 +34,7 @@
   {
     "name": "ETERNIX",
     "html_url": "https://github.com/GVaishanth/ETERNIX",
-    "homepage": "",
+    "homepage": "https://gvaishanth.github.io/ETERNIX/",
     "description": "Visionary: 3D open-world street racing completely on browser.",
     "language": "TypeScript",
     "pushed_at": "2026-10-19T08:58:07Z"
