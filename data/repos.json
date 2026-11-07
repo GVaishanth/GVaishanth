@@ -1,11 +1,27 @@
 [
   {
+    "name": "LEXICON",
+    "html_url": "https://github.com/GVaishanth/LEXICON",
+    "homepage": "https://gvaishanth.github.io/LEXICON/",
+    "description": "A Formal Archive For Word Puzzles.",
+    "language": "JavaScript",
+    "pushed_at": "2026-11-07T09:07:39Z"
+  },
+  {
+    "name": "Computer-Cricket",
+    "html_url": "https://github.com/GVaishanth/Computer-Cricket",
+    "homepage": "https://gvaishanth.github.io/Computer-Cricket/game.html",
+    "description": "A Python-based interactive hand cricket simulation game which includes toss mechanics, adaptive AI behavior, and various rule-based modes such as Normal, Crazy, Insane, and B10. It emphasizes modular programming, user interaction, and complex conditional logic to create an engaging command-line gaming experience. Now, deployed as a staic website.",
+    "language": "HTML",
+    "pushed_at": "2026-11-06T13:13:59Z"
+  },
+  {
     "name": "GVaishanth",
     "html_url": "https://github.com/GVaishanth/GVaishanth",
     "homepage": "",
     "description": "",
     "language": "Python",
-    "pushed_at": "2026-11-05T12:06:33Z"
+    "pushed_at": "2026-11-06T11:58:04Z"
   },
   {
     "name": "GALAXIA",
@@ -22,14 +38,6 @@
     "description": "A modern chess platform built for everyone. Play live matches, test your strategy, and sharpen your chess knowledge.",
     "language": "TypeScript",
     "pushed_at": "2026-11-02T02:06:40Z"
-  },
-  {
-    "name": "LEXICON",
-    "html_url": "https://github.com/GVaishanth/LEXICON",
-    "homepage": "https://gvaishanth.github.io/LEXICON/",
-    "description": "A Formal Archive For Word Puzzles.",
-    "language": "JavaScript",
-    "pushed_at": "2026-10-30T08:11:38Z"
   },
   {
     "name": "ETERNIX",
@@ -110,14 +118,6 @@
     "description": "Online terminal with limited sets of commands.",
     "language": "TypeScript",
     "pushed_at": "2026-07-29T18:08:48Z"
-  },
-  {
-    "name": "Computer-Cricket",
-    "html_url": "https://github.com/GVaishanth/Computer-Cricket",
-    "homepage": "https://gvaishanth.github.io/Computer-Cricket/game.html",
-    "description": "A Python-based interactive hand cricket simulation game which includes toss mechanics, adaptive AI behavior, and various rule-based modes such as Normal, Crazy, Insane, and B10. It emphasizes modular programming, user interaction, and complex conditional logic to create an engaging command-line gaming experience. Now, deployed as a staic website.",
-    "language": "HTML",
-    "pushed_at": "2026-07-13T17:14:03Z"
   },
   {
     "name": "RedFlag-Fraud-Detection",
