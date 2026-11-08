@@ -1,5 +1,13 @@
 [
   {
+    "name": "GVaishanth",
+    "html_url": "https://github.com/GVaishanth/GVaishanth",
+    "homepage": "",
+    "description": "",
+    "language": "Python",
+    "pushed_at": "2026-11-07T10:58:08Z"
+  },
+  {
     "name": "LEXICON",
     "html_url": "https://github.com/GVaishanth/LEXICON",
     "homepage": "https://gvaishanth.github.io/LEXICON/",
@@ -14,14 +22,6 @@
     "description": "A Python-based interactive hand cricket simulation game which includes toss mechanics, adaptive AI behavior, and various rule-based modes such as Normal, Crazy, Insane, and B10. It emphasizes modular programming, user interaction, and complex conditional logic to create an engaging command-line gaming experience. Now, deployed as a staic website.",
     "language": "HTML",
     "pushed_at": "2026-11-06T13:13:59Z"
-  },
-  {
-    "name": "GVaishanth",
-    "html_url": "https://github.com/GVaishanth/GVaishanth",
-    "homepage": "",
-    "description": "",
-    "language": "Python",
-    "pushed_at": "2026-11-06T11:58:04Z"
   },
   {
     "name": "GALAXIA",
